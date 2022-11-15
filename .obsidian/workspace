@@ -45,6 +45,25 @@
             "sortOrder": "alphabetical"
           }
         }
+      },
+      {
+        "id": "da85d747561821e7",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "b5d4aa3aa8de8ee7",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
