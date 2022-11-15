@@ -34,7 +34,7 @@ url: null
 - 可以尽量拆分文件，并使用双链链接它们，使 MOC 联系越来越紧密，避免产生孤儿节点
 - 只进行 Markdown 层面的美化，且不过度美化
 - 图片全部上传至 COS，且链接以 `https://cdn.wallleap.cn/img/pic/illustrtion/` 开头，图片没有特殊描述就置空
-- 其他资源，例如视频均放至 `asserts` 目录
+- 其他资源，例如视频均放至 `asserts` 目录，且大小不应超过 50MB
 
 ## 使用到的插件
 
