@@ -20,6 +20,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fec1a6922a8062cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web/源码/vant4 源码.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
         "stacked": true
@@ -177,6 +190,8 @@
   },
   "active": "36aab6eda9af3b8a",
   "lastOpenFiles": [
+    "web/源码/vant4 源码.md",
+    "design/B 端设计/B 端学习文章/B端产品如何做好移动化设计.md",
     "design/B 端设计/B 端学习文章/尼尔森十大可用性原则.md",
     "design/B 端设计/B 端学习文章/3个方面详析如何做好B端移动App设计.md",
     "design/B 端设计/B 端学习文章/用户调研/0-国内 B 端产品调研网站.md",
@@ -184,8 +199,6 @@
     "design/B 端设计/B 端学习文章/⭐️工作宝典/一张图带你了解用户体验设计标准流程-工作不出错宝典.md",
     "design/B 端设计/B 端学习文章/B 端设计指南/6-表格.md",
     "README.md",
-    "asserts/videos/「设计资源」表格操作交互视频.mp4",
-    "design/B 端设计/B 端学习文章/B 端组件库/大厂组件库一览表.md",
-    "design/B 端设计/B 端学习文章/B 类产品设计细节/页面常用的适配方法及选择.md"
+    "asserts/videos/「设计资源」表格操作交互视频.mp4"
   ]
 }
