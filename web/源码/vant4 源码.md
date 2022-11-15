@@ -1,7 +1,7 @@
 ---
 title: vant4 源码
 date: 2022-11-15 13:52
-updated: 2022-11-15 13:52
+updated: 2022-11-15 14:18
 cover: //cdn.wallleap.cn/img/post/1.jpg
 author: Luwang
 comments: true
@@ -22,7 +22,7 @@ url: null
 
 本文为稀土掘金技术社区首发签约文章，14天内禁止转载，14天后未获授权禁止转载，侵权必究！
 
-## 1\. 前言
+## 1. 前言
 
 大家好，我是[若川](https://link.juejin.cn/?target=https%3A%2F%2Flxchuan12.gitee.io "https://lxchuan12.gitee.io")。我倾力持续组织了一年[每周大家一起学习200行左右的源码共读活动](https://juejin.cn/post/7079706017579139102 "https://juejin.cn/post/7079706017579139102")，感兴趣的可以[点此扫码加我微信 `ruochuan12` 参与](https://juejin.cn/pin/7005372623400435725 "https://juejin.cn/pin/7005372623400435725")。另外，想学源码，极力推荐关注我写的专栏[《学习源码整体架构系列》](https://juejin.cn/column/6960551178908205093 "https://juejin.cn/column/6960551178908205093")，目前是掘金关注人数（4.1k+人）第一的专栏，写有20余篇源码文章。
 
@@ -32,8 +32,8 @@ url: null
 
 如果是 `Vue` 技术栈，开发移动端的项目，大多会选用 `vant` 组件库，目前（2022-11-13） `star` 多达 `20.4k`。我们可以挑选 `vant` 组件库学习，我会写一个[组件库源码系列专栏](https://juejin.cn/column/7140264842954276871 "https://juejin.cn/column/7140264842954276871")，欢迎大家关注。
 
--   [vant 4 即将正式发布，支持暗黑主题，那么是如何实现的呢](https://juejin.cn/post/7158239404484460574 "https://juejin.cn/post/7158239404484460574")
--   [跟着 vant4 源码学习如何用 vue3+ts 开发一个 loading 组件，仅88行代码](https://juejin.cn/post/7160465286036979748 "https://juejin.cn/post/7160465286036979748")
+- [vant 4 即将正式发布，支持暗黑主题，那么是如何实现的呢](https://juejin.cn/post/7158239404484460574 "https://juejin.cn/post/7158239404484460574")
+- [跟着 vant4 源码学习如何用 vue3+ts 开发一个 loading 组件，仅88行代码](https://juejin.cn/post/7160465286036979748 "https://juejin.cn/post/7160465286036979748")
 
 学完本文，你将学到：
 
@@ -41,10 +41,9 @@ url: null
 1. 学会如何用 vue3 + ts 开发一个 List 组件
 2. 学会封装各种组合式 `API`
 3. 等等
-复制代码
 ```
 
-## 2\. 准备工作
+## 2. 准备工作
 
 看一个开源项目，第一步应该是先看 [README.md](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fyouzan%2Fvant "https://github.com/youzan/vant") 再看贡献文档 [github/CONTRIBUTING.md](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fyouzan%2Fvant%2Fblob%2Fmain%2F.github%2FCONTRIBUTING.md "https://github.com/youzan/vant/blob/main/.github/CONTRIBUTING.md")。
 
@@ -66,7 +65,6 @@ pnpm i
 
 # Start development
 pnpm dev
-复制代码
 ```
 
 我们先来看 `pnpm dev` 最终执行的什么命令。
@@ -77,7 +75,7 @@ pnpm dev
 
 `pnpm dev` 最终执行的是：`vant-cli dev` 执行测试用例。本文主要是学习 [List 组件](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2F%23%2Fzh-CN%2Flist "https://vant-contrib.gitee.io/vant/#/zh-CN/list") 的实现，所以我们就不深入 `vant-cli dev` 命令了。
 
-## 3\. List 组件
+## 3. List 组件
 
 [List 组件文档](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2F%23%2Fzh-CN%2Flist "https://vant-contrib.gitee.io/vant/#/zh-CN/list")
 
@@ -85,9 +83,9 @@ pnpm dev
 
 从这个描述和我们自己体验 `demo` 来。 至少有以下三个问题值得去了解学习。
 
--   如何监听滚动
--   如何计算滚动到了底部
--   如何触发事件加载更多
+- 如何监听滚动
+- 如何计算滚动到了底部
+- 如何触发事件加载更多
 
 带着问题我们直接找到 list demo 文件：`vant/packages/vant/src/list/demo/index.vue`。为什么是这个文件，我在上篇文章[跟着 vant4 源码学习如何用 vue3+ts 开发一个 loading 组件，仅88行代码](https://juejin.cn/post/7160465286036979748#heading-3 "https://juejin.cn/post/7160465286036979748#heading-3")分析了其原理，感兴趣的小伙伴点击查看。这里就不赘述了。
 
@@ -172,10 +170,9 @@ const onLoad = (index: number) => {
       </van-list>
     </van-tab>
 <template>
-复制代码
 ```
 
-## 4\. 入口文件
+## 4. 入口文件
 
 主要就是导出一下类型和变量等。
 
@@ -195,14 +192,13 @@ declare module 'vue' {
     VanList: typeof List;
   }
 }
-复制代码
 ```
 
 `withInstall` 函数在上篇文章[5.1 withInstall 给组件对象添加 install 方法](https://juejin.cn/post/7160465286036979748#heading-10 "https://juejin.cn/post/7160465286036979748#heading-10") 也有分析，这里就不赘述了。
 
 我们可以在这些文件，任意位置加上 `debugger` 调试源码。
 
-## 5\. 主文件
+## 5. 主文件
 
 ```
 import {
@@ -250,7 +246,6 @@ export const listProps = {
 };
 
 export type ListProps = ExtractPropTypes<typeof listProps>;
-复制代码
 ```
 
 [List 组件 api](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2Fv4%2F%23%2Fzh-CN%2Flist%23api "https://vant-contrib.gitee.io/vant/v4/#/zh-CN/list#api")
@@ -291,7 +286,6 @@ export default defineComponent({
     };
   }
 }
-复制代码
 ```
 
 `debugger` 调试截图。
@@ -341,7 +335,6 @@ setup(props, { emit, slots }) {
       passive: true,
     });
 }
-复制代码
 ```
 
 由上面代码可以看出，`check` 函数非常重要，我们在下文分析它。
@@ -361,7 +354,6 @@ export function useExpose<T = Record<string, any>>(apis: T) {
     extend(instance.proxy as object, apis);
   }
 }
-复制代码
 ```
 
 通过 `ref` 可以获取到 `List` 实例并调用实例方法，详见[组件实例方法](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2Fv4%2F%23%2Fzh-CN%2Fadvanced-usage%23zu-jian-shi-li-fang-fa "https://vant-contrib.gitee.io/vant/v4/#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa")。
@@ -448,11 +440,9 @@ export function useEventListener(
     });
   }
 }
-
-复制代码
 ```
 
-## 6\. steup check 函数
+## 6. steup check 函数
 
 ```
 const check = () => {
@@ -498,7 +488,6 @@ const check = () => {
         }
     });
 };
-复制代码
 ```
 
 从 `check` 函数可以看出，主要就是利用滚动高度，接下来我们看这个函数中，使用到的组合式 `API`，`useTabStatus`、`useScrollParent`、`useRect`。
@@ -512,7 +501,6 @@ import { inject, ComputedRef, InjectionKey } from 'vue';
 export const TAB_STATUS_KEY: InjectionKey<ComputedRef<boolean>> = Symbol();
 
 export const useTabStatus = () => inject(TAB_STATUS_KEY, null);
-复制代码
 ```
 
 代码根据 `commit` 可以发现 `useTabStatus` 有这样一次提交。
@@ -582,7 +570,6 @@ export function useScrollParent(
 
   return scrollParent;
 }
-复制代码
 ```
 
 ### 6.3 useRect 获取元素的大小及其相对于视口的位置
@@ -630,8 +617,6 @@ export const useRect = (
   // 不支持的情况下返回 0 0
   return makeDOMRect(0, 0);
 };
-
-复制代码
 ```
 
 ### 6.4 isHidden 是否隐藏
@@ -656,12 +641,11 @@ export function isHidden(
 
   return hidden || parentHidden;
 }
-复制代码
 ```
 
 接着我们来分析开头的插槽部分。
 
-## 7\. 插槽
+## 7. 插槽
 
 插槽部分基本都是有插槽用插槽没有则用默认的。
 
@@ -686,7 +670,6 @@ return () => {
         </div>
     );
 };
-复制代码
 ```
 
 ### 7.1 renderFinishedText 渲染加载完成文字
@@ -700,7 +683,6 @@ const renderFinishedText = () => {
         }
     }
 };
-复制代码
 ```
 
 ### 7.2 renderErrorText 渲染加载失败文字
@@ -728,7 +710,6 @@ const renderErrorText = () => {
         }
     }
 };
-复制代码
 ```
 
 ### 7.3 renderLoading 渲染 loading
@@ -749,10 +730,9 @@ const renderLoading = () => {
         );
     }
 };
-复制代码
 ```
 
-## 8\. 总结
+## 8. 总结
 
 我们主要分析了 [`List` 组件](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2F%23%2Fzh-CN%2Flist "https://vant-contrib.gitee.io/vant/#/zh-CN/list") 实现原理。
 
@@ -761,23 +741,22 @@ const renderLoading = () => {
 ```
 emit('update:loading', true);
 emit('load');
-复制代码
 ```
 
 同时分析了一些相关组合式 `API`
 
--   `useExpose` 暴露接口供 `this.$refs.xxx` 使用
--   `useEventListener` 绑定事件
--   `useTabStatus` 当前 `tab` 是否激活的状态
--   `useScrollParent` 获取元素最近的可滚动父元素
--   `useRect` 获取元素的大小及其相对于视口的位置
+- `useExpose` 暴露接口供 `this.$refs.xxx` 使用
+- `useEventListener` 绑定事件
+- `useTabStatus` 当前 `tab` 是否激活的状态
+- `useScrollParent` 获取元素最近的可滚动父元素
+- `useRect` 获取元素的大小及其相对于视口的位置
 
 组件留有四个插槽，分别是：
 
--   `default` 列表内容
--   `loading` 自定义底部加载中提示
--   `finished` 自定义加载完成后的提示文案
--   `error` 自定义加载失败后的提示文案
+- `default` 列表内容
+- `loading` 自定义底部加载中提示
+- `finished` 自定义加载完成后的提示文案
+- `error` 自定义加载失败后的提示文案
 
 至此，我们就分析完了 `List` 组件，主要与 `DOM` 操作会比较多。`List 组件` 主文件的代码仅有 `100` 多行，但封装了很多组合式 `API` 。看完这篇源码文章，再去看 [List 组件文档](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2F%23%2Fzh-CN%2Flist "https://vant-contrib.gitee.io/vant/#/zh-CN/list")，可能就会有豁然开朗的感觉。再看其他组件，可能就可以猜测出大概实现的代码了。
 
@@ -785,7 +764,7 @@ emit('load');
 
 **如果看完有收获，欢迎点赞、评论、分享支持。你的支持和肯定，是我写作的动力**。
 
-## 9\. 加源码共读群交流
+## 9. 加源码共读群交流
 
 最后可以持续关注我[@若川](https://juejin.cn/user/1415826704971918 "https://juejin.cn/user/1415826704971918")。我会写一个[组件库源码系列专栏](https://juejin.cn/column/7140264842954276871 "https://juejin.cn/column/7140264842954276871")，欢迎大家关注。
 
