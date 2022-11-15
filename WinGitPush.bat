@@ -6,5 +6,5 @@ echo.
 echo.
 echo.
 echo PUSH FINISHED
-timeout /t 2
+timeout /t 5
 exit
