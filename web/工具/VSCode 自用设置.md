@@ -1,3 +1,24 @@
+---
+title: VSCode 自用设置
+date: 2022-11-15 14:54
+updated: 2022-11-15 15:04
+cover: //cdn.wallleap.cn/img/post/1.jpg
+author: Luwang
+comments: true
+aliases:
+  - 文章别名
+rating: 10
+tags:
+  - blog
+category: web
+keywords:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+description: 文章描述
+source: null
+url: null
+---
 
 ## 一、首选项设置
 
@@ -39,7 +60,9 @@ Win 入口：
 
 Compact Folders 取消复选框
 
+### Auto  Save
 
+### 面板放到右侧
 
 ## 二、插件
 
@@ -47,32 +70,36 @@ Compact Folders 取消复选框
 
 #### (1) Monokai Pro
 
-个人用的 `Classic `，它包含图标主题，可以自行选择
+个人用的 `  Classic `，它包含图标主题，可以自行选择
 
 ![Monokai Pro](https://cdn.wallleap.cn/img/pic/illustrtion/202208121638611.png)
 
 > Monokai pro 提示需要license解决办法
 
 1. 找到Monokai pro插件安装的路径：
-   `C:\Users\用户名\.vscode\extensions\monokai.theme-monokai-pro-vscode-1.1.18\js`
+		`C:\Users\用户名\.vscode\extensions\monokai.theme-monokai-pro-vscode-1.1.18\js`
 
 2. 打开`app.js`，搜索`"isValidLicense"`，找到如下地方，注释掉原来的代码，保存即可。
 
-   ```js
-       key: "isValidLicense",
-       value: function()
-       {
-           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-               t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-           //if (!e || !t) return !1; 注释掉原来的代码
-           if (!e || !t) return 1;
-           var o = s()("".concat(i.APP.UUID).concat(e)),
-               r = o.match(/.{1,5}/g),
-               n = r.slice(0, 5).join("-");
-           //return t === n  注释掉原来的代码
-           return 1
-       }
-   ```
+		`````
+		 ````
+		  ```js
+		      key: "isValidLicense",
+		      value: function()
+		      {
+		          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
+		              t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+		          //if (!e || !t) return !1; 注释掉原来的代码
+		          if (!e || !t) return 1;
+		          var o = s()("".concat(i.APP.UUID).concat(e)),
+		              r = o.match(/.{1,5}/g),
+		              n = r.slice(0, 5).join("-");
+		          //return t === n  注释掉原来的代码
+		          return 1
+		      }
+		  ```
+		 ````
+		`````
 
 之后重启 VSCode 即可
 
@@ -93,3 +120,11 @@ Compact Folders 取消复选框
 文件图标使用这个就 OK 了
 
 ![Material Icon Theme](https://cdn.wallleap.cn/img/pic/illustrtion/202208121648789.png)
+
+Format Document ——> <kbd>Alt</kbd> + <kbd>F</kbd>
+
+### Vim
+
+## Code Spell Checker
+
+用于检查代码单词是否写错，写错会有波浪线

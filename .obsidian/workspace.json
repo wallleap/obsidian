@@ -27,7 +27,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/工具/Emmet 加快开发速度.md",
+                "file": "web/工具/Vim —— 写代码更高效.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4bdbc2c3cd7a2b27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web/工具/VSCode 自用设置.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -53,7 +66,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "web/工具/Emmet 加快开发速度.md"
+                    "file": "web/工具/Vim —— 写代码更高效.md"
                   }
                 }
               }
@@ -69,7 +82,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "web/工具/Emmet 加快开发速度.md",
+                    "file": "web/工具/Vim —— 写代码更高效.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -167,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/工具/Emmet 加快开发速度.md"
+                "file": "web/工具/Vim —— 写代码更高效.md"
               }
             }
           },
@@ -191,15 +204,15 @@
   },
   "active": "52147a1b188b28e2",
   "lastOpenFiles": [
+    "web/工具/VSCode 自用设置.md",
+    "web/工具/Vim —— 写代码更高效.md",
+    "web/工具/Emmet 加快开发速度.md",
     "web/源码/vant4 源码.md",
     "design/B 端设计/B 端学习文章/B端产品如何做好移动化设计.md",
     "design/B 端设计/B 端学习文章/尼尔森十大可用性原则.md",
     "design/B 端设计/B 端学习文章/3个方面详析如何做好B端移动App设计.md",
     "design/B 端设计/B 端学习文章/用户调研/0-国内 B 端产品调研网站.md",
     "design/B 端设计/B 端学习文章/设计方法模版/设计走查表.md",
-    "design/B 端设计/B 端学习文章/⭐️工作宝典/一张图带你了解用户体验设计标准流程-工作不出错宝典.md",
-    "design/B 端设计/B 端学习文章/B 端设计指南/6-表格.md",
-    "README.md",
-    "asserts/videos/「设计资源」表格操作交互视频.mp4"
+    "design/B 端设计/B 端学习文章/⭐️工作宝典/一张图带你了解用户体验设计标准流程-工作不出错宝典.md"
   ]
 }
