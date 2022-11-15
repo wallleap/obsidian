@@ -20,8 +20,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "52147a1b188b28e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web/工具/Emmet 加快开发速度.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       },
       {
@@ -39,7 +53,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "web/源码/vant4 源码.md"
+                    "file": "web/工具/Emmet 加快开发速度.md"
                   }
                 }
               }
@@ -55,7 +69,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "web/源码/vant4 源码.md",
+                    "file": "web/工具/Emmet 加快开发速度.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -153,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/源码/vant4 源码.md"
+                "file": "web/工具/Emmet 加快开发速度.md"
               }
             }
           },
@@ -175,10 +189,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "fec1a6922a8062cd",
+  "active": "52147a1b188b28e2",
   "lastOpenFiles": [
-    "design/B 端设计/B 端学习文章/B端产品如何做好移动化设计.md",
     "web/源码/vant4 源码.md",
+    "design/B 端设计/B 端学习文章/B端产品如何做好移动化设计.md",
     "design/B 端设计/B 端学习文章/尼尔森十大可用性原则.md",
     "design/B 端设计/B 端学习文章/3个方面详析如何做好B端移动App设计.md",
     "design/B 端设计/B 端学习文章/用户调研/0-国内 B 端产品调研网站.md",
