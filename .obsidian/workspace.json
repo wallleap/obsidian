@@ -9,12 +9,12 @@
         "dimension": 77.58985200845666,
         "children": [
           {
-            "id": "fec1a6922a8062cd",
+            "id": "52147a1b188b28e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/源码/vant4 源码.md",
+                "file": "web/编程学习之道.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "52147a1b188b28e2",
+            "id": "cbe10e30522cfbeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/工具/Vim —— 写代码更高效.md",
+                "file": "life/知识管理/康奈尔笔记法.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -48,7 +48,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       },
       {
@@ -66,7 +65,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "web/工具/Vim —— 写代码更高效.md"
+                    "file": "web/编程学习之道.md"
                   }
                 }
               }
@@ -82,7 +81,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "web/工具/Vim —— 写代码更高效.md",
+                    "file": "web/编程学习之道.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -180,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/工具/Vim —— 写代码更高效.md"
+                "file": "web/编程学习之道.md"
               }
             }
           },
@@ -204,15 +203,15 @@
   },
   "active": "52147a1b188b28e2",
   "lastOpenFiles": [
-    "web/工具/VSCode 自用设置.md",
-    "web/工具/Vim —— 写代码更高效.md",
-    "web/工具/Emmet 加快开发速度.md",
+    "life/知识管理/康奈尔笔记法.md",
+    "web/编程学习之道.md",
     "web/源码/vant4 源码.md",
+    "web/工具/Vim —— 写代码更高效.md",
+    "web/工具/VSCode 自用设置.md",
+    "web/工具/Emmet 加快开发速度.md",
     "design/B 端设计/B 端学习文章/B端产品如何做好移动化设计.md",
     "design/B 端设计/B 端学习文章/尼尔森十大可用性原则.md",
     "design/B 端设计/B 端学习文章/3个方面详析如何做好B端移动App设计.md",
-    "design/B 端设计/B 端学习文章/用户调研/0-国内 B 端产品调研网站.md",
-    "design/B 端设计/B 端学习文章/设计方法模版/设计走查表.md",
-    "design/B 端设计/B 端学习文章/⭐️工作宝典/一张图带你了解用户体验设计标准流程-工作不出错宝典.md"
+    "design/B 端设计/B 端学习文章/用户调研/0-国内 B 端产品调研网站.md"
   ]
 }
