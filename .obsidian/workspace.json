@@ -9,38 +9,12 @@
         "dimension": 77.58985200845666,
         "children": [
           {
-            "id": "52147a1b188b28e2",
+            "id": "71e4b789230f0a76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/编程学习之道.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cbe10e30522cfbeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "life/知识管理/康奈尔笔记法.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4bdbc2c3cd7a2b27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "web/工具/VSCode 自用设置.md",
+                "file": "design/颜色.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -65,7 +39,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "web/编程学习之道.md"
+                    "file": "design/颜色.md"
                   }
                 }
               }
@@ -81,7 +55,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "web/编程学习之道.md",
+                    "file": "design/颜色.md",
                     "options": {
                       "collapse-filter": true,
                       "search": "",
@@ -179,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web/编程学习之道.md"
+                "file": "design/颜色.md"
               }
             }
           },
@@ -201,17 +175,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "52147a1b188b28e2",
+  "active": "71e4b789230f0a76",
   "lastOpenFiles": [
-    "life/知识管理/康奈尔笔记法.md",
+    "README.md",
+    "design/UI 设计/案例/如何从0到1设计一组图标.md",
+    "design/B 端设计/B 端学习文章/设计规范/手把手教你做设计规范——颜色篇.md",
+    "design/排版.md",
+    "life/面试必备.md",
+    "design/颜色.md",
+    "design/UI 设计/Banner 点击率提升改怎样做.md",
+    "design/设计师如何搭建知识体系.md",
     "web/编程学习之道.md",
-    "web/源码/vant4 源码.md",
-    "web/工具/Vim —— 写代码更高效.md",
-    "web/工具/VSCode 自用设置.md",
-    "web/工具/Emmet 加快开发速度.md",
-    "design/B 端设计/B 端学习文章/B端产品如何做好移动化设计.md",
-    "design/B 端设计/B 端学习文章/尼尔森十大可用性原则.md",
-    "design/B 端设计/B 端学习文章/3个方面详析如何做好B端移动App设计.md",
-    "design/B 端设计/B 端学习文章/用户调研/0-国内 B 端产品调研网站.md"
+    "asserts/videos/表格操作交互视频.mp4"
   ]
 }

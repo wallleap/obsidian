@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-14 14:52
+updated: 2022-11-16 17:09
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -19,7 +19,7 @@ source: null
 url: null
 ---
 
-# Inbox —— All in this
+# Inbox —— All in this . MOC
 
 本知识库约定：
 
@@ -35,23 +35,23 @@ url: null
 - 只进行 Markdown 层面的美化，且不过度美化
 - 图片全部上传至 COS，且链接以 `https://cdn.wallleap.cn/img/pic/illustrtion/` 开头，图片没有特殊描述就置空
 - 其他资源，例如视频均放至 `asserts` 目录，且大小不应超过 50MB
+- 重要文件在此文档加上链接，其他使用 DataView 获取
 
 ## 使用到的插件
 
-核心插件：标签列表、大纲、工作区、关系图谱（<kbd>Ctrl</kbd> + <kbd>G</kbd> ）、快速切换、录音机、命令面板、模板、日记、搜索、文件恢复、文件列表、斜杠命令、星标、字数统计、Markdown 格式转换器
+核心插件：标签列表、大纲、工作区、关系图谱（<kbd>Ctrl</kbd> + <kbd>G</kbd> ）、快速切换、录音机、命令面板、模板、日记、搜索、~~文件恢复~~（会和同步冲突）、文件列表、斜杠命令、星标、字数统计、Markdown 格式转换器
 
 ### 编辑增强
 
-- 标题快捷键：<kbd>Ctrl</kbd> + <kbd>1</kbd>  （数字 1~6）
-- 删除段落：<kbd>Ctrl</kbd> + <kbd>D</kbd>
-- 下划线：<kbd>Ctrl</kbd> + <kbd>U</kbd>  <u>下划线</u>
-
-下面这些用自带的
-
-- 加粗：<kbd>Ctrl</kbd> + <kbd>B</kbd>  **加粗**
-- 倾斜：<kbd>Ctrl</kbd> + <kbd>I</kbd>  *倾斜*
-- 删除线：<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>  ~~删除线~~
-- 插入链接：<kbd>Ctrl</kbd> + <kbd>K</kbd>  [链接](//wallleap.cn)
+- 设定快捷键
+	- 标题快捷键：<kbd>Ctrl</kbd> + <kbd>1</kbd>  （数字 1~6）
+	- 删除段落：<kbd>Ctrl</kbd> + <kbd>D</kbd>
+	- 下划线：<kbd>Ctrl</kbd> + <kbd>U</kbd>  <u>下划线</u>
+- 下面这些用自带的
+	- 加粗：<kbd>Ctrl</kbd> + <kbd>B</kbd>  **加粗**
+	- 倾斜：<kbd>Ctrl</kbd> + <kbd>I</kbd>  *倾斜*
+	- 删除线：<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>  ~~删除线~~
+	- 插入链接：<kbd>Ctrl</kbd> + <kbd>K</kbd>  [链接](//wallleap.cn)
 
 ### Advanced URI
 
@@ -98,7 +98,7 @@ url: null
 
 ### Obsidian Git
 
-- 懒得自己 Commit，直接隔段时间就 Commit 一次
+- 懒得自己 Commit，直接隔段时间就 Commit 一次（也不太好用）改用下面手动的方式
 
 在根目录新建文件 `WinGitPush.bat`，内容如下：
 
