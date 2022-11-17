@@ -152,7 +152,7 @@ git push -f
 ```dataview
 table 
 file.tags as 关于规范的标签
-from "design"and #规范
+from "400-design" and #规范
 ```
 
 ## design
@@ -166,25 +166,33 @@ from "design"and #规范
 #### [[0-B 端汇总]]
 
 ```dataview
-list from "design/B 端设计"
+table
+meta.tags as "标签"
+from "400-design/B 端设计"
 ```
 
 ### UI 设计
 
 ```dataview
-list from "design/UI 设计"
+table
+file.tag as "标签"
+from "400-design/UI 设计"
 ```
 
 ### 平面设计
 
 ```dataview
-list from "design/平面设计"
+table
+file.tag as "标签"
+from "400-design/平面设计"
 ```
 
 ### 动效设计
 
 ```dataview
-list from "design/动效设计"
+table
+file.tag as "标签"
+from "400-design/动效设计"
 ```
 
 [[21天动效打卡教程]]
@@ -192,19 +200,25 @@ list from "design/动效设计"
 ## web
 
 ```dataview
-list from "web"
+table
+file.tag as "标签"
+from "300-web"
 ```
 
 ## work
 
 ```dataview
-list from "work"
+table
+file.tag as "标签"
+from "200-work"
 ```
 
 ## life
 
 ```dataview
-list from "life"
+table
+file.tag as "标签"
+from "100-life"
 ```
 
 ### 工具

@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "400-design/B 端设计/B 端学习文章/启点B端设计周报/首都国际机场大屏案例.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/三件套/深入客户端存储大比拼.md",
+                "file": "300-web/三件套/深入客户端存储大比拼.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "400-design/B 端设计/B 端学习文章/启点B端设计周报/首都国际机场大屏案例.md"
               }
             }
           }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "400-design/B 端设计/B 端学习文章/启点B端设计周报/首都国际机场大屏案例.md"
               }
             }
           },
@@ -142,15 +142,15 @@
   },
   "active": "36aab6eda9af3b8a",
   "lastOpenFiles": [
-    "web/三件套/深入客户端存储大比拼.md",
+    "001-inbox/keep.md",
+    "400-design/B 端设计/B 端学习文章/启点B端设计周报/首都国际机场大屏案例.md",
     "README.md",
-    "design/UI 设计/小程序设计规范.md",
-    "temp/blog.md",
-    "temp/meta.md",
-    "temp/template.md",
-    "temp/temporary.md",
-    "life/备忘录.md",
-    "design/UI 设计/案例/如何从0到1设计一组图标.md",
-    "design/颜色.md"
+    "300-web/三件套/深入客户端存储大比拼.md",
+    "400-design/UI 设计/小程序设计规范.md",
+    "010-temp/blog.md",
+    "010-temp/meta.md",
+    "010-temp/template.md",
+    "010-temp/temporary.md",
+    "100-life/备忘录.md"
   ]
 }
