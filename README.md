@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-16 17:09
+updated: 2022-11-17 10:36
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -146,6 +146,14 @@ git push -f
 - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>m</kbd>  思维导图
 
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd>  打开调试功能
+
+## design 文件夹下 `#规范` 标签文件
+
+```dataview
+table 
+file.tags as 关于规范的标签
+from "design"and #规范
+```
 
 ## design
 

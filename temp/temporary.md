@@ -1,5 +1,23 @@
 ---
-date: 2022-11-10 18:10
+title: temporary
+date: 2022-11-17 10:46
+updated: 2022-11-17 10:46
+cover: //cdn.wallleap.cn/img/pic.jpg
+author: Luwang
+comments: true
+aliases:
+  - 文章别名
+rating: 10
+tags:
+  - 标签
+category: 分类
+keywords:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+description: 文章描述
+source: null
+url: null
 ---
 
 > 微信公众号排版工具。问题或建议，请公众号留言。**[程序员翻身](#jump_8)**

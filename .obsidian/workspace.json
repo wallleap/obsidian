@@ -6,15 +6,28 @@
       {
         "id": "d9dddc983522eb08",
         "type": "tabs",
-        "dimension": 77.58985200845666,
+        "dimension": 76.97138869504536,
         "children": [
           {
-            "id": "71e4b789230f0a76",
+            "id": "36aab6eda9af3b8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "design/颜色.md",
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b88d78db252ab7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web/三件套/深入客户端存储大比拼.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -25,69 +38,21 @@
         "stacked": true
       },
       {
-        "id": "e4f8732bd0e2c24a",
-        "type": "split",
-        "dimension": 22.41014799154334,
+        "id": "a35337032fa1ed23",
+        "type": "tabs",
+        "dimension": 23.028611304954644,
         "children": [
           {
-            "id": "a35337032fa1ed23",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b92e5196ce90fd8f",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "design/颜色.md"
-                  }
-                }
+            "id": "b92e5196ce90fd8f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
               }
-            ]
-          },
-          {
-            "id": "17f5b5cb9903b15f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "c0a07b4d38ea80d6",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "design/颜色.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 0.7132754626224425,
-                      "close": true
-                    }
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design/颜色.md"
+                "file": "README.md"
               }
             }
           },
@@ -175,17 +140,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "71e4b789230f0a76",
+  "active": "36aab6eda9af3b8a",
   "lastOpenFiles": [
+    "web/三件套/深入客户端存储大比拼.md",
     "README.md",
+    "design/UI 设计/小程序设计规范.md",
+    "temp/blog.md",
+    "temp/meta.md",
+    "temp/template.md",
+    "temp/temporary.md",
+    "life/备忘录.md",
     "design/UI 设计/案例/如何从0到1设计一组图标.md",
-    "design/B 端设计/B 端学习文章/设计规范/手把手教你做设计规范——颜色篇.md",
-    "design/排版.md",
-    "life/面试必备.md",
-    "design/颜色.md",
-    "design/UI 设计/Banner 点击率提升改怎样做.md",
-    "design/设计师如何搭建知识体系.md",
-    "web/编程学习之道.md",
-    "asserts/videos/表格操作交互视频.mp4"
+    "design/颜色.md"
   ]
 }
