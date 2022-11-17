@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-17 10:36
+updated: 2022-11-17 18:13
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -167,7 +167,8 @@ from "400-design" and #规范
 
 ```dataview
 table
-meta.tags as "标签"
+metaData.tags as "标签",
+metaData.updated as "更新时间"
 from "400-design/B 端设计"
 ```
 
