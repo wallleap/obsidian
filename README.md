@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-17 18:13
+updated: 2022-11-18 09:35
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -147,6 +147,13 @@ git push -f
 
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd>  打开调试功能
 
+## 三天内修改的文档
+
+```dataview
+table
+where date(today) - file.mtime <= dur(3 days) 
+```
+
 ## design 文件夹下 `#规范` 标签文件
 
 ```dataview
@@ -168,7 +175,8 @@ from "400-design" and #规范
 ```dataview
 table
 metaData.tags as "标签",
-metaData.updated as "更新时间"
+file.ctime as "更新时间",
+date(now)-(file.ctime) as 迄今時數
 from "400-design/B 端设计"
 ```
 

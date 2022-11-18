@@ -54,6 +54,9 @@ Win10启用其子系统Ubuntu并安装图形界面：https://myblog.wallleap.cn/
 
 ![终端中 Arch](https://cdn.wallleap.cn/img/pic/illustrtion/202207111113806.png)
 
+>如果显示`[已退出进程，代码为 4294967295 (0xffffffff)]`
+>可以管理员身份运行`netsh winsock reset`
+
 ## 4、设置Root密码
 
 ```
@@ -262,13 +265,13 @@ wsl 下可以进入 `/mnt` 目录，win 下的各个盘符都在这底下
 
 将上面的文件下载到本地：
 
-```cmd
+```sh
 git clone https://github.com/FrankFang/oh-my-env-1.git oh-my-env
 ```
 
 运行命令：
 
-```cmd
+```sh
 docker network create network1
 ```
 
@@ -279,6 +282,10 @@ docker network create network1
 3. 输入 Ctrl + Shift + P，然后输入 Reopen，回车，等待
 
 ![reopen in container](https://cdn.wallleap.cn/img/pic/illustrtion/202207261220177.png)
+
+现在好像 docker 被墙了
+
+推荐把 Docker、DockerCli、`docker.io` 都设置为走代理
 
 等上一步启动完毕之后，新建终端
 

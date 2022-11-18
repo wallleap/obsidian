@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "300-web/工具/win11安装arch子系统.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -35,7 +35,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "300-web/工具/win11安装arch子系统.md"
               }
             }
           }
@@ -105,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "300-web/工具/win11安装arch子系统.md"
               }
             }
           },
@@ -129,13 +129,13 @@
   },
   "active": "6f2428385a629b4a",
   "lastOpenFiles": [
-    "100-life/笔记/测试用.md",
+    "README.md",
     "100-life/笔记/康奈尔笔记法.md",
+    "100-life/笔记/测试用.md",
     "300-web/三件套/深入客户端存储大比拼.md",
     "{{metaData.cover}}.md",
     "400-design/B 端设计/B 端学习文章/启点B端设计周报/首都国际机场大屏案例.md",
     "001-inbox/keep.md",
-    "README.md",
     "400-design/UI 设计/小程序设计规范.md",
     "010-temp/blog.md",
     "010-temp/meta.md"
