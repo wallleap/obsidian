@@ -158,6 +158,7 @@ git remote -v
 
 ```zsh
 git remote add origin 仓库链接(ssh或https)
+git remote set-url origin 新仓库链接
 ```
 
 ### 推送代码
