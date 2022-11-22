@@ -6,10 +6,10 @@ cover: //cdn.wallleap.cn/img/post/1.jpg
 author: Luwang
 comments: true
 aliases:
-  - 文章别名
+  - {{title}}
 rating: 10
 tags:
-  - 标签
+  - blog
 category: 分类
 keywords:
   - 关键词1
@@ -17,5 +17,5 @@ keywords:
   - 关键词3
 description: 文章描述
 source: #
-url: #
+url: //myblog.wallleap.cn/post/
 ---

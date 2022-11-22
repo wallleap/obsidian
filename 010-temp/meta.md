@@ -6,7 +6,7 @@ cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
 aliases:
-  - 文章别名
+  - {{title}}
 rating: 10
 tags:
   - 标签

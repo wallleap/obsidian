@@ -1,7 +1,7 @@
 ---
 title: temporary
 date: 2022-11-17 10:46
-updated: 2022-11-17 10:46
+updated: 2022-11-21 15:08
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -17,7 +17,7 @@ keywords:
   - 关键词3
 description: 文章描述
 source: null
-url: null
+url: obsidian://open?vault=obsidian&file=010-temp%2Ftemporary
 ---
 
 > 微信公众号排版工具。问题或建议，请公众号留言。**[程序员翻身](#jump_8)**
@@ -271,7 +271,7 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 
 通过`<![](url),![](url)>`这种语法设置横屏滑动滑动片，具体用法如下：
 
-<![蓝1](https://markdown.com.cn/images/blue.jpg),![绿2](https://markdown.com.cn/images/green.jpg),![红3](https://markdown.com.cn.jpg)>
+<![蓝1](https://markdown.com.cn/images/blue.jpg),![绿2](https://markdown.com.cn/images/green.jpg),![红3](https://markdown.com.cn/images/red.jpg)>
 
 ## 4 其他语法
 
