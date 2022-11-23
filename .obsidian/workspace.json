@@ -6,15 +6,15 @@
       {
         "id": "d9dddc983522eb08",
         "type": "tabs",
-        "dimension": 77.58985200845666,
+        "dimension": 76.97138869504536,
         "children": [
           {
-            "id": "5959b281ec430ac7",
+            "id": "36aab6eda9af3b8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/工具/Git 操作.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -25,69 +25,21 @@
         "stacked": true
       },
       {
-        "id": "e4f8732bd0e2c24a",
-        "type": "split",
-        "dimension": 22.41014799154334,
+        "id": "a35337032fa1ed23",
+        "type": "tabs",
+        "dimension": 23.028611304954644,
         "children": [
           {
-            "id": "a35337032fa1ed23",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b92e5196ce90fd8f",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "300-web/工具/Git 操作.md"
-                  }
-                }
+            "id": "b92e5196ce90fd8f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
               }
-            ]
-          },
-          {
-            "id": "17f5b5cb9903b15f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "c0a07b4d38ea80d6",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "300-web/工具/Git 操作.md",
-                    "options": {
-                      "collapse-filter": true,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": false,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": true,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 1,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": true,
-                      "centerStrength": 0.518713248970312,
-                      "repelStrength": 10,
-                      "linkStrength": 1,
-                      "linkDistance": 250,
-                      "scale": 0.7132754626224425,
-                      "close": true
-                    }
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/工具/Git 操作.md"
+                "file": "README.md"
               }
             }
           },
@@ -175,17 +127,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "5959b281ec430ac7",
+  "active": "36aab6eda9af3b8a",
   "lastOpenFiles": [
-    "400-design/B 端设计/B 端学习文章/引导弹窗的管理与提效.md",
-    "300-web/工具/Git 操作.md",
-    "200-work/前端/常用网站.md",
-    "200-work/广告/创意课程合集.md",
-    "300-web/工具/win11安装arch子系统.md",
-    "300-web/工具/nohup和&后台运行，进程查看及终止.md",
-    "300-web/项目/山竹记账/搭建开发环境.md",
+    "400-design/B 端设计/B 端学习文章/启点B端设计周报/SaaS产品的差异化设计细节.md",
+    "400-design/B 端设计/B 端学习文章/启点B端设计周报/设计规范如何高效落地.md",
+    "400-design/B 端设计/B 端学习文章/启点B端设计周报/四个小技巧搞定复杂的业务场景设计.md",
+    "400-design/B 端设计/B 端学习文章/启点B端设计周报/分层设计让转化率翻五倍.md",
     "README.md",
-    "010-temp/temporary.md",
-    "400-design/UI 设计/在 Figma 中使用自动化脚本.md"
+    "100-life/知识管理/obsidian 使用/9. DataView 查询.md",
+    "400-design/B 端设计/B 端学习文章/价值点/以用户体验为中心的设计，就是一块遮羞布.md",
+    "400-design/设计规范.md",
+    "300-web/工具/Git 操作.md",
+    "400-design/B 端设计/B 端学习文章/引导弹窗的管理与提效.md"
   ]
 }

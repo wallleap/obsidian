@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-18 09:35
+updated: 2022-11-23 10:37
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -29,6 +29,7 @@ url: null
 - 每个文件都添加 `temp` 目录下的 **front-matter**，尤其是 `tag` 字段（已设定成模板可以使用快捷键插入到文章头部）
 - `tag` 字段一定保持统一（英文大小写符合常规）
 	- 需要在个人博客中展示的文章加标签：`blog`
+	- 中英文不需要空格隔开，否则会被认定为是两个标签（`B端`）
 - `category` 字段一般就使用大文件夹的名称
 - 为了方便迁移，除 `inbox` 文件夹和文件外，尽量使用 Obsidian 自带的语法
 - 可以尽量拆分文件，并使用双链链接它们，使 MOC 联系越来越紧密，避免产生孤儿节点
@@ -151,6 +152,8 @@ git push -f
 
 ```dataview
 table
+file.tags as "标签",
+file.ctime as "创建时间"
 where date(today) - file.mtime <= dur(3 days) 
 ```
 
@@ -174,7 +177,7 @@ from "400-design" and #规范
 
 ```dataview
 table
-metaData.tags as "标签",
+file.tags as "标签",
 file.ctime as "更新时间",
 date(now)-(file.ctime) as 迄今時數
 from "400-design/B 端设计"
@@ -184,7 +187,7 @@ from "400-design/B 端设计"
 
 ```dataview
 table
-file.tag as "标签"
+file.tags as "标签"
 from "400-design/UI 设计"
 ```
 
@@ -192,7 +195,7 @@ from "400-design/UI 设计"
 
 ```dataview
 table
-file.tag as "标签"
+file.tags as "标签"
 from "400-design/平面设计"
 ```
 
@@ -200,7 +203,7 @@ from "400-design/平面设计"
 
 ```dataview
 table
-file.tag as "标签"
+file.tags as "标签"
 from "400-design/动效设计"
 ```
 
@@ -210,7 +213,7 @@ from "400-design/动效设计"
 
 ```dataview
 table
-file.tag as "标签"
+file.tags as "标签"
 from "300-web"
 ```
 
@@ -218,7 +221,7 @@ from "300-web"
 
 ```dataview
 table
-file.tag as "标签"
+file.tags as "标签"
 from "200-work"
 ```
 
@@ -226,7 +229,7 @@ from "200-work"
 
 ```dataview
 table
-file.tag as "标签"
+file.tags as "标签"
 from "100-life"
 ```
 
