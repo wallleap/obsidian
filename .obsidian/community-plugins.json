@@ -1,5 +1,4 @@
 [
-  "markdown-prettifier",
   "better-word-count",
   "obsidian-git",
   "Enhanced-editing",
@@ -13,5 +12,6 @@
   "obsidian-emoji-toolbar",
   "obsius-publish",
   "dataview",
-  "obsidian-weread-plugin"
+  "obsidian-weread-plugin",
+  "markdown-prettifier"
 ]

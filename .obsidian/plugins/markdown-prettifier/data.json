@@ -1,11 +1,11 @@
 {
   "bullet": "-",
-  "emphasis": "_",
+  "emphasis": "*",
   "rule": "-",
-  "createHeaderIfNotPresent": false,
-  "newHeaderTemplate": "\ndate created: \"{{date:YYYY-MM-DD HH:mm}}\" \n",
-  "updateHeader": false,
-  "updateHeaderTemplate": "\ndate updated: \"{{date:YYYY-MM-DD HH:mm}}\" \n",
-  "listItemIndent": "one",
+  "createHeaderIfNotPresent": true,
+  "newHeaderTemplate": "\ndate: {{date:YYYY-MM-DD HH:mm}}\n",
+  "updateHeader": true,
+  "updateHeaderTemplate": "\nupdated: {{date:YYYY-MM-DD HH:mm}}\n",
+  "listItemIndent": "tab",
   "newlinesAroundHeadings": true
 }

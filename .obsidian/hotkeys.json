@@ -1,5 +1,13 @@
 {
-  "Enhanced-editing:add-daima": [],
+  "Enhanced-editing:add-daima": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Y"
+    }
+  ],
   "Enhanced-editing:add-Line0": [],
   "workspace:goto-tab-1": [],
   "workspace:goto-tab-2": [],
