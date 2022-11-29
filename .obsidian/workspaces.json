@@ -6,12 +6,11 @@
         "type": "split",
         "children": [
           {
-            "id": "d9dddc983522eb08",
+            "id": "f839161edd88e695",
             "type": "tabs",
-            "dimension": 76.97138869504536,
             "children": [
               {
-                "id": "36aab6eda9af3b8a",
+                "id": "018ee013067ce245",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -25,11 +24,64 @@
               }
             ],
             "stacked": true
-          },
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "28a94fec0b2bc43f",
+        "type": "split",
+        "children": [
           {
-            "id": "a35337032fa1ed23",
+            "id": "5fb380a33311f79d",
             "type": "tabs",
-            "dimension": 23.028611304954644,
+            "children": [
+              {
+                "id": "1a894e9b237b81e9",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "cd9c2252ac27f581",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d488638e994d7d06",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 292.5
+      },
+      "right": {
+        "id": "ff952d28c1918849",
+        "type": "split",
+        "children": [
+          {
+            "id": "6f35e5143e8840b1",
+            "type": "tabs",
             "children": [
               {
                 "id": "b92e5196ce90fd8f",
@@ -40,75 +92,13 @@
                     "file": "README.md"
                   }
                 }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "28a94fec0b2bc43f",
-        "type": "split",
-        "children": [
-          {
-            "id": "5fb380a33311f79d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1a894e9b237b81e9",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
               },
               {
-                "id": "cd9c2252ac27f581",
+                "id": "081928919b6c3ad2",
                 "type": "leaf",
                 "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "d488638e994d7d06",
-                "type": "leaf",
-                "state": {
-                  "type": "starred",
+                  "type": "graph",
                   "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 292.5
-      },
-      "right": {
-        "id": "ff952d28c1918849",
-        "type": "split",
-        "children": [
-          {
-            "id": "6f35e5143e8840b1",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "cb11919991c959ce",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "README.md"
-                  }
                 }
               },
               {
@@ -121,150 +111,12 @@
                     "useHierarchy": true
                   }
                 }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 200,
-        "collapsed": true
-      },
-      "active": "36aab6eda9af3b8a"
-    },
-    "有关系图": {
-      "main": {
-        "id": "9b801bf05df074bb",
-        "type": "split",
-        "children": [
-          {
-            "id": "d9dddc983522eb08",
-            "type": "tabs",
-            "dimension": 77.58985200845666,
-            "children": [
-              {
-                "id": "36aab6eda9af3b8a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "README.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                },
-                "group": "d0a0c71fa55dbc33"
-              }
-            ],
-            "stacked": true
-          },
-          {
-            "id": "e4f8732bd0e2c24a",
-            "type": "split",
-            "dimension": 22.41014799154334,
-            "children": [
-              {
-                "id": "a35337032fa1ed23",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "b92e5196ce90fd8f",
-                    "type": "leaf",
-                    "state": {
-                      "type": "outline",
-                      "state": {
-                        "file": "README.md"
-                      }
-                    }
-                  }
-                ]
               },
               {
-                "id": "17f5b5cb9903b15f",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "c0a07b4d38ea80d6",
-                    "type": "leaf",
-                    "state": {
-                      "type": "localgraph",
-                      "state": {
-                        "file": "README.md",
-                        "options": {
-                          "collapse-filter": true,
-                          "search": "",
-                          "localJumps": 1,
-                          "localBacklinks": true,
-                          "localForelinks": true,
-                          "localInterlinks": false,
-                          "showTags": false,
-                          "showAttachments": false,
-                          "hideUnresolved": false,
-                          "collapse-color-groups": true,
-                          "colorGroups": [],
-                          "collapse-display": true,
-                          "showArrow": false,
-                          "textFadeMultiplier": 0,
-                          "nodeSizeMultiplier": 1,
-                          "lineSizeMultiplier": 1,
-                          "collapse-forces": true,
-                          "centerStrength": 0.518713248970312,
-                          "repelStrength": 10,
-                          "linkStrength": 1,
-                          "linkDistance": 250,
-                          "scale": 0.7132754626224425,
-                          "close": true
-                        }
-                      }
-                    },
-                    "group": "d0a0c71fa55dbc33"
-                  }
-                ]
-              }
-            ],
-            "direction": "horizontal"
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "28a94fec0b2bc43f",
-        "type": "split",
-        "children": [
-          {
-            "id": "5fb380a33311f79d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1a894e9b237b81e9",
+                "id": "8802705ab5095eb2",
                 "type": "leaf",
                 "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "cd9c2252ac27f581",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "d488638e994d7d06",
-                "type": "leaf",
-                "state": {
-                  "type": "starred",
+                  "type": "advanced-tables-toolbar",
                   "state": {}
                 }
               }
@@ -272,45 +124,9 @@
           }
         ],
         "direction": "horizontal",
-        "width": 292.5
+        "width": 277.5
       },
-      "right": {
-        "id": "ff952d28c1918849",
-        "type": "split",
-        "children": [
-          {
-            "id": "6f35e5143e8840b1",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "cb11919991c959ce",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "README.md"
-                  }
-                }
-              },
-              {
-                "id": "fb66bc3a04e24cd6",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 200,
-        "collapsed": true
-      },
-      "active": "c0a07b4d38ea80d6"
+      "active": "018ee013067ce245"
     },
     "思维导图": {
       "main": {
@@ -318,12 +134,12 @@
         "type": "split",
         "children": [
           {
-            "id": "6a889f003f1c44db",
+            "id": "a6d8ab95e3f02b35",
             "type": "tabs",
-            "dimension": 85.22727272727273,
+            "dimension": 84.68606431852986,
             "children": [
               {
-                "id": "8127101cabb3d09e",
+                "id": "e278359cfb00e556",
                 "type": "leaf",
                 "state": {
                   "type": "mindmap",
@@ -333,12 +149,12 @@
             ]
           },
           {
-            "id": "5e92be40cdd041f1",
+            "id": "f839161edd88e695",
             "type": "tabs",
-            "dimension": 14.772727272727273,
+            "dimension": 15.313935681470136,
             "children": [
               {
-                "id": "d1e86ab6dbd7f3d8",
+                "id": "018ee013067ce245",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -350,7 +166,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "stacked": true
           }
         ],
         "direction": "vertical"
@@ -411,13 +228,21 @@
             "type": "tabs",
             "children": [
               {
-                "id": "cb11919991c959ce",
+                "id": "b92e5196ce90fd8f",
                 "type": "leaf",
                 "state": {
                   "type": "outline",
                   "state": {
                     "file": "README.md"
                   }
+                }
+              },
+              {
+                "id": "081928919b6c3ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
                 }
               },
               {
@@ -430,15 +255,143 @@
                     "useHierarchy": true
                   }
                 }
+              },
+              {
+                "id": "8802705ab5095eb2",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
               }
             ]
           }
         ],
         "direction": "horizontal",
-        "width": 200,
-        "collapsed": true
+        "width": 277.5
       },
-      "active": "d1e86ab6dbd7f3d8"
+      "active": "e278359cfb00e556"
+    },
+    "关系图谱": {
+      "main": {
+        "id": "9b801bf05df074bb",
+        "type": "split",
+        "children": [
+          {
+            "id": "f839161edd88e695",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "018ee013067ce245",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ],
+            "stacked": true
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "28a94fec0b2bc43f",
+        "type": "split",
+        "children": [
+          {
+            "id": "5fb380a33311f79d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1a894e9b237b81e9",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "cd9c2252ac27f581",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d488638e994d7d06",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 292.5
+      },
+      "right": {
+        "id": "ff952d28c1918849",
+        "type": "split",
+        "children": [
+          {
+            "id": "6f35e5143e8840b1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b92e5196ce90fd8f",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "081928919b6c3ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              },
+              {
+                "id": "fb66bc3a04e24cd6",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "8802705ab5095eb2",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 277.5
+      },
+      "active": "018ee013067ce245"
     }
   },
   "active": "常规"

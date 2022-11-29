@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "▶",
+      "🐕‍🦺",
+      "🎉",
+      "⛳",
+      "🧠"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  "000-asserts": "🌲",
+  "001-inbox": "💶",
+  "010-temp": "⛵",
+  "100-life": "📬",
+  "200-work": "🍾",
+  "300-web": "🐋",
+  "400-design": "🧠",
+  "README.md": "⛳",
+  "000-asserts/ppt": "🎉",
+  "000-asserts/videos": "🐕‍🦺",
+  "000-asserts/videos/表格操作交互视频.mp4": "▶",
+  "000-asserts/videos/抖店侧边导航.mp4": "▶",
+  "000-asserts/videos/盒马营销设计数字化工作台.mp4": "▶",
+  "000-asserts/videos/京东云官网视觉升级.mp4": "▶",
+  "000-asserts/videos/酷家乐主站3.0，让一切更简单.mp4": "▶",
+  "000-asserts/videos/群核设计系统Manycore Design——平台解决方案.mp4": "▶",
+  "000-asserts/videos/数据可视化大屏设计经验分享【高级篇】.mp4": "▶"
+}

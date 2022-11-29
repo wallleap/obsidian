@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-28 13:42
+updated: 2022-11-29 11:24
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -51,13 +51,26 @@ url: null
 - 下面这些用自带的
 	- 加粗：<kbd>Ctrl</kbd> + <kbd>B</kbd>  **加粗**
 	- 倾斜：<kbd>Ctrl</kbd> + <kbd>I</kbd>  *倾斜*
-	- 删除线：<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>  ~~删除线~~
+	- 删除线：<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>  ~~删除线~~（表格用的 <kbd>Ctrl</kbd>）
 	- 插入链接：<kbd>Ctrl</kbd> + <kbd>K</kbd>  [链接](//wallleap.cn)
 
 ### Advanced URI
 
 文件列表中右击文章标题，Copy Advanced URI
 `obsidian://advanced-uri?vault=obsidian&filepath=web%252F%25E5%25B7%25A5%25E5%2585%25B7%252FVSCode%2520%25E8%2587%25AA%25E7%2594%25A8%25E8%25AE%25BE%25E7%25BD%25AE.md`
+
+### Advanced Tables
+
+操作 Markdown 表格更方便，不常用，一般都是直接复制表格到 Typora 再复制过来，但是它可以让单元格在源码模式对齐来，看起来更舒适一点
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202211290948868.gif)
+
+| 快捷键                                               | 操作        |
+| ------------------------------------------------- | --------- |
+| <kbd>Tab</kbd>                                    | 下一单元格     |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd>                 | 上一单元格     |
+| <kbd>Enter</kbd>                                  | 下一行       |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd> | 打开表格控制侧边栏 |
 
 ### Better Word Count
 
@@ -78,11 +91,11 @@ url: null
 ### Emoji Toolbar
 
 - 自己设置快捷键或者 <kbd>Ctrl</kbd> + <kbd>P</kbd> 搜索 emoji 👍，但是好像网不好不显示☹️
+- 搭配 Obsidian Icon Folder 插件可以修改文件（夹）图标 😘
 
 ### Image auto upload Plugin
 
 - 搭配 Picgo 使用，直接粘贴就能上传图片
-
 - Picgo 建议使用 COS 作为图床，以后方便迁移（自己设定 CDN 地址）
 
 ### Markdown prettifier
@@ -99,7 +112,7 @@ url: null
 
 ### Obsidian Git
 
-- 懒得自己 Commit，直接隔段时间就 Commit 一次（也不太好用）改用下面手动的方式
+- 懒得自己 Commit，~~直接隔段时间就 Commit 一次~~（也不太好用）改用下面手动的方式
 
 在根目录新建文件 `WinGitPush.bat`，内容如下：
 

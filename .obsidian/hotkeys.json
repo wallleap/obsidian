@@ -95,7 +95,7 @@
   "editor:toggle-strikethrough": [
     {
       "modifiers": [
-        "Mod",
+        "Alt",
         "Shift"
       ],
       "key": "D"
