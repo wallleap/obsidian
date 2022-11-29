@@ -1,7 +1,28 @@
+---
+title: SaaS 中 6 种常见 UI 入职模式
+date: 2022-11-29 11:43
+updated: 2022-11-29 11:43
+cover: //cdn.wallleap.cn/img/post/1.jpg
+author: Luwang
+comments: true
+aliases:
+  - SaaS 中 6 种常见 UI 入职模式
+rating: 10
+tags:
+  - SaaS
+category: design
+keywords:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+description: 文章描述
+source: null
+url: //myblog.wallleap.cn/post/
+---
+
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211041601116.png)
 
 [SaaS 中 6 种常见 UI 入职模式 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/138258638)
-
 
 工作以来，一直从事着企业级 SaaS 产品。如今，也慢慢的看到越来越多的设计师，从事和关注这个行业。
 
@@ -25,12 +46,12 @@
 
 以下，总结了常见的 UI 入职模式：
 
--   欢迎光临
--   产品导旅
--   清单
--   手动执行
--   脉冲
--   空状态
+- 欢迎光临
+- 产品导旅
+- 清单
+- 手动执行
+- 脉冲
+- 空状态
 
 共列举了 16 个 SaaS 产品案列，图文并茂的进行阐述。
 
@@ -134,10 +155,6 @@
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211041601586.gif)
 
-  
-
-  
-
 [Groove](https://link.zhihu.com/?target=https%3A//www.groovehq.com/)，客户支持应用。将默认数据和教程完美的结合在一起，通过解决未分配任务，自然的学会了产品的使用。
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211041601587.jpeg)
@@ -148,14 +165,14 @@
 
 当我们进行新手入门设计时，试着询问自己以下问题：
 
--   产品为客户提供的核心价值是什么？最好从现有的客户那里询问答案
--   新用户需要采取什么步骤来获得该核心价值？
--   这些步骤中可能存在哪些障碍？
--   是否需要针对不同的角色，提供个性化的入门？
+- 产品为客户提供的核心价值是什么？最好从现有的客户那里询问答案
+- 新用户需要采取什么步骤来获得该核心价值？
+- 这些步骤中可能存在哪些障碍？
+- 是否需要针对不同的角色，提供个性化的入门？
 
 然后，才是思考采用什么 UI 模式。同时，新手入门和其他产品设计一样，还需对其数据监测（定量），并与付费不久的用户以及最终流失的用户交谈（定性），进行持续优化。
 
-___
+---
 
 [Wiiii：当我们在谈 SaaS 的时候，在谈什么？15 赞同 · 2 评论文章![](https://cdn.wallleap.cn/img/pic/illustrtion/202211041601588.jpeg)](https://zhuanlan.zhihu.com/p/77011774)
 

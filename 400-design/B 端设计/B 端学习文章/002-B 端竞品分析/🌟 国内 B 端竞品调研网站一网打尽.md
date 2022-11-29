@@ -1,10 +1,32 @@
+---
+title: 🌟 国内 B 端竞品调研网站一网打尽
+date: 2022-11-29 11:45
+updated: 2022-11-29 11:45
+cover: //cdn.wallleap.cn/img/post/1.jpg
+author: Luwang
+comments: true
+aliases:
+  - 🌟 国内 B 端竞品调研网站一网打尽
+rating: 10
+tags:
+  - 竞品分析
+category: design
+keywords:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+description: 文章描述
+source: null
+url: //myblog.wallleap.cn/post/
+---
+
 [国内B端竞品调研网站一网打尽 (qq.com)](https://mp.weixin.qq.com/s/qe7NElIIB8vk9rWIQgTqew)
 
 好了，废话不多说，接下来我就简单介绍下我觉得几个还不错的国内B端竞品选型网站。
 
 ## 1、36Kr 企服点评
 
-官网：https://www.36dianping.com/
+官网：<https://www.36dianping.com/>
 
 ![图片](https://cdn.wallleap.cn/img/pic/illustrtion/20221103225524.png)
 
@@ -16,7 +38,7 @@
 
 ## 2、SaaS软件点评网
 
-官网：https://www.saasruanjian.com
+官网：<https://www.saasruanjian.com>
 
 ![图片](https://cdn.wallleap.cn/img/pic/illustrtion/20221103225525.png)
 
@@ -24,7 +46,7 @@ SaaS软件点评网是专业且中立的SaaS产品交流与选型平台，创建
 
 ## 3、找 SAAS
 
-官网：https://www.zhaosaas.com/
+官网：<https://www.zhaosaas.com/>
 
 里面不仅有saas应用市场，在这里你可以找相关的saas产品，同时还有saas产品咨询和saas产品设计的相关文章。
 
@@ -32,7 +54,7 @@ SaaS软件点评网是专业且中立的SaaS产品交流与选型平台，创建
 
 ## 4、字母点评
 
-官网：https://www.zimudianping.com/#/
+官网：<https://www.zimudianping.com/#/>
 
 字母点评专注数字化产品选型，网站访问量已超百万，覆盖200+数字化产品分类，用户可基于真实使用者评价、字母网格、榜单挑选数字化产品，帮企业做更好的技术决策。
 
@@ -48,7 +70,7 @@ SaaS软件点评网是专业且中立的SaaS产品交流与选型平台，创建
 
 ## 5、选型宝
 
-官网：https://www.xuanxingbao.com/
+官网：<https://www.xuanxingbao.com/>
 
 选型宝是“B2B市场的大众点评”，为企业的IT决策者，提供了一个实名的选型经验交流社区。在选型宝，企业IT采购者不仅能看到其他用户的实名点评，还可以按产品，找到用过的人，跟他们聊一聊，问一问真实的使用感受。
 
@@ -68,7 +90,7 @@ SaaS软件点评网是专业且中立的SaaS产品交流与选型平台，创建
 
 ## 6、Yun88 网
 
-官网：https://yun88.com/video
+官网：<https://yun88.com/video>
 
 Yun88网主要助力企业筛选优质厂商、产品、技术和解决方案，实现数字化转型。
 
@@ -78,7 +100,7 @@ Yun88网主要助力企业筛选优质厂商、产品、技术和解决方案，
 
 ## 7、SaaS 之家
 
-官网：http://home.saaszhijia.com/
+官网：<http://home.saaszhijia.com/>
 
 SaaS之家是专业的SaaS产品点评和排行平台，致力于更好地连接SaaS用户和厂商，在此基础上实现数据互通。
 
@@ -86,7 +108,7 @@ SaaS之家是专业的SaaS产品点评和排行平台，致力于更好地连接
 
 ## 8、CSDN 企业服务导航
 
-官网：https://www.csdn.net/saas/?utm\_medium=zhfs
+官网：<https://www.csdn.net/saas/?utm\\_medium=zhfs>
 
 是CSDN推出的专业企业软件与服务聚合导航平台，方便企业用户更快地找到自己所需的产品与服务，助力企业降本增效。
 

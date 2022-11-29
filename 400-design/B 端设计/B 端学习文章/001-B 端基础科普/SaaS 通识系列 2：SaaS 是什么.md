@@ -1,5 +1,26 @@
-![](https://cdn.wallleap.cn/img/pic/illustrtion/202211041521048.png)
+---
+title: SaaS 通识系列 2：SaaS 是什么
+date: 2022-11-29 11:42
+updated: 2022-11-29 11:42
+cover: //cdn.wallleap.cn/img/post/1.jpg
+author: Luwang
+comments: true
+aliases:
+  - SaaS 通识系列 2：SaaS 是什么
+rating: 10
+tags:
+  - SaaS
+category: design
+keywords:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+description: 文章描述
+source: null
+url: //myblog.wallleap.cn/post/
+---
 
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202211041521048.png)
 
 [SaaS 通识系列 2：SaaS 是什么 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/226198317)
 
@@ -10,32 +31,27 @@
 
 记得在 10 年前，我开始学习设计的时候，安装 Photoshop：
 
--   下载软件，本地安装
+- 下载软件，本地安装
 
--   按版本购买，获取软件序列号
+- 按版本购买，获取软件序列号
 
--   每次更新，需要从新下载替换
+- 每次更新，需要从新下载替换
 
--   设计文件保留在本地电脑上，通过 U 盘拷贝才能携带，更无法团队协作
+- 设计文件保留在本地电脑上，通过 U 盘拷贝才能携带，更无法团队协作
 
 然而，在今天，我们使用软件的方式已不再相同。
 
 例如 Figma（基于 Web 的在线设计软件）：
 
--   通过浏览器访问使用，无需下载
+- 通过浏览器访问使用，无需下载
 
--   按月付费，并随时可取消订阅
+- 按月付费，并随时可取消订阅
 
--   无需更新，每次登录都是最新版本
+- 无需更新，每次登录都是最新版本
 
--   设计文件通过云储存，登录任何一台电脑（连接网络）均可访问
+- 设计文件通过云储存，登录任何一台电脑（连接网络）均可访问
 
 ![传统软件 VS SaaS 软件](https://cdn.wallleap.cn/img/pic/illustrtion/20221103222959.png)
-
-
-
-
-
 
 我们将这种方式称为 SaaS（Software as a Service），软件即服务。
 
@@ -45,12 +61,7 @@
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223027.png)
 
-
 ![](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/boxcnxVdLNUphLTEOQpBXBOWZyh/?mount_node_token=doccnzoNPD8cAcDW59Lv4R3VBUh&mount_point=doc_image)
-
-
-
-
 
 ▲ 软盘、CD-ROM 和软件许可证。图片来源（从左到右）：Shutterstock、PikPng、Camtasia
 
@@ -58,13 +69,13 @@
 
 当然，为了让你对 SaaS 有更深入的理解，我将从以下 4 个维度进行阐述：
 
--   **商业模式**：订阅经济
+- **商业模式**：订阅经济
 
--   **经济效益**：规模化和复利
+- **经济效益**：规模化和复利
 
--   **产品策略**：开放和灵活
+- **产品策略**：开放和灵活
 
--   **社会生产力**：先进生产力
+- **社会生产力**：先进生产力
 
 ### 1.1 商业模式：订阅经济
 
@@ -80,14 +91,9 @@ SaaS（software as a service），直译为软件即服务。从本质上而言�
 
 所以，**软件即服务，除了软件自身提供的产品服务外，还有支持等配套服务，即帮助客户成功使用并获得成功，使原先的软件（产品）业务转变成了服务业务**。
 
-
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223113.png)
 
 ![](blob:https://ef17ayryne.feishu.cn/02298382-b122-4647-95ce-8c98155b46a8)
-
-
-
-
 
 ▲ SaaS商业模式--订阅许可的有效运转
 
@@ -103,29 +109,15 @@ SaaS 采取订阅付费（按月/年）模式，在良好留存的情况下，�
 
 同时，后期也可根据业务的发展，升级套餐或增加数量（例如，使用的坐席人数），这些优势都致使 SaaS 软件更容易拥有大量客户，形成规模。
 
-
-
-
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223150.png)
 
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=)
 
-
-
-
-
 ▲ Concur 年收入。图片来源 tomtunguz
-
-
-
-
 
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=)
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223203.png)
-
-
-
 
 ▲ Concur 净收入占年收入的百分比。图片来源 tomtunguz
 
@@ -143,14 +135,8 @@ SaaS 通常也会开放自己的多种接口（API），进而方便与其他软
 
 同时，厂商也会主动对接市场上跟自身产品业务相关的软件，从而提供更加完善的解决方案。当然，也是帮助销售促成订单的有利因素之一。
 
-
-
 ![](blob:https://ef17ayryne.feishu.cn/1bf76b7b-ed2e-44ba-91e2-d746d0c3da67)
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223213.png)
-
-
-
-
 
 ▲ 53KF 渠道集成
 
@@ -176,31 +162,15 @@ SaaS 产品的发展，其实是一个不断验证市场需求（PMF）、优胜
 
 厂商觉得市场有大量的同类需求且长期存在，从而开发成产品，进行市场运作。从某种程度上讲，这也是有效的节省了同类诉求其社会资源的多次投入。
 
-
-
-
-
 ![](blob:https://ef17ayryne.feishu.cn/4540f9a6-24fe-42e6-a52b-1a269ca43fe8)
-
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223230.png)
 
-
-
 ▲Slack VS Email
-
-
-
-
-
-
 
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=)
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223238.png)
-
-
-
 
 ▲ Slack 针对不同业务和部门的解决方案
 
@@ -253,8 +223,6 @@ SaaS 统一运行在厂商的服务器上，由厂商统一维护、更新。
 **开放集成**
 
 开放的接口（API）可以与其他产品进行数据打通，更好的满足业务需求。
-
-
 
 #### 2.1.2 对厂商的好处：
 
@@ -320,18 +288,13 @@ SaaS 软件由软件提供商拥有，并具有绝对控制权。单个客户不
 
 SaaS 产品的划分有多种方式，通常可归纳为 2 种维度：
 
--   从对象层面：B2B（企业级）和 B2C（个人消费者）
+- 从对象层面：B2B（企业级）和 B2C（个人消费者）
 
--   从业务层面：通用型（业务垂直型）和垂直型（行业垂直型）
-
+- 从业务层面：通用型（业务垂直型）和垂直型（行业垂直型）
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223355.png)
 
 ![](blob:https://ef17ayryne.feishu.cn/2984b504-e8ab-4cb4-a41d-0e1a5ff1a809)
-
-
-
-
 
 ▲ SaaS 产品划分
 
@@ -345,14 +308,9 @@ SaaS 产品的划分有多种方式，通常可归纳为 2 种维度：
 
 当然，有些产品，即支持个人也支持企业，例如石墨文档、Dropbox 等。
 
-
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223408.png)
 
 ![](blob:https://ef17ayryne.feishu.cn/96bccc82-3c06-4b80-8c84-1ac12b56467d)
-
-
-
-
 
 ▲ 石墨文档，既面向企业，也面向个人
 
@@ -366,14 +324,9 @@ SaaS 产品的划分有多种方式，通常可归纳为 2 种维度：
 
 例如零售电商、医疗、物流、餐饮、房地产、教育、酒旅、美业等。
 
-
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223418.png)
 
 ![](blob:https://ef17ayryne.feishu.cn/c5d91241-661f-4db4-b445-1d0e256896c3)
-
-
-
-
 
 ▲ 垂直型和通用型
 
@@ -385,14 +338,9 @@ SaaS 产品的划分有多种方式，通常可归纳为 2 种维度：
 
 同时，垂直型 SaaS 也是绕开互联网巨头的最佳选择，因为垂直型 SaaS 需要深入行业本身，其“重脏乱”是巨头所避忌的，并且从战略角度考虑，也更加偏向于平台型和入口型的广阔市场。
 
-
-
 ![](blob:https://ef17ayryne.feishu.cn/da99b7fb-f68b-46ae-adcd-ecff8a8c43ad)
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223427.png)
-
-
-
 
 ▲ 来源：艾瑞《2019年中国企业级 SaaS 行业研究报告》
 
@@ -400,25 +348,13 @@ SaaS 产品的划分有多种方式，通常可归纳为 2 种维度：
 
 例如同是项目管理软件，asana 则是通用型 SaaS，而 productboard 更偏向于垂直型，专注于产品经理的项目管理。
 
-
-
 ![](blob:https://ef17ayryne.feishu.cn/1a63b64c-6392-40a9-93fc-acfe1fa42370)
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223440.png)
 
-
-
-
-
 ▲ asana，适用性更高的相关管理应用
-
-
 
 ![](blob:https://ef17ayryne.feishu.cn/58befa69-8afe-43f6-a5be-d1b2089feec5)
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/20221103223448.png)
-
-
-
-
 
 ▲ productboard，偏向于某一角色和领域的项目管理应用
 
