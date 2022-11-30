@@ -3,6 +3,7 @@ title: temporary
 date: 2022-11-17 10:46
 updated: 2022-11-21 15:08
 cover: //cdn.wallleap.cn/img/pic.jpg
+image-auto-upload: false
 author: Luwang
 comments: true
 aliases:

@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-11-10 11:26
-updated: 2022-11-29 11:24
+updated: 2022-11-30 14:00
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -144,6 +144,10 @@ git push -f
 
 - 文件列表中选中文件右击选择 Publish to Obsius
 - 自动复制好链接，可以分享给其他人查看 <https://obsius.site/1p3t376x6w5c530k4v45>
+
+### Regex Find/Replace
+
+- 文字/字符替换，个人用于批量修改图片链接
 
 ### Style Settings
 

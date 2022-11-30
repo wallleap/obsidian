@@ -3,6 +3,7 @@ title: {{title}}
 date: {{date}}
 updated: {{date}}
 cover: //cdn.wallleap.cn/img/post/1.jpg
+image-auto-upload: true
 author: Luwang
 comments: true
 aliases:
