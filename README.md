@@ -178,8 +178,10 @@ where date(today) - file.mtime <= dur(3 days)
 
 ```dataview
 table 
-file.tags as 关于规范的标签
+file.folder as "文件夹",
+rating as "星级"
 from "400-design" and #规范
+sort rating
 ```
 
 ## design
