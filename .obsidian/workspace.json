@@ -13,33 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100-life/知识管理/obsidian 使用/9. DataView 查询.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e2636da1ab3353e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce4960172a288394",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "400-design/颜色.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -113,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "100-life/知识管理/obsidian 使用/9. DataView 查询.md"
+                "file": "README.md"
               }
             }
           },
@@ -152,8 +126,8 @@
   },
   "active": "018ee013067ce245",
   "lastOpenFiles": [
-    "README.md",
     "100-life/知识管理/obsidian 使用/9. DataView 查询.md",
+    "README.md",
     "400-design/颜色.md",
     "400-design/B 端设计/B 端学习文章/004-B 端组件库/万字干货带你读懂并应用 Design Token.md",
     "400-design/B 端设计/B 端学习文章/004-B 端组件库/简单理解token机制.md",
