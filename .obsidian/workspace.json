@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/8-启点B端设计周报-08期.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/8-启点B端设计周报-08期.md"
               }
             }
           },
@@ -126,15 +126,15 @@
   },
   "active": "018ee013067ce245",
   "lastOpenFiles": [
-    "100-life/知识管理/obsidian 使用/9. DataView 查询.md",
+    "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/9-启点B端设计周报-09期.md",
+    "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/8-启点B端设计周报-08期.md",
     "README.md",
+    "100-life/知识管理/obsidian 使用/9. DataView 查询.md",
     "400-design/颜色.md",
     "400-design/B 端设计/B 端学习文章/004-B 端组件库/万字干货带你读懂并应用 Design Token.md",
     "400-design/B 端设计/B 端学习文章/004-B 端组件库/简单理解token机制.md",
     "400-design/B 端设计/B 端学习文章/004-B 端组件库/design token 如何在工作中落地.md",
     "400-design/B 端设计/B 端学习文章/004-B 端组件库/Design Token 应用指南.md",
-    "400-design/B 端设计/B 端学习文章/004-B 端组件库/Design Tokens 在设计系统中的意义与应用.md",
-    "400-design/B 端设计/B 端学习文章/004-B 端组件库/UX Writing-内容写作实操.md",
-    "010-temp/template.md"
+    "400-design/B 端设计/B 端学习文章/004-B 端组件库/Design Tokens 在设计系统中的意义与应用.md"
   ]
 }
