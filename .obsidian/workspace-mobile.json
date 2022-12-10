@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "6d1613e8ee0c2169",
+        "id": "174ed2af51bd40f3",
         "type": "tabs",
         "children": [
           {
-            "id": "c0dc9a52d0c2685f",
+            "id": "d102f1775aebd64c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,15 +80,13 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "README.md"
-          }
+          "state": {}
         }
       }
     ],
     "currentTab": 0
   },
-  "active": "c0dc9a52d0c2685f",
+  "active": "d102f1775aebd64c",
   "lastOpenFiles": [
     "README.md",
     "web/编程学习之道.md",
