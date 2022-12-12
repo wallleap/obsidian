@@ -20,5 +20,9 @@ description: 文章描述
 url: #
 ---
 ---
-
+```dataview
+Table without id 
+file.mtime as 文件修改时间
+where file.name = this.file.name
+```
 ## 正文
