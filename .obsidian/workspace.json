@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "018ee013067ce245",
+            "id": "33de5728a1ac4946",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "100-life/工具/常用工具和软件.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "100-life/工具/常用工具和软件.md"
               }
             }
           },
@@ -122,19 +122,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 277.5,
+    "collapsed": true
   },
-  "active": "018ee013067ce245",
+  "active": "33de5728a1ac4946",
   "lastOpenFiles": [
+    "100-life/工具/mac打包DMG.md",
+    "README.md",
     "200-work/Office/0-PPT学习.md",
     "200-work/Office/PPT页面排版.md",
     "400-design/认知偏差知识手册.md",
-    "README.md",
     "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/10-启点B端设计周报-10期.md",
     "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/9-启点B端设计周报-09期.md",
     "100-life/工具/国内如何注册使用 ChatGPT.md",
     "010-temp/template.md",
-    "400-design/B 端设计/B 端学习文章/003-设计规范/色彩系统应用篇.md",
-    "010-temp/meta.md"
+    "400-design/B 端设计/B 端学习文章/003-设计规范/色彩系统应用篇.md"
   ]
 }
