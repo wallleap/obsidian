@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100-life/工具/常用工具和软件.md",
+                "file": "100-life/工具/macOS 个性化定制.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "100-life/工具/常用工具和软件.md"
+                "file": "100-life/工具/macOS 个性化定制.md"
               }
             }
           },
@@ -127,6 +127,7 @@
   },
   "active": "33de5728a1ac4946",
   "lastOpenFiles": [
+    "100-life/工具/常用工具和软件.md",
     "100-life/工具/mac打包DMG.md",
     "README.md",
     "200-work/Office/0-PPT学习.md",
@@ -135,7 +136,6 @@
     "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/10-启点B端设计周报-10期.md",
     "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/9-启点B端设计周报-09期.md",
     "100-life/工具/国内如何注册使用 ChatGPT.md",
-    "010-temp/template.md",
-    "400-design/B 端设计/B 端学习文章/003-设计规范/色彩系统应用篇.md"
+    "010-temp/template.md"
   ]
 }

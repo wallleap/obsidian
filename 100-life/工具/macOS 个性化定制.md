@@ -9,8 +9,8 @@ aliases:
   - macOS 个性化定制
 rating: 10
 tags:
-  - blog
-category: 分类
+  - macOS
+category: tools
 keywords:
   - 关键词1
   - 关键词2
@@ -26,9 +26,15 @@ url: //myblog.wallleap.cn/post/
 
 ### 允许安装任意来源的 APP
 
+在终端输入以下命令：
+
 ```zsh
 sudo spctl --master-disable
 ```
+
+会要求输入密码，直接输入你的电脑登录密码即可（输入的时候不会在终端中显示 输入完直接回车）
+
+之后到设置-安全性与隐私中查看是否是勾选的“任何来源”，如果不是，可以点击左下的锁，输入密码之后再选择“任何来源”
 
 ![允许任何来源](https://cdn.wallleap.cn/img/pic/illustrtion/20221009005904.png)
 
@@ -39,6 +45,18 @@ sudo spctl --master-disable
 可以再到这个界面看下有没有提示，如果有，请选择【仍要打开】
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211272033851.png)
+
+如果还不行，可能需要**绕过苹果的公证 Gatekeeper**
+
+终端输入以下命令，并且将需要打开的应用拖到终端中，再回车
+
+```sh
+sudo xattr -rd com.apple.quarantine
+```
+
+就类似这样的：
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212151818586.png)
 
 ### 安装 Xcode Command Line Tools
 
@@ -54,7 +72,7 @@ xcode-select --install
 
 由于国内直接运行安装命令会报错，所以需要先配置好代理（自行解决），或者使用镜像（自己搜索教程）
 
-之后到命令行执行（端口号 10809 10808 改成自己的）
+之后到命令行执行（端口号 10809 10808 改成自己设定的 http socks5 代理端口）
 
 ```sh
 export https_proxy=http://127.0.0.1:10809 http_proxy=http://127.0.0.1:10809 all_proxy=socks5://127.0.0.1:10808
@@ -66,9 +84,11 @@ export https_proxy=http://127.0.0.1:10809 http_proxy=http://127.0.0.1:10809 all_
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-如果前面安装顺利，之后弹出提示的话，可以按照它给出的提示，运行命令
+如果前面安装顺利，之后弹出提示的话，可以按照它给出的提示，运行命令（这里没有演示）
 
 测试
+
+
 ### 修改启动台图标行和列数
 
 启动台里面也可以设置应用的列和宽，使用如下命令即可：
