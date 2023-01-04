@@ -66,7 +66,7 @@ sudo xattr -rd com.apple.quarantine
 xcode-select --install
 ```
 
-## 安装 HomeBrew
+### 安装 HomeBrew
 
 好用的软件包管理器，官网为：[The Missing Package Manager for macOS (or Linux) — Homebrew](https://brew.sh/)（可以直接到官网首页搜索框搜软件，之后直接复制到终端运行）
 
@@ -84,10 +84,38 @@ export https_proxy=http://127.0.0.1:10809 http_proxy=http://127.0.0.1:10809 all_
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-如果前面安装顺利，之后弹出提示的话，可以按照它给出的提示，运行命令（这里没有演示）
+如果前面安装顺利，之后弹出提示的话，可以按照它给出的提示，运行命令（*这里没有演示*）
 
-测试
+常用命令：
 
+查看有哪些指令可以使用
+
+```sh
+# 使用帮助
+brew help
+# 列出指令
+brew commands
+```
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271440509.png)
+
+```sh
+# 查找相关软件
+brew search 关键词
+# 安装软件
+brew install 软件名
+brew install --cask 软件名
+# 卸载软件
+brew unintstall 软件名
+# 列出已安装的软件
+brew list
+# 查看软件信息
+brew info [FORMULA|CASK...]
+# 更新 Homebrew
+brew update
+# 更新软件
+brew upgrade [FORMULA|CASK...]
+```
 
 ### 修改启动台图标行和列数
 
@@ -202,6 +230,7 @@ killall Dock
 - 首先点击这个圆点
 - 然后按住 <kbd>Command</kbd> 键同时拖动状态栏的图标移动到两个点的左边
 - 再次点击圆点就可以隐藏两个圆点左边的图标了
+- 如果需要彻底将图标从状态栏移除，可以开启 `Enable 'remove' Dozer icon`，之后将图标移到小圆点的左边即可，需要恢复的时候，按住 <kbd>Option</kbd> 再点击 Dozer 在状态栏的图标就能显示移除的图标
 - 最主要的是显示隐藏图标的时候只会显示 Dozer 的名字，状态栏基本可以看到所有的图标了
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211272024131.png)
@@ -209,6 +238,101 @@ killall Dock
 演示：
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211272155291.gif)
+
+### 访达增强——超级右键、MacZip
+
+使用习惯了 win 下的右键新建文件的功能，mac 下没有还是很不适应的，【超级右键】这个软件就很好地解决了这个烦恼
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271552937.png)
+
+mac 自带的解压功能并不强，还是需要其他的软件辅助，个人使用过 Bandzip、Dr. Unarchiver、eZip 等，它们都很好用，但大多都需要付费，最后保留下来的是 MacZip 这款免费且强大的解压缩软件
+
+界面很简洁，解压、压缩、加密等功能都有
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271557631.png)
+
+### 窗口——AltTab、Magnet
+
+<kbd>Alt</kdb> + <kbd>Tab</kbd> win 下面切换窗口最常用的方式
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271559065.png)
+
+Magnet 便捷管理窗口，可以快捷键快速分屏，拖动对齐窗口，拖动到屏幕边缘快速分屏等
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271608711.png)
+### 输入法——搜狗拼音输入法、自动切换输入法
+
+主要是最开始使用的就是搜狗输入法，而且也支持小鹤双拼，使用起来还是很舒适的
+
+个人是把系统自带的中文输入法删除了，只留下了 ABC 和搜狗输入法
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271612439.png)
+使用 mac 最烦恼的一件事就是它会自动切换回默认的输入法，如果有多个输入法，一不小心就不知道正在用的是哪个了
+
+自动切换输入法可以设定规则，我把常用的软件都设置成了自动切换到“搜狗输入法”，并且在写代码或者经常使用快捷键的软件中**强制英文符号**，这样用起来就很顺手了
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271616278.png)
+
+### 截图——ishot、snipaste
+
+单纯的截图系统自带的已经够用了，但是它的快捷键不太好按，因此我改成了自己喜欢的
+
+修改快捷键的方式：
+
+设置中找到【键盘】，再找到【键盘快捷键】，【截屏】中修改快捷键
+
+由于我只想记一个快捷键，所以只改了一个功能全一点的，用的是 <kbd>Option</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd>
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271622706.png)
+Snipaste 最开始看中的是它的贴图功能，取色功能也常用，但是它检测窗口好像总是会有问题，并且免费版功能有点不够了
+
+iShot 功能就非常全面了，支持截屏、标注、贴图、长截图等，基本上把我需要的功能都包含了
+
+![](https://cdn.wallleap.cn/img/pic/illustrtion/202212271630460.png)
+
+### 看图——Xee^3
+
+个人喜欢的看图方式是在文件管理器里看缩略图，需要放大看的双击打开，能方便切换下一张，方便缩放，界面看着舒适
+
+win 下之前使用2345看图王绿色版非常符合，后面找到[蓝山看图王](https://www.lanshan.com/pic/)也不错
+
+mac 暂时还没找到一款符合我期望的看图软件，勉强使用的是 Xee^3，基本能用，就是叉掉图片之后软件不能自动关闭，会一直留在 Dock 栏
+
+### 编辑器——CotEditor、VS Code
+
+CotEditor 我用来替换系统自带的文本编辑器，缺点也是关掉之后还会在 Dock 栏
+
+VS Code 就用于编写代码
+
+### 笔记/知识管理——备忘录、Typora、Obsidian
+
+临时的想法和任务基本使用的是系统自带的备忘录，如果用的苹果全家桶，记录之后同步很方便
+
+一般记笔记现在都用 Markdown，Typora 简洁还好用
+
+Obsidian 也很好用
+
+### 图床——uPic、PicGo
+
+个人使用的是腾讯云的 COS + CDN，下载客户端之后存储桶能一次性下载，迁移起来挺方便的
+
+uPic 支持的图床种类很多，使用也方便，但是 Obsidian 和 Typora 都支持 PicGo，所以一直使用的都是 PicGo
+
+### 办公——365、系统自带、WPS
+
+
+
+
+### PDF——PDF Exper/PDF Reader Pro
+
+
+### 阅读——X-Reader/NeatReader、CAJ 云阅读
+
+
+
+
+
+
 
 
 

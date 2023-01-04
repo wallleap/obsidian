@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f839161edd88e695",
+        "id": "cb9da1ff865b01fc",
         "type": "tabs",
         "children": [
           {
-            "id": "33de5728a1ac4946",
+            "id": "ac7cf44d27e871cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100-life/工具/macOS 个性化定制.md",
+                "file": "400-design/B 端设计/B 端学习文章/005-用户调研/用户画像-构建用户画像的流程与方法.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "100-life/工具/macOS 个性化定制.md"
+                "file": "400-design/B 端设计/B 端学习文章/005-用户调研/用户画像-构建用户画像的流程与方法.md"
               }
             }
           },
@@ -139,17 +139,17 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "33de5728a1ac4946",
+  "active": "ac7cf44d27e871cb",
   "lastOpenFiles": [
-    "100-life/工具/常用工具和软件.md",
-    "100-life/工具/mac打包DMG.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户反馈-客户咨询记录如何驱动产品设计改版.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户访谈-如何做好 toB 管理端用户访谈.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户访谈-新手如何做好用户访谈.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户访谈-设计师搞定 B 端用户初级指南.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户访谈-如何让访谈结果更有效.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户访谈-使用定向问卷代替访谈.md",
+    "400-design/B 端设计/B 端学习文章/005-用户调研/用户访谈-详解“用户访谈”.md",
     "README.md",
-    "200-work/Office/0-PPT学习.md",
-    "200-work/Office/PPT页面排版.md",
-    "400-design/认知偏差知识手册.md",
-    "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/10-启点B端设计周报-10期.md",
-    "400-design/B 端设计/B 端学习文章/000-启点B端设计周报/9-启点B端设计周报-09期.md",
-    "100-life/工具/国内如何注册使用 ChatGPT.md",
-    "010-temp/template.md"
+    "400-design/B 端设计/B 端学习文章/005-用户调研/0-国内 B 端产品调研网站.md",
+    "400-design/B 端设计/B 端学习文章/004-B 端组件库/万字干货带你读懂并应用 Design Token.md"
   ]
 }
