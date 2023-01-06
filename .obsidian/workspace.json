@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f07fde85ee689f0b",
+        "id": "6e64750968c18995",
         "type": "tabs",
         "children": [
           {
-            "id": "bad1328b05bb54f7",
+            "id": "41243e07ae702173",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "400-design/B 端设计/006-设计策略/分析评估｜正态分布模型.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "400-design/B 端设计/006-设计策略/分析评估｜正态分布模型.md"
+                "file": "README.md"
               }
             }
           },
@@ -141,15 +141,15 @@
   },
   "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
-    "400-design/B 端设计/006-设计策略/分析评估-寻找体验优化机会点.md",
-    "400-design/B 端设计/006-设计策略/设计法则-渐进式披露.md",
-    "400-design/B 端设计/006-设计策略/设计策略-古腾堡原则.md",
-    "400-design/B 端设计/006-设计策略/设计法则-形、色、字、构、质、动.md",
-    "400-design/B 端设计/006-设计策略/行为分析-AISAS模型.md",
-    "400-design/B 端设计/006-设计策略/用户增长-AARRR模型.md",
-    "400-design/B 端设计/006-设计策略/用户调研-同理心地图.md",
-    "400-design/B 端设计/006-设计策略/用户调研-用户体验地图.md",
-    "400-design/B 端设计/006-设计策略/KANO模型.md",
-    "400-design/B 端设计/006-设计策略/需求分析-5W1H模型.md"
+    "400-design/素材资源库/Keynote或PPT素材/优质 PPT.md",
+    "400-design/素材资源库/Keynote或PPT素材/作品集封面.md",
+    "400-design/运营设计/插画设计/自如设计：插画组件系统 设计过程官方揭秘！.md",
+    "400-design/设计改版/推荐阅读并背诵.md",
+    "400-design/B 端设计/007-B 端体验设计/数据可视化/⭐️数据可视化工具-开箱即用.md",
+    "400-design/设计方法论/分析评估｜正态分布模型.md",
+    "400-design/设计方法论/分析评估-寻找体验优化机会点.md",
+    "400-design/设计方法论/设计法则-渐进式披露.md",
+    "400-design/设计方法论/设计策略-古腾堡原则.md",
+    "400-design/设计方法论/设计法则-形、色、字、构、质、动.md"
   ]
 }

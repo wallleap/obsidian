@@ -12,7 +12,7 @@ tags:
   - 整理
 category: home
 keywords:
-  -∏ Obsidian
+  - Obsidian
   - 整理
 description: 显示本知识库所有内容
 source: null
