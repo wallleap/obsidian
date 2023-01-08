@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "400-design/设计规范.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "400-design/设计规范.md"
+                "file": "README.md"
               }
             }
           },
@@ -141,6 +141,7 @@
   },
   "active": "41243e07ae702173",
   "lastOpenFiles": [
+    "400-design/设计规范.md",
     "README.md",
     "400-design/素材资源库/Keynote或PPT素材/优质 PPT.md",
     "400-design/素材资源库/Keynote或PPT素材/作品集封面.md",
@@ -149,7 +150,6 @@
     "400-design/B 端设计/007-B 端体验设计/数据可视化/⭐️数据可视化工具-开箱即用.md",
     "400-design/设计方法论/分析评估｜正态分布模型.md",
     "400-design/设计方法论/分析评估-寻找体验优化机会点.md",
-    "400-design/设计方法论/设计法则-渐进式披露.md",
-    "400-design/设计方法论/设计策略-古腾堡原则.md"
+    "400-design/设计方法论/设计法则-渐进式披露.md"
   ]
 }
