@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "400-design/设计规范.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 200
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "400-design/设计规范.md"
               }
             }
           },
@@ -139,8 +139,9 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "1a894e9b237b81e9",
+  "active": "41243e07ae702173",
   "lastOpenFiles": [
+    "README.md",
     "400-design/素材资源库/Keynote或PPT素材/优质 PPT.md",
     "400-design/素材资源库/Keynote或PPT素材/作品集封面.md",
     "400-design/运营设计/插画设计/自如设计：插画组件系统 设计过程官方揭秘！.md",
@@ -149,7 +150,6 @@
     "400-design/设计方法论/分析评估｜正态分布模型.md",
     "400-design/设计方法论/分析评估-寻找体验优化机会点.md",
     "400-design/设计方法论/设计法则-渐进式披露.md",
-    "400-design/设计方法论/设计策略-古腾堡原则.md",
-    "400-design/设计方法论/设计法则-形、色、字、构、质、动.md"
+    "400-design/设计方法论/设计策略-古腾堡原则.md"
   ]
 }
