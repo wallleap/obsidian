@@ -8,12 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e3715c60f02658dc",
+            "id": "9baa5fb31df498be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/001-初学 Web.md",
+                "file": "300-web/课程/003-Git 学习.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eb676a4b0a3913c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "300-web/工具/Git 操作.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +100,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/001-初学 Web.md"
+                "file": "300-web/课程/003-Git 学习.md"
               }
             }
           },
@@ -139,17 +152,17 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "e3715c60f02658dc",
+  "active": "9baa5fb31df498be",
   "lastOpenFiles": [
+    "300-web/工具/Git 操作.md",
+    "300-web/课程/003-Git 学习.md",
+    "300-web/工具/如何规范你的Git commit？.md",
     "300-web/课程/001-初学 Web.md",
+    "300-web/工具/mac 本地 Git 服务器.md",
     "().md",
     "README.md",
     "400-design/设计规范.md",
     "400-design/素材资源库/Keynote或PPT素材/优质 PPT.md",
-    "400-design/素材资源库/Keynote或PPT素材/作品集封面.md",
-    "400-design/运营设计/插画设计/自如设计：插画组件系统 设计过程官方揭秘！.md",
-    "400-design/设计改版/推荐阅读并背诵.md",
-    "400-design/B 端设计/007-B 端体验设计/数据可视化/⭐️数据可视化工具-开箱即用.md",
-    "400-design/设计方法论/分析评估｜正态分布模型.md"
+    "400-design/素材资源库/Keynote或PPT素材/作品集封面.md"
   ]
 }
