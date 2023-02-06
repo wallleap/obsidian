@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9baa5fb31df498be",
+            "id": "a1b0c610fada2168",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -139,17 +139,17 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "9baa5fb31df498be",
+  "active": "a1b0c610fada2168",
   "lastOpenFiles": [
-    "100-life/修改 Hosts 访问外网.md",
+    "300-web/课程/002-HTML.md",
+    "300-web/课程/001-初学 Web.md",
     "300-web/课程/003-Git 学习.md",
+    "100-life/修改 Hosts 访问外网.md",
     "100-life/常用 DNS 服务器.md",
     "300-web/工具/macOS 安装 NVM.md",
     "300-web/工具/Git 操作.md",
     "300-web/工具/如何规范你的Git commit？.md",
-    "300-web/课程/001-初学 Web.md",
     "300-web/工具/mac 本地 Git 服务器.md",
-    "().md",
-    "README.md"
+    "().md"
   ]
 }
