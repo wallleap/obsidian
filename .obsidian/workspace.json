@@ -8,32 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a1b0c610fada2168",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "300-web/课程/003-Git 学习.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc48f7675c664873",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "400-design/设计规范.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1de0ec50bb49bc55",
             "type": "leaf",
             "state": {
@@ -47,7 +21,6 @@
             }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -166,7 +139,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1de0ec50bb49bc55",
+  "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
     "400-design/设计规范.md",
     "300-web/课程/003-Git 学习.md",
