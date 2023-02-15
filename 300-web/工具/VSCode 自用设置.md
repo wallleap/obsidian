@@ -54,7 +54,17 @@ Win 入口：
 
 ![字体](https://cdn.wallleap.cn/img/pic/illustrtion/202208121611763.png)
 
+```json
+"editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, 'Courier New', monospace",
+```
+
 字体大小一般默认14就行，需要调整可以直接在窗口中使用快捷键<kbd>Ctrl</kbd>+<kbd>+</kbd>和<kbd>Ctrl</kbd>+<kbd>-</kbd>调节整体的缩放
+
+开启连字
+
+```json
+"editor.fontLigatures": true,
+```
 
 ### 3、空文件夹折叠取消
 
@@ -62,7 +72,29 @@ Compact Folders 取消复选框
 
 ### Auto  Save
 
-### 面板放到右侧
+### 高亮显示当前缩进线
+
+```json
+"editor.guides.bracketPairs": "active",
+```
+
+### 菜单栏放到右侧
+
+```json
+"workbench.sideBar.location": "right",
+```
+
+### 菜单栏图标放到底部
+
+安装插件 Activitus Bar 插件
+
+隐藏大图标，并且把图标弄到右侧
+
+```json
+"workbench.activityBar.visible": false,
+"activitusbar.alignment" :"Right",
+"activitusbar.priority": 0,
+```
 
 ## 二、插件
 
