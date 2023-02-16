@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c9c6c62923169613",
+        "id": "3e319c3c84dd0789",
         "type": "tabs",
         "children": [
           {
-            "id": "8127bda53a424b37",
+            "id": "49a5bd0ddafaf296",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "400-design/UI 设计/ICON/ICON 绘制.md",
+                "file": "300-web/课程/006-布局相关.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "400-design/UI 设计/ICON/ICON 绘制.md"
+                "file": "300-web/课程/006-布局相关.md"
               }
             }
           },
@@ -122,8 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5,
-    "collapsed": true
+    "width": 277.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -140,17 +139,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8127bda53a424b37",
+  "active": "49a5bd0ddafaf296",
   "lastOpenFiles": [
     "300-web/课程/005-深入 CSS.md",
+    "300-web/课程/006-布局相关.md",
+    "400-design/UI 设计/ICON/ICON 绘制.md",
     "300-web/工具/Vim —— 写代码更高效.md",
     "300-web/工具/VSCode 自用设置.md",
     "100-life/翻翻教程.md",
     "100-life/工具/macOS 个性化定制.md",
     "100-life/工具/常用工具和软件.md",
     "100-life/工具/国内如何注册使用 ChatGPT.md",
-    "100-life/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md",
-    "400-design/UI 设计/ICON/ICON 绘制.md",
-    "300-web/工具/规范化 Commit 提交信息.md"
+    "100-life/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md"
   ]
 }
