@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/006-布局相关.md",
+                "file": "300-web/课程/002-HTML.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/006-布局相关.md"
+                "file": "300-web/课程/002-HTML.md"
               }
             }
           },
@@ -141,8 +141,8 @@
   },
   "active": "49a5bd0ddafaf296",
   "lastOpenFiles": [
-    "300-web/课程/005-深入 CSS.md",
     "300-web/课程/006-布局相关.md",
+    "300-web/课程/005-深入 CSS.md",
     "400-design/UI 设计/ICON/ICON 绘制.md",
     "300-web/工具/Vim —— 写代码更高效.md",
     "300-web/工具/VSCode 自用设置.md",
