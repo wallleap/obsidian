@@ -71,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -122,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 207.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -139,12 +140,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "49a5bd0ddafaf296",
+  "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
+    "300-web/课程/005-深入 CSS.md",
+    "300-web/课程/006-布局相关.md",
     "300-web/课程/002-HTML.md",
     "300-web/工具/pnpm 出来这么久了，你还没用它吗.md",
-    "300-web/课程/006-布局相关.md",
-    "300-web/课程/005-深入 CSS.md",
     "400-design/UI 设计/ICON/ICON 绘制.md",
     "300-web/工具/Vim —— 写代码更高效.md",
     "300-web/工具/VSCode 自用设置.md",
