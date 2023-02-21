@@ -359,7 +359,7 @@ uPic 支持的图床种类很多，使用也方便，但是 Obsidian 和 Typora 
 
 1、安装 HomeBrew 并用他安装 App 和 Cli 工具。App 可以在 [homebrew-cask — Homebrew Formulae](https://formulae.brew.sh/cask/) 里找有没有，Cli 工具可以在 [homebrew-core — Homebrew Formulae](https://formulae.brew.sh/formula/) 找有没有。
 
-```
+```sh
 # 先开代理，不然会很慢（依赖第一步）
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
