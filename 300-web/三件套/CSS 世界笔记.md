@@ -1358,11 +1358,494 @@ CSS 世界中正常的流内容或者流布局虽然也足够强大，但是实�
 
 左侧定宽且浮动，右侧元素 `margin-left` 比左侧宽多 10 像素，不会发生环绕，且是自适应的
 
-#### 清除浮动 `clear`
+### 清除浮动 `clear`
 
-`clear: none | left | right | both`
+`clear: none | left | right | both`，基本使用 `both` 就可以了
 
-`clear:both` 的作用本质是让自己不和 `float` 元素在一行显示，并不是真正意义上的清除浮动
+`clear:both` 的作用本质是让自己不和 `float` 元素在一行显示，并不是真正意义上的清除浮动，而是抗浮动，`float` 一些特性仍存在：
+
+- 如果 `clear:both` 元素前面的元素就是 `float` 元素，则 `margin-top` 负值即使设置成 `-9999px`，也不见任何效果。
+- `clear:both` 后面的元素依旧可能会发生文字环绕的现象。
+
+**clear 属性只有块级元素才有效**，因此经常这样写：
+
+```css
+.clearfix::after {
+  content: ''; /* 默认是内联 */
+  display: table; /* block list-item 也可以 */
+  clear: both;
+}
+```
+
+### BFC
+
+`clear:both` 只能在一定程度上消除浮动的影响，要想完美地去除浮动元素的 影响，还需要使用其他 CSS 声明
+
+BFC 全称是 Block Formatting Context，块级格式化上下文
+
+BFC 表现原则：
+- 具有 BFC 特性的元素的子元素不会受外部元素影响，也不会影响外部元素（内部是独立的环境）
+- BFC 元素是不可能发生 margin 重叠的，因为 margin 重叠是会影响外面的元素的
+- BFC 元素也可以用来清除浮动的影响，因为如果不清除，子元素浮动则父元素高度塌陷，必然会影响后面元素布局和定位（有 BFC 就可以不 `clear` 了）
+
+BFC 形成条件：
+- `<html>` 根元素
+- `float` 值不为 none
+- `overflow` 的值为 `auto`、`scroll` 或 `hidden`
+- `display` 的值为 `table-cell`、`table-caption` 或 `inline-block`
+- `position` 的值不为 `static` 和 `relative`
+
+一般认为使用 BFC 特性清除浮动的影响要比使用 `clear` 更优，但是使用不同属性也有不同的效果：
+- `float: left`：虽然产生了 BFC 特性，但是浮动元素有破坏性和包裹性，失去了元素本身的流体自适应性，无法用来实现自动填满容器的自适应布局
+- `position: absolute`：使用这个属性元素完全脱离文档流
+- `overflow: hidden`：这个本身还是普通的元素，块状元素的流体特性仍然保留
+- `display: inline-block`：会让元素尺寸包裹收缩，会失去水平方向的流动特性
+
+所以好用一点的还是：`overflow: hidden`
+
+### overflow
+
+#### 生成 BFC 特性
+
+`overflow` 设置 `hidden`、`auto` 或`scroll`，利用 BFC 的“结界”特性彻底解决浮动对外部或兄弟元素的影响，能够清除浮动的影响和解决 `margin` 嵌套合并
+
+#### 裁剪特性
+
+设置 `overflow: hidden` 之后，元素会把超出部分进行裁剪
+
+裁剪的边界是 border 的内边缘
+
+#### 滚动条
+
+- `visible` 是默认值；`hidden` 会进行裁剪；`scroll` 滚动条会一直出现；`auto` 当内容少时没有滚动条，当内容超出时滚动条出现
+- 如果 `overflow-x` 和 `overflow-y` 属性中的一个值设置为 `visible` 而另外一个设置为 `scroll`、`auto` 或 `hidden`，则 `visible` 的样式表现会如同 `auto`
+- 除非 `overflow-x` 和 `overflow-y` 的属性值都是 `visible`，否则 `visible` 会当成 `auto` 来解析
+- 永远不可能实现一个方向溢出剪裁或滚动，另一方向内容溢出显示的效果
+- HTML 中有两个标签是默认可以产生滚动条的，一个是根元素 `<html>`，另一个是文本域 `<textarea>`（这两个默认的是 `auto`）
+- 在 PC 端，无论是什么浏览器，默认滚动条均来自 `<html>`，而不是标签 `<body>`
+- 去除页面默认滚动条：`html { overflow: hidden; }`
+- PC 端滚动条会占用容器的可用宽度或高度（默认是 `17px`）
+- 移动端则不一定
+	- `html { overflow: hidden; }` 在移动端基本无效
+	- 在 PC 端，窗体滚动高度可以使用 `document.documentElement.scrollTop` 获取，但是在移动端， 可能就要使用 `document.body.scrollTop` 获取
+	- 因为移动端的屏幕尺寸本身就有限，滚动条一般都是悬浮模式，不会占据可用宽度
+- 滚动条可以自定义，Chrome 下：
+	- 整体部分，`::-webkit-scrollbar`
+	- 两端按钮，`::-webkit-scrollbar-button`
+	- 外层轨道，`::-webkit-scrollbar-track`
+	- 内层轨道，`::-webkit-scrollbar-track-piece`
+	- 滚动滑块，`::-webkit-scrollbar-thumb`
+	- 边角，`::-webkit-scrollbar-corner`
+
+#### 文本溢出
+
+> 单行文字溢出点点点
+
+```css
+.ell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+```
+
+> 多行内容
+
+```css
+.ell {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 几行就设几 */
+}
+```
+
+### 定位也能破坏流
+
+#### absolute 绝对定位
+
+- `position: absolute` 和 `float: left`、`float: right` 一样，都有“块状化”、“包裹性”和“破坏性”等特性
+- 当 `absolute` 和 `float` 同时存在时，`float` 属性是没有任何效果的
+- 块状化：元素一旦 `position` 属性值为 `absolute` 或 `fixed`，其 `display` 计算值就是 `block` 或者 `table`
+- 破坏性：破坏正常的流特性
+- 包裹性：尺寸收缩包裹，同时具有自适应性（`display:inline-block` 声明具有“包裹性”，因此使用决定定位之后就不需要加这个了）
+- `absolute` 的自适应性最大宽度往往不是由父元素决定的，而是由**包含块**（containing block）决定的
+	- 元素用来计算和定位的一个框
+	- 普通元素的百分比宽度是相对于父元素的 content box 宽度计算的
+	- 绝对定位元素的宽度是相对于第一个 `position` 不为 `static` 的祖先元素计算的
+	- 根元素（很多场景下可以看成是）被称为“初始包含块”，其尺寸等同于浏览器可视窗口的大小
+	- 其他元素，如果该元素的 `position` 是 `relative` 或者 `static`，则“包含块” 由其最近的块容器祖先盒的 content box 边界形成
+	- 如果元素 `position:fixed`，则“包含块”是“初始包含块”
+	- 如果元素 `position:absolute`，则“包含块”由最近的 `position` 不为 `static` 的祖先元素建立
+	- 如果没有符合条件的祖先元素，则“包含块”是“初始包含块”
+	- 边界是 padding box 而不是 content box
+	- 当包含块是内联元素时，可能会出现文字自动换行，这个时候可以改变默认的宽度显示类型 `white-space: nowrap`，让宽度表现从“包裹性”变成“最大可用宽度”
+- `absolute` 是非常独立的 CSS 属性值，其样式和行为表现不依赖其他任何 CSS 属性就可以完成
+	- 一个绝对定位元素，没 有任何 `left/top/right/bottom` 属性设置，并且**其祖先元素全部都是非定位元素**，其位置还是**当前位置**
+	- “无依赖绝对定位”本质上就是“**相对**定位”，仅仅是**不占据** CSS 流的尺寸空间而已
+	- 利用这个可以不加偏移量而通过 `margin` 实现一些小的图标、提示性文字、下拉列表、导航二级菜单等静态交互效果上
+- `text-align` 居然可以改变 `absolute` 元素的位置（本质上是“幽灵空白节点”和“无依赖绝对定位”共同作用的结果），只有原本是内联水平的元素绝对定位后可以受 `text-align` 属性影响
+- 绝对定位元素不总是被父级 `overflow` 属性剪裁，尤其当 `overflow` 在绝对定位元素及其包含块之间的时候（如果 `overflow` 不是定位元素，同时绝对定位元素和 `overflow` 容器之间也没有定位元素，则 `overflow` 无法对 `absolute` 元素进行剪裁）
+	- `overflow` 元素父级是定位元素（`relative`）也不会剪裁（`relative>overflow>absolute`）
+	- 如果 `overflow` 属性所在的元素同时也是定位元素，里面的绝对定位元素会被剪裁（`relative.overflow>absolute`）
+	- 如果 `overflow` 元素和绝对定位元素之间有定位元素，也会被剪裁（`overflow>relative>absolute`）
+	- 如果 `overflow` 的属性值不是 `hidden` 而是 `auto` 或者 `scroll`，即使绝对定位元素高宽比 `overflow` 元素高宽还要大，也都不会出现滚动条，也不跟着非绝对定位元素滚动（`overflow>absolute`）
+	- 由于 `position:fixed` 固定定位元素的包含块是根元素，因此，除非是窗体滚动，否则上面讨论的所有 `overflow` 剪裁规则对固定定位都不适用
+	- `transform` 除了改变 `overflow` 属性原有规则，对层叠上下文以及 `position:fixed` 的渲染都有影响。因此，当遇到 `absolute` 元素被剪裁或者 `fixed` 固定定位失效时，可以看看是不是 `transform` 属性在作祟
+- `clip` 属性要想起作用，元素必须是绝对定位或者固定定位，也就是 `position` 属性值必须是 `absolute` 或者 `fixed`
+	- 语法 `clip: rect(top, right, bottom, left)` 或 `clip: rect(top right bottom left)`
+	- 对于 `position:fixed` 元素，就要用到 `clip` 属性了
+	- **最佳可访问性隐藏**，例如 `<h1>` 中的网站标题可以 `h1 { position: absolute; clip: rect(0 0 0 0); }`，就可以不用 `text-indent` 之类的隐藏了
+	- 使用 `clip` 进行剪裁的元素其 `clientWidth` 和 `clientHeight` 包括样式计算的宽高都还是原来的大小
+	- `clip` 隐藏仅仅是决定了哪部分是可见的，非可见部分无法响应点击事件等
+- 当 `absolute` 遇到 `left/top/right/bottom` 属性的时候，`absolute` 元素才真正变成绝对定位元素
+	- 设置了两个方向的偏移（即使是0）时，相对于绝对定位元素包含块的左上角对齐，此时原本的相对特性丢失
+	- 仅设置了一个方向的绝对定位，另一个方向定位依然保持了相对特性
+- 绝对定位元素也具有普通流块级类似的流体特性，需要在对立方向同时发生定位的时候
+	- `.box { position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: 30px; }`
+	- 普通元素流体特性只有 一个方向，默认是水平方向，但是绝对定位元素可以让垂直方向和水平方向同时保持流动性（垂直方向流动性这样子元素的 `height` 百分比值可以生效了）
+	- 当绝对定位元素处于流体状态的时候，各个盒模型相关属性的解析和普通流体元素都是一模一样的，`margin` 负值可以让元素的尺寸更大
+	- 绝对定位元素的 `margin:auto` 的填充规则和普通流体元素的一模一样：
+		- 如果一侧定值，一侧 `auto`，`auto` 为剩余空间大小
+		- 如果两侧均是 `auto`，则平分剩余空间
+		- 利用绝对定位元素的流体特性和 `margin:auto` 的自动分配特性实现居中 `.element { width: 300px; height: 200px; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+
+#### relative 相对定位
+
+- 虽然说 `relative/absolute/fixed` 都能对 `absolute` 的“包裹性”以及“定位”产生限制，但只有 `relative` 可以让元素依然保持在正常的文档流中
+- `relative` 的定位有两大特性：一是**相对自身**；二是无侵入
+	- “无侵入”的意思是，当 `relative` 进行定位偏移的时候，一般情况下不会影响周围元素的布局（`margin` 偏移后面的元素会跟着移动，而使用 `relative` 定位后面的元素依然在原地纹丝不动，自身原本区域留出了一大块空白）
+	- 
+- 相对定位元素的 `left/top/right/bottom` 的**百分比值**是相对于包含块计算的，而不是自身（`top` 和 `bottom` 这两个垂直方向的百分比值计算跟 `height` 的百分比值是一样的，都是相对高度计算的，如果包含块的高度是 `auto`，那么计算值是 0）
+- 当相对定位元素同时应用对立方向定位值的时候，也就是 `top/bottom` 和 `left/right` 同时使用的时候，只有一个方向的定位属性会起作用，**与文档流的顺序有关的**，默认的文档流是自上而下、从左往右，因此 `top/bottom` 同时使用的时候，`top` 生效；`left/right` 同时使用的时候，`left` 生效
+- 在实际使用中可以参照 `relative` 的最小化影响原则
+	- 尽量不使用 `relative`，如果想定位某些元素，看看能否使用“无依赖的绝对定位”
+	- 如果场景受限，一定要使用 `relative`，则该 `relative` 务必最小化（`relative` 尽量不要包裹到其他元素）
+
+#### fixed 固定定位
+
+`position:fixed` 固定定位元素的“包含块”是根元素，我们可以将其近似看成 `<html>` 元素
+
+> 模态框的蒙层无法覆盖浏览器右侧的滚动栏，并且鼠标滚动的时候后面的背景内容依然可以被滚动，并没有被锁定
+
+`position:fixed` 蒙层之所以出现背景依然滚动，那是因为滚动元素是根元素，正好是 position:fixed 的“包含块”。所以，如果希望背景被锁定，让页面滚动条由内部的普通元素产生即可。
+
+移动端项目，阻止 `touchmove` 事件的默认行为可以防止滚动；如果是桌面端项目，可以让根元素直接 `overflow:hidden`，并且使用同等宽度的透明边框填充消失的滚动条
+
+在蒙层显示的同时执行下面的 JavaScript 代码
+
+```javascript
+var widthBar = 17, root = document.documentElement;
+if (typeof window.innerWidth == 'number') {
+  widthBar = window.innerWidth - root.clientWidth;
+}  
+root.style.overflow = 'hidden';  
+root.style.borderRight = widthBar + 'px solid transparent';
+```
+
+隐藏的时候执行下面的 JavaScript 代码
+
+```javascript
+var root = document.documentElement;
+root.style.overflow = '';
+root.style.borderRight = '';
+```
+
+## CSS 中的层叠规则
+
+“层叠规则”，指的是当网页中的元素发生层叠时的表现规则
+
+### 层叠上下文
+
+层叠上下文，英文称作 stacking context，是 HTML 中的一个三维的概念。如果一个元素含有层叠上下文，我们可以理解为这个元素在 z 轴上就“高人一等”
+
+### 层叠水平
+
+层叠水平，英文称作 stacking level，决定了同一个层叠上下文中元素在 z 轴上的显示顺序。
+
+所有的元素都有层叠水平，包括层叠上下文元素，也包括普通元素。然而，对普通元素的层叠水平探讨只局限在**当前层叠上下文元素**中。
+
+某些情况下 `z-index` 确实可以影响层叠水平，但是只限于定位元素以及 `flex` 盒子的孩子元素；而层 叠水平所有的元素都存在。
+
+### 元素的层叠顺序
+
+层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。
+
+CSS 2.1 下，层叠顺序规则如下图所示：
+
+![](https://cdn.wallleap.cn/img/pic/illustration/202302221557227.png)
+
+（1）位于最下面的 `background/border` 特指层叠上下文元素的边框和背景色。每一个 层叠顺序规则仅适用于当前层叠上下文元素的小世界。
+
+（2）`inline` 水平盒子指的是包括 `inline/inline-block/inline-table` 元素的“层叠顺序”，它们都是同等级别的。
+
+（3）单纯从层叠水平上看，实际上 `z-index:0` 和 `z-index:auto` 是可以看成是一样的。
+
+`background/border `为**装饰**属性，浮动和块状元素一般用作**布局**，而内联元素都是**内容**
+
+### 两条层叠领域的黄金准则
+
+（1）**谁大谁上**：当具有明显的层叠水平标识的时候，如生效的 `z-index` 属性值，在同一个层叠上下文领域，层叠水平值大的那一个覆盖小的那一个。
+
+（2）**后来居上**：当元素的层叠水平一致、层叠顺序相同的时候，在 DOM 流中处于后面的元素会覆盖前面的元素。
+
+### 层叠上下文的特性
+
+- 层叠上下文的层叠水平要比普通元素高（原因后面会说明）
+- 层叠上下文可以阻断元素的混合模式（参见 http://www.zhangxinxu.com/wordpress/?p=5155 的这篇文章的第二部分说明）
+- 层叠上下文可以嵌套，内部层叠上下文及其所有子元素均受制于外部的“层叠上下文”
+- 每个层叠上下文和兄弟元素独立，也就是说，当进行层叠变化或渲染的时候，只需要考虑后代元素
+- 每个层叠上下文是自成体系的，当元素发生层叠的时候，整个元素被认为是在父层叠上下文的层叠顺序中。
+
+### 层叠上下文的创建
+
+1．根层叠上下文
+根层叠上下文指的是页面根元素，可以看成是元素。因此，页面中所有的元素一定处于至少一个“层叠结界”中。
+
+2．定位元素与传统层叠上下文
+对于 position 值为 relative/absolute 以及 Firefox/IE 浏览器（不包括 Chrome 浏览 器）下含有 position:fixed 声明的定位元素，当其 z-index 值不是 auto 的时候，会创建层叠上下文。
+
+3．CSS3 与新时代的层叠上下文
+
+（1）元素为 flex 布局元素（父元素 display:flex|inline-flex），同时 z-index 值不是 auto。
+（2）元素的 opacity 值不是 1。 
+（3）元素的 transform 值不是 none。
+（4）元素 mix-blend-mode 值不是 normal。 
+（5）元素的 filter 值不是 none。
+（6）元素的 isolation 值是 isolate。
+（7）元素的 will-change 属性值为上面 2～6 的任意一个（如 will-change:opacity、will-chang:transform 等）。
+（8）元素的-webkit-overflow-scrolling 设为 touch。
+
+### 层叠上下文与层叠顺序
+
+（1）如果层叠上下文元素不依赖 z-index 数值，则其层叠顺序是 z-index:auto，可看成 z:index:0 级别；
+
+（2）如果层叠上下文元素依赖 z-index 数值，则其层叠顺序由 z-index 值决定。
+
+![新的层叠顺序规则](https://cdn.wallleap.cn/img/pic/illustration/202302221607061.png)
+
+
+元素一旦成为定位元素，其 z-index 就会自动生效，此时其 z-index 就是默认的 auto，也就是 0 级别，根据上面的层叠顺序表，就会覆盖 inline 或 block 或 float 元素。而不支持 z-index 的层叠上下文元素天然是 z-index:auto 级别，也就意味着，层叠上下文元素和定位元素是 一个层叠顺序的，于是当它们发生层叠的时候，遵循的是“后来居上”准则。
+
+从图中可以看到 z-index 负值元素的层级是在层叠上下文元素上面、block 元素的下面，也就是 z-index 虽然名为负数层级，但依然无法突破当前层叠上下文所包裹的小世界。
+
+## 文本
+
+### 字号 font-size
+
+内联元素默认基线对齐，图片的基线可以看成是图片的下边缘，文字内容的基线是字符 x 下边缘
+
+因此想让一个图片图标和文字对齐，可以设置图片的 `vertical-align` 的值为`文字的行高 * -25%` 或 `.6ex`
+
+之前有说 `1ex` 指的是字符 `x` 的高度，而 `1em` 指的是一个子模的高度（'M'）
+
+在 CSS 中，`1em` 的计算值等同于当前元素所在的 `font-size` 计算值，可以将其想象成当前元素中（如果有）汉字的高度
+
+`em` 相对于当前元素，`rem` 相对于根元素
+
+**font-size 的关键词属性**
+- 相对尺寸关键字，相对于当前元素 font-size 计算
+	- larger：大一点，是元素的默认 font-size 属性值
+	- smaller：小一点，是元素的默认 font-size 属性值
+- 绝对尺寸关键字，仅受浏览器设置的字号影响
+	- xx-large：好大好大，和 `<h1>` 元素计算值一样
+	- x-large：好大，和 `<h2>` 元素计算值一样
+	- large：大，和 `<h3>` 元素计算值近似（“近似”指计算值偏差在 1 像素以内，下同）
+	- medium：不上不下，是 font-size 的初始值，和 `<h4>` 元素计算值一样
+	- small：小，和 `<h5>` 元素计算值近似
+	- x-small：好小，和 `<h6>` 元素计算值近似
+	- xx-small：好小好小，无对应的 HTML 元素
+
+桌面 Chrome 浏览器下有个 12px 的字号限制，如果 font-size:0 的字号表现就是 0，那么文字会直接被隐藏掉，并且只能是 font-size:0，哪怕设置成 font-size:0.0000001px，都还是会被当作 12px 处理的
+
+### 字体属性家族 font
+
+#### font-family 字体家族
+
+font-family 默认值由操作系统和浏览器共同决定
+
+font-family 支持两类属性值，一类是“字体名”，一类是“字体族”，如果字体名包含空格，需要使用引号包起来（可以不用区分大小写；如果有多个字体设定，从左往右依次寻找本地是否有对应的字体即可）
+
+```css
+body {
+  font-family: 'PingFang SC', 'Microsoft Yahei', simsun;
+}
+```
+
+字体族分类：
+- serif：衬线字体（笔画开始、结束的地方有额外 装饰而且笔画的粗细会有所不同的字体，典型字体是“宋体”）
+- sans-serif：无衬线字体（没有这些额外的装饰，而且笔画的粗细差不多，黑体）
+- monospace：等宽字体
+- cursive：手写字体
+- fantasy：奇幻字体
+- system-ui：系统 UI 字体。
+
+serif 和 sans-serif 一定要写在最后，因为在大多数浏览器下，写在 serif 和 sans-serif 后面的所有字体都会被忽略
+
+等宽字体一般用于展示代码、一些字符
+
+1ch 表示一个 0 字符的宽度，所以 6 个 0 所占据的宽度就是 6ch，用这个单位和等宽字体可以实现数字/字母一个个出现的效果
+
+#### font-weight 字重
+
+```css
+/* 平常用的最多的 */ font-weight: normal; font-weight: bold; 
+/* 相对于父级元素 */ font-weight: lighter; font-weight: bolder; 
+/* 字重的精细控制 */ font-weight: 100; font-weight: 200; font-weight: 300; font-weight: 400; font-weight: 500; font-weight: 600; font-weight: 700; font-weight: 800; font-weight: 900;
+/* 400 等同于 normal，700 等同于 bold */
+```
+
+这些数值关键字浏览器都是支持的，之所以没有看到任何粗细的变化，是因为我们的系统里面缺乏对应粗细的字体。font-weight 要想真正发挥潜力，问题不在于 CSS 的支持，而在于是否存在对应的字体文件。
+
+#### font-style 倾斜
+
+```css
+font-style: normal; font-style: italic; font-style: oblique;
+```
+
+italic 是使用当前字体的斜体字体，而 oblique 只是单纯地让文字倾斜
+
+如果当前字体没有对应的斜体字体，则退而求其次，解析为 oblique，也就是单纯形状倾斜
+
+#### font 属性
+
+可以缩写在 font 属性中的属性非常多，包括 font-style、font-variant、 font-weight、font-size、line-height、font-family 等
+
+完整语法为：
+
+```
+font: [ [ font-style || font-variant || font-weight ]? font-size [ / line-height ]? font-family ]
+/* ||表示或，?和正则表达式中的?的含义一致，表示 0 个或 1 个 */
+```
+
+font-size 和 font-family 是必需的，是不可以省略的
+
+font 还支持关键字属性值，使用关键字作为属性值的时候必须是独立的，只能使用一下值
+
+```
+font:caption | icon | menu | message-box | small-caption | status-bar
+```
+
+如果将 font 属性设置为上面的一个值，就等同于设置 font 为操作系统该部件对应的 font，也就是说直接使用系统字体
+
+- caption：活动窗口标题栏使用的字体
+- icon：包含图标内容所使用的字体，如所有文件夹名称、文件名称、磁盘名称，甚至 浏览器窗口标题所使用的字体
+- menu：菜单使用的字体，如文件夹菜单
+- message-box：消息盒里面使用的字体
+- small-caption：调色板标题所使用的字体
+- status-bar：窗体状态栏使用的字体
+
+### @font face 规则
+
+@font face 本质上就是一个定 义字体或字体集的变量，这个变量不仅仅是简单地自定义字体，还包括字体重命名、默认字体样式设置等
+
+@font face 规则支持的 CSS 属性有 font-family、src、font-style、font-weigh、unicode-range、font-variant、font-stretch 和 font-feature-settings，例如：
+
+```css
+@font-face {
+font-family: 'example'; /* 给字体取个名字 */
+src: url(example.ttf); /* 字体资源 */
+font-style: normal;
+font-weight: normal;
+unicode-range: U+0025-00FF;
+font-variant: small-caps;
+font-stretch: expanded;
+font-feature-settings："liga1" on; }
+```
+
+src 可以给多种字体格式，因为不同系统兼容性不同，我们可以优先使用 woff2，然后是 woff 格式字体
+
+### 文本的控制
+
+#### text-indent 文本缩进
+
+```css
+p { text-indent: 2em; }
+```
+
+text-indent 的百分比值是相对于当前元素的“包含块”计算的，而不是当前元素
+
+#### letter-spacing 字符间距
+
+默认值是 normal，计算值还是 0，支持负值
+
+#### word-spacing 单词间距
+
+letter-spacing 作用于所有字符，但 word-spacing 仅作用于空格字符
+
+#### word-break 和 word-wrap
+
+word-break 属性，语法如下：
+```
+word-break: normal;
+word-break: break-all;
+word-break: keep-all;
+```
+
+- normal：使用默认的换行规则
+- break-all：允许任意非 CJK（Chinese/Japanese/Korean）文本间的单词断行
+- keep-all：不允许 CJK 文本中的单词换行，只能在半角空格或连字符处换行。非 CJK 文本的行为实际上和 normal 一致。
+
+word-wrap
+```
+word-wrap: normal;
+word-wrap: break-word;
+```
+
+- normal：就是大家平常见得最多的正常的换行规则
+- break-word：一行单词中实在没有其他靠谱的换行点的时候换行
+
+word-break:break-all 和 word-wrap:break-word 效果区别
+- word-break:break-all 的作用是所有的都换行，毫不留情，一点儿空 隙都不放过
+- 而 word-wrap:break-word 则带有怜悯之心，如果这一行文字有可以换 行的点，如空格或 CJK（中文/日文/韩文）之类的，就不打英文单词或字符的主意了，在 这些换行点换行，至于对不对齐、好不好看则不关心，因此，很容易出现一片一片空白区 域的情况。
+
+#### white-space
+
+white-space 属性声明了如何处理元素内的空白字符，这类空白字符包括 Space（空格） 键、Enter（回车）键、Tab（制表符）键产生的空白
+
+- normal：合并空白字符和换行符
+- pre：空白字符不合并，并且内容只在有换行符的地方换行
+- nowrap：该值和 normal 一样会合并空白字符，但不允许文本环绕
+- pre-wrap：空白字符不合并，并且内容只在有换行符的地方换行，同时允许文本环绕
+- pre-line：合并空白字符，但只在有换行符的地方换行，允许文本环绕
+
+white-space 的功能分 3 个维度，分别是：是否合并空白字符，是否合并换行符，以及文本是否自动换行
+
+![](https://cdn.wallleap.cn/img/pic/illustration/202302221743972.png)
+
+- 如果合并空格，会让多个空格变成 1 个，也就是我们平常看到的效果，敲了 10 个空格，结果页面就 1 个空格。
+- 如果合并换行，会把多个连续换行合并成 1 个，并当作 1 个普通空格处理，就是键盘空格键敲出来的那个空格。
+- 如果文本环绕，一行文字内容超出容器宽度时，会自动从下一行开始显示。
+
+当 white-space 设置为 nowrap 的时候，元素的宽度此时表现为“**最大可用宽度**”，换 行符和一些空格全部合并，文本一行显示
+
+- “包含块”尺寸过小处理，绝对定位以及 inline-block 元素 都具有包裹性，当文本内容宽度超过包含块宽度的时候，就会发生文本 环绕现象。
+- 单行文字溢出点点点效果。text-overflow:ellipsis 文字内容超出打点效果离不开 white-space:nowrap 声明
+
+#### text-align 对齐
+
+text-align:justify 两端对齐，除了实现文本的两端对齐，还可以实现容错性更强的两端对齐布局效果。
+
+在默认设置下，text-align:justify 要想有两端对齐的效果，需要满足两点：一是有分隔点，如空格；二是要超过一行，此时非最后一行内容会两端对齐
+
+所以可以把子元素设置为 `inline-block`，在容器上设置伪元素且设置内敛快宽度撑满
+
+#### text-decoration
+
+下划线可能会和文字重叠，所以一般用 `border-bottom` 模拟下划线
+
+```css
+a {
+  text-decoration: none;
+  border-bottom: 1px solid current;
+  padding-bottom: .2em;
+}
+```
+
+#### text-transform 字符大小写
+
+text-transform 也是为英文字符设计的，要么全大写 text-transform:uppercase， 要么全小写 text-transform:lowercase
+
+### ::first-letter/::first-line 伪元素
 
 
 
@@ -1370,4 +1853,16 @@ CSS 世界中正常的流内容或者流布局虽然也足够强大，但是实�
 
 
 
-不是的。实际上，浮动元素和后面的文字并不在一行显示，浮动元素已经在文档流之外了。证据就是，当后面文字足够多的时候，文字并不是在浮动元素的下面，而是继续在后面。这就说明，浮动元素和后面文字不在一行，只是它们恰好站在了一起而已。真相是，浮动元素会生成“块盒子”，这就是后话了。
+
+
+
+
+
+
+
+
+
+
+
+
+

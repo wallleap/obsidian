@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/007-CSS 补充.md",
+                "file": "300-web/三件套/CSS 世界笔记.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -71,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -87,7 +88,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/007-CSS 补充.md"
+                "file": "300-web/三件套/CSS 世界笔记.md"
               }
             }
           },
@@ -141,8 +142,8 @@
   },
   "active": "fc55c43d5952c92d",
   "lastOpenFiles": [
-    "300-web/课程/006-布局相关.md",
     "300-web/课程/007-CSS 补充.md",
+    "300-web/课程/006-布局相关.md",
     "300-web/课程/005-深入 CSS.md",
     "100-life/工具/RIME 小鹤双拼快速设置.md",
     "100-life/工具/macOS 个性化定制.md",
