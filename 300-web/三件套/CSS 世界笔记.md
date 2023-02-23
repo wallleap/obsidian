@@ -1,4 +1,6 @@
-
+---
+date: 2023-02-23 18:29
+---
 
 ![Cover6](https://cdn.wallleap.cn/img/pic/illustrtion/202210121558633.jpg)
 
@@ -18,8 +20,8 @@ CSS 是由一个个规则集(ruleset)组成的，规则集包括选择器和声�
 
 - 选择器(Selector)：在规则的开头，用于选择出需要定义样式的 HTML 元素，需要同时选中多个选择器用 `,` 分隔
 - 声明块：用 `{}` 包括起来的内容，其中每一条是一个声明(Declaration)，声明是一组键值对（使用冒号隔开，左边的是键，右边的是值），每条声明用 `;` 隔开
-  - 属性(Property)： 可读的标识符，指示您想要更改的样式特征，例如高度、颜色、字体大小
-  - 属性值(Property value)：数值、百分比值、长度值、颜色值、关键字等
+	- 属性(Property)： 可读的标识符，指示您想要更改的样式特征，例如高度、颜色、字体大小
+	- 属性值(Property value)：数值、百分比值、长度值、颜色值、关键字等
 
 ![Code](https://cdn.wallleap.cn/img/pic/illustrtion/202210101050755.png)
 
@@ -34,24 +36,23 @@ CSS 是由一个个规则集(ruleset)组成的，规则集包括选择器和声�
 选择器是用来瞄准目标元素的东西，例如，上面的 `.selector` 就是一个选择器。
 
 - 类选择器：指以 `.` 这个点号开头的选择器。很多元素可以应用同一个类选择器。 “类”，天生就是被公用的命。
--  ID 选择器：`#` 打头，权重相当高。ID 一般指向**唯一元素**。但是，在 CSS 中，**ID 样式出现在多个不同的元素上并不会只渲染第一个**，而是雨露均沾。但显然不推荐这么做。
+- ID 选择器：`#` 打头，权重相当高。ID 一般指向**唯一元素**。但是，在 CSS 中，**ID 样式出现在多个不同的元素上并不会只渲染第一个**，而是雨露均沾。但显然不推荐这么做。
 - 属性选择器：指含有`[]` 的选择器，形如 `[title]{}`、`[title= "css-world"]{}`、`[title~="css-world"]{}`、`[title^= "css-world"]{}` 和 `[title$="css-world"]{}` 等。
 - 伪类选择器：一般指前面有个英文冒号 `:` 的选择器，如 `:first-child` 或 `:last-child` 等。
 - 伪元素选择器：就是有连续两个冒号的选择器，如 `::first-line`、`::first-letter`、`::before` 和 `::after`。
 - 关系选择器是指根据与其他元素的关系选择元素的选择器，常见的符号有`空格`、`>`、`~`，还有`+`等，这些都是非常常用的选择器。
-  - 后代选择器：选择所有合乎规则的后代元素。空格连接。
-  - 相邻后代选择器：仅仅选择合乎规则的儿子元素，孙子、重孙元素忽略，因此又称“子选择器”。`>` 连接。
-  - 兄弟选择器：选择当前元素后面的所有合乎规则的兄弟元素。`~` 连接。
-  - 相邻兄弟选择器：仅仅选择当前元素相邻的那个合乎规则的兄弟元素。`+` 连接。
+	- 后代选择器：选择所有合乎规则的后代元素。空格连接。
+	- 相邻后代选择器：仅仅选择合乎规则的儿子元素，孙子、重孙元素忽略，因此又称“子选择器”。`>` 连接。
+	- 兄弟选择器：选择当前元素后面的所有合乎规则的兄弟元素。`~` 连接。
+	- 相邻兄弟选择器：仅仅选择当前元素相邻的那个合乎规则的兄弟元素。`+` 连接。
 
-###  CSS 世界中的“未定义行为”
+### CSS 世界中的“未定义行为”
 
 Web 应用场景千变万化，Web 标准也是不可能面面俱到的，也会存在规范描述以外的场景，此时，各大浏览器厂家只能根据自己的理解与喜好去实现，一旦个性化就会出现差异，就比如 Firefox 和 IE/Chrome 浏览器表现不一样。实际上，此时遇到的表现差异并不是浏览器的 bug，用计算机领域的专业术语描述应该是“未定义行为”（undefined behavior）。
 
 ## CSS 世界的“世界观”
 
 - CSS 世界是一点一点创造出来的
-
 - CSS 世界的诞生就是为图文信息展示服务的
 - SVG 显然要比 Flash 优秀很多，SVG 开发、标准，和 CSS 和 JavaScript 都能很方便地进行交互，SVG 的强项是图形，其文字内容的呈现实在不敢恭维
 - 为什么 CSS 世界的图文显示能力那么强？为什么它可以抑制 SVG 这么多年？答案就是：流！
@@ -66,11 +67,11 @@ CSS 世界构建的基石是 HTML，而 HTML 最具代表的两个基石 `<div>`
 
 流是如何影响整个 CSS 世界的？
 
-- 擒贼先擒王CSS 世界的基石是 HTML，HTML 默认的表现符合“流”，所以整个 CSS 世界就可以被“流”统治
+- 擒贼先擒王。CSS 世界的基石是 HTML，HTML 默认的表现符合“流”，所以整个 CSS 世界就可以被“流”统治
 - 特殊布局与流的破坏。实际的网页是有很多复杂的布局的，可以通过破坏“流”来实现特殊布局
 - 流向的改变。默认的文档流从左往右自上而下，这种流向我们是可以改变的，可以让 CSS 的展现更为丰富
 
-> table 自己的世界，“流”的特性对 `<table>` 并不适用
+> table 有自己的世界，“流”的特性对 `<table>` 并不适用
 
 ### CSS 世界的基石 HTML 元素
 
@@ -95,7 +96,6 @@ HTML 常见的标签有 `<div>`、`<p>`、`<li>` 和 `<table>` 以及 `<span>`�
 ```
 
 > 为什么 `list-item` 元素会出现项目符号
->
 > ——之所以 `list-item` 元素会出现项目符号是因为生成了一个附加的盒子，学名“标记盒子”（marker box），专门用来放圆点、数字这些项目符号。
 
 #### 内联元素
@@ -103,7 +103,6 @@ HTML 常见的标签有 `<div>`、`<p>`、`<li>` 和 `<table>` 以及 `<span>`�
 内联元素又叫行内元素，指只占据它对应标签的边框所包含的空间的元素，这些元素如果父元素宽度足够则并排在一行显示的，如 `span`、`a`、`em`、`i`、`img`、`td` 等。“内联元素”的“内联”特指后文提到的“外在盒子”，这些元素的 `display` 值默认是 `inline`、`inline-block`、`inline-table`、`table-cell` 等。
 
 > 一般情况下，行内元素只能包含数据和其他行内元素，而块级元素可以包含行内元素和其他块级元素
->
 > 就行为表现来看，“内联元素”的典型特征就是可以和文字在一行显示，浮动元素貌似也是可以和文字在一个水平上显示的，实际上，浮动元素和后面的文字并不在一行显示，它已经在文档流之外了，浮动元素会生成“块盒子”
 
 ## CSS 盒模型
@@ -113,7 +112,7 @@ HTML 常见的标签有 `<div>`、`<p>`、`<li>` 和 `<table>` 以及 `<span>`�
 每个元素都两个盒子，外在盒子和内在盒子
 
 - 外在盒子负责元素是可以一行显示，还是只能换行显示，“外在盒子”有 `inline`、`block` 和 `run-in` 三种水平（其中 `run-in` 鲜有人使用，且有淘汰风险，可以忽略）。外在盒子是流体布局的本质所在，从作用上来讲，块级负责结构，内联负责内容。
-- 内在盒子负责宽高、内容呈现什么的，专业的名称叫作“**容器盒子**”（`width` 和 `height` 是作用在这个盒子的），“内在盒子”又被分成了 4 个盒子，分别是 `content-box`、`padding-box`、`border-box` 和 `margin box` (`margin ` 的背景永远是透明的)
+- 内在盒子负责宽高、内容呈现什么的，专业的名称叫作“**容器盒子**”（`width` 和 `height` 是作用在这个盒子的），“内在盒子”又被分成了 4 个盒子，分别是 `content-box`、`padding-box`、`border-box` 和 `margin box` (` margin  ` 的背景永远是透明的)
 
 按照 `display` 的属性值不同，外在盒子和内在盒子组成不同
 
@@ -150,8 +149,7 @@ HTML 常见的标签有 `<div>`、`<p>`、`<li>` 和 `<table>` 以及 `<span>`�
 - `container-box` 就是包含块的意思，在内联元素中，包含块是由行框组成的。说白了就是包裹在所有行框外面的那层盒子。
 - `struct`，**”幽灵空白节点“**，这个节点透明，不占据任何宽度，看不见也无法通过脚本获取，并且行高和字体大小都与该元素相同。
 
-> ✨ 内联元素的所有解析和渲染表现就如同每个行框盒子的前面有一个“空白节点”一样。这个“空白节点”永远透明，不占据任何宽度，看不见也无法通过脚本获取，就好像幽灵一样。
->
+> ✨ **内联元素**的所有解析和渲染表现就如同每个行框盒子的前面有一个“**空白节点**”一样。这个“空白节点”永远透明，不占据任何宽度，看不见也无法通过脚本获取，就好像幽灵一样。
 > “幽灵空白节点”实际上也是一个盒子，不过是个假想盒，名叫“strut”，中文直译为“支柱”，是一个存在于每个“行框盒子”前面，同时具有该元素的字体和行高属性的 0 宽度的内联盒。
 
 ## 基本尺寸
@@ -177,7 +175,7 @@ CSS 的默认流是水平方向的，宽度是稀缺的，高度是无限的，�
 
 `height:auto` 的表现：有几个元素盒子，每个多高，然后一加，就是最终的高度值了。
 
-####  height:100%
+#### height:100%
 
 `height` 和 `width` 还有一个比较明显的区别就是对百分比单位的支持。
 
@@ -211,14 +209,14 @@ CSS 世界中，`min-width`/`max-width` 和 `min-height`/`max-height` 属性间�
 - 超越 `!important` 指的是 `max-width` 会覆盖 `width`
 - 超越最大指的是 `min-width` 覆盖 `max-width`
 
-例子1：图片最后呈现的宽度是 `256px`
+🌰 例子1：图片最后呈现的宽度是 `256px`
 
 ```css
 <img src="1.jpg" style="width:480px !important;">
 img { max-width: 256px; }
 ```
 
-例子2：最小宽度比最大宽度设置得还大，此时，“超越最大”规则，`min-width` 活下来，`max-width` 被忽略，`.container` 元素表现为至少 1400 像素宽
+🌰 例子2：最小宽度比最大宽度设置得还大，此时，“超越最大”规则，`min-width` 活下来，`max-width` 被忽略，`.container` 元素表现为至少 1400 像素宽
 
 ```css
 .container {
@@ -227,7 +225,7 @@ img { max-width: 256px; }
 }
 ```
 
-> 案例：任意高度元素的展开收起动画技术
+> 🌰 案例：任意高度元素的展开收起动画技术
 
 ```css
 .element {
@@ -255,12 +253,12 @@ CSS 的 `content` CSS 属性用于在元素的 [`::before`](https://developer.mo
 根据“外在盒子”是内联还是块级我们可以把元素分为内联元素和块级元素，而根据是否具有可替换内容，我们也可以把元素分为替换元素和非替换元素
 
 - 替换元素：通过修改某个属性值（例如 `value`、`src` 等）呈现的内容就可以被替换的元素就称为“替换元素”，`<img>`、`<object>`、`<video>`、`<iframe>` 或者表单元素 `<textarea>` 和 `<input>` 都是典型
-  的替换元素
-  - **内容可替换**
-  - 基本样式外部 CSS 很难改变，需要通过特定的伪元素选择
-  - 有自己的尺寸，有默认的尺寸，有些和浏览器有关
-  - 基线是下边缘 （`vertical-align` 的默认值的 `baseline`，但是替换元素不适用）
-  - 所有的替换元素都是**内联水平元素**
+	的替换元素
+	- **内容可替换**
+	- 基本样式外部 CSS 很难改变，需要通过特定的伪元素选择
+	- 有自己的尺寸，有默认的尺寸，有些和浏览器有关
+	- 基线是下边缘 （`vertical-align` 的默认值的 `baseline`，但是替换元素不适用）
+	- 所有的替换元素都是**内联水平元素**
 - 非替换元素：内容不可替换，除了上述的元素基本都是非替换元素
 
 替换元素的尺寸：从内而外分为 3 类——固有尺寸、HTML 尺寸和 CSS 尺寸
@@ -280,7 +278,7 @@ CSS 的 `content` CSS 属性用于在元素的 [`::before`](https://developer.mo
 - 如果上面的条件都不符合，则最终宽度表现为 300 像素，高度为 150 像素，宽高比 2 : 1（例如 `video`/`canvas`/`iframe` 在现代浏览器下的尺寸表现为 `300x150px`，图片除外）
 - 内联替换元素和块级替换元素使用上面同一套尺寸计算规则（即使给 `img` 标签设置 `display: block` 但是尺寸还是按照上述规则计算）
 
-> 首屏以下的图片处理
+> 🌰 首屏以下的图片处理
 
 Web 开发的时候，为了提高加载性能以及节约带宽费用，首屏以下的图片就会通过滚屏加载的方式异步加载，当图片的 `src` 属性缺省的时候，图片不会有任何请求
 
@@ -296,7 +294,7 @@ img[src] { visibility: visible; }
 </style>
 ```
 
-> 使用 `content` 属性生成图片
+> 🌰 使用 `content` 属性生成图片
 
 在 Chrome 浏览器下，所有的元素都支持 `content` 属性
 
@@ -308,7 +306,7 @@ img[src] { visibility: visible; }
 
 ![图片来源于网络，仅作展示用](https://cdn.wallleap.cn/img/pic/illustrtion/202210121646937.gif)
 
-> H1 显示 logo 图片
+> 🌰 H1 显示 logo 图片
 
 使用 `content` 属性，我们还可以让普通标签元素变成替换元素
 
@@ -347,7 +345,7 @@ h1 {
 
 在实际项目中，`content` 属性几乎都是用在 `::before`/`::after` 这两个伪元素中，因此，“content 内容生成技术”有时候也称 “::before/::after 伪元素技术”。
 
-> 把 content 的属性值设置为空字符串，再利用其他 CSS 代码来生成辅助元素，或实现图形效果
+> 🌰 把 content 的属性值设置为空字符串，再利用其他 CSS 代码来生成辅助元素，或实现图形效果
 
 ```css
 .element:before { 
@@ -355,9 +353,7 @@ h1 {
 } 
 ```
 
-
-
-> 清除浮动带来的影响
+> 🌰 清除浮动带来的影响
 
 ```css
 .clear:after { 
@@ -367,9 +363,7 @@ h1 {
 }
 ```
 
-
-
-> 辅助实现“两端对齐”以及“垂直居中/上边缘/下边缘对齐”效果
+> 🌰 辅助实现“两端对齐”以及“垂直居中/上边缘/下边缘对齐”效果
 
 ```html
 <div class="box"><i class="bar"></i> 
@@ -396,13 +390,11 @@ h1 {
 </style>
 ```
 
-
-
 `:before` 伪元素用于辅助实现底对齐，`:after` 伪元素用于辅助实现两端对齐
 
 使用这种方式，需要注意 HTML 代码有些地方不能换行或者空格，有些地方则必 须要换行或者有空格
 
-> **content** 字符内容生成：，比较常见的应用就是配合 @font-face 规则实现图标字体效果
+> 🌰 **content** 字符内容生成：，比较常见的应用就是配合 @font-face 规则实现图标字体效果
 
 ```html
 <span class="icon-home"></span> 
@@ -421,8 +413,6 @@ h1 {
 </style>
 ```
 
-
-
 除常规字符之外，我们还可以插入 Unicode 字符，例如换行符
 
 ```css
@@ -432,9 +422,7 @@ h1 {
 }
 ```
 
-
-
-> 来实现字符动画效果
+> 🌰 来实现字符动画效果
 
 ```html
 正在加载中<dot>...</dot>
@@ -457,9 +445,7 @@ dot::before {
 </style>
 ```
 
-
-
-> **content** 图片生成
+> 🌰 **content** 图片生成
 
 ```css
 /* 直接用 url 功能符显示图片 */
@@ -473,9 +459,7 @@ div:before {
 } 
 ```
 
-
-
->  **content** 开启闭合符号生成
+> 🌰 **content** 开启闭合符号生成
 
 常规实现：
 
@@ -487,8 +471,6 @@ q:after {
    content: '”'; 
 }
 ```
-
-
 
 自带属性 `quotes`：
 
@@ -507,11 +489,9 @@ q:after { content: close-quote; }
 </script>
 ```
 
-
-
 可以任意指定 `quotes` 的字符，CSS 中还有 no-open-quote 和 no-close-quote 关键字，顾名思义，引号不需要了
 
-> **content attr** 属性值内容生成
+> 🌰 **content attr** 属性值内容生成
 
 ```css
 img::after { 
@@ -525,9 +505,7 @@ img::after {
 }
 ```
 
-
-
-> 使用 `counter()` 实现 `ol` 前的序号展示
+> 🌰 使用 `counter()` 实现 `ol` 前的序号展示
 
 [CSS](https://developer.mozilla.org/zh-CN/docs/Web/CSS) 函数 **`counter()`**，返回一个代表计数器的当前值的字符串。它通常和伪元素搭配使用，但是理论上可以在支持 `<string>` 值的任何地方使用。
 可以直接看这篇文章：[使用 CSS 计数器更改有序列表序号样式](https://myblog.wallleap.cn/#/post/90)
@@ -535,10 +513,11 @@ img::after {
 - 初始化/重置计数器：`counter-reset: name 初始值`
 
 - 计数器递增：`counter-increment:  name 递增值`
-- 显示计数： `content: counter(name, style)`/`content: counters()`
-  - **list-style-type**：disc | circle | square | decimal | lower-roman | upper-roman |  lower-alpha | upper-alpha | none | armenian | cjk-ideographic | georgian | lower-greek | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-latin | upper-latin
 
-> **content** 内容生成的混合特性
+- 显示计数： `content: counter(name, style)`/`content: counters()`
+	- **list-style-type**：disc | circle | square | decimal | lower-roman | upper-roman |  lower-alpha | upper-alpha | none | armenian | cjk-ideographic | georgian | lower-greek | hebrew | hiragana | hiragana-iroha | katakana | katakana-iroha | lower-latin | upper-latin
+
+> 🌰 **content** 内容生成的混合特性
 
 各种 content 内容生成语法是可以混合在 一起使用的
 
@@ -554,13 +533,9 @@ q:before {
 }
 ```
 
-
-
 - 函数不要加引号
 - 连接符就是一个空格，不需要逗号
 - 引号内可以是任意内容
-
-
 
 ### 温和的 padding 属性
 
@@ -568,23 +543,23 @@ q:before {
 
 - `padding` 指盒子的内补间
 - CSS 中默认的 `box-sizing` 是 `content-box`，所以使用 `padding` 会增加元素的尺寸
-- 设置 ` box-sizing:border-box`，`padding` 小的时候元素尺寸就不会变化；但是，如果 `padding` 值足够大，那么这个盒子还是会被撑大的（取大的值）
+- 设置 `  box-sizing:border-box `，`padding` 小的时候元素尺寸就不会变化；但是，如果 `padding` 值足够大，那么这个盒子还是会被撑大的（取大的值）
 - 内联元素的 `padding` 在垂直方向同样会影响布局，只是因为内联元素没有可视宽度和可视高度的说法（`clientHeight` 和 `clientWidth` 永远是 0），垂直方向的行为表现完全受 `line-height` 和 `vertical-align` 的影响，视觉上并没有 改变和上一行下一行内容的间距，因此，给我们的感觉就会是垂直 `padding` 没有起作用
 - 对于非替换元素的内联元素，不仅 `padding` 不会加入行盒高度的计算，`margin` 和 `border` 也都是如此，都是不计算高度，但实际上在内联盒周围发生了渲染
 - `padding` 百分比值无论是水平方向还是垂直方向均是相对于宽度计算的
 - 如果是内联元素
-  - 同样相对于宽度计算
-  - 默认的高度和宽度细节有差异
-  - `padding` 会断行( `padding` 区域是跟着内联盒模型中的行框盒子走的)
-  - 内联元素的垂直 `padding` 会让“幽灵空白 节点”显现，也就是规范中的“strut”出现（内联元素默认的高度完全受 `font-size` 大小控制，可以把 `font-size` 设为0）
+	- 同样相对于宽度计算
+	- 默认的高度和宽度细节有差异
+	- `padding` 会断行( `padding` 区域是跟着内联盒模型中的行框盒子走的)
+	- 内联元素的垂直 `padding` 会让“幽灵空白 节点”显现，也就是规范中的“strut”出现（内联元素默认的高度完全受 `font-size` 大小控制，可以把 `font-size` 设为0）
 - 标签元素内置的 **padding**
-  - `ol`/`ul` 列表内置 `padding-left`，但是单位是 `px`，如果列表中的字体大小很小，则元素的项目符号（如点或数字）就会离元素的左边缘距离很开；如果 `font-size` 比较大，则项目符号可能跑到列表元素的外面
-  - 很多表单元素都内置 `padding`
-  - 所有浏览器 `<input>`/`<textarea>` 输入框内置 `padding`
-  - 所有浏览器 `<button>` 按钮内置 `padding`，按钮元素的 `padding` 最难控制！Chrome 下 `button { padding: 0; }` 就可以了，Firefox 下可以试试 `button::-moz-focus-inner { padding: 0; }`
-  - 部分浏览器 `<select>` 下拉内置 `padding`，如 Firefox、IE8 及以上版本浏览器可以设置 `padding`
-  - 所有浏览器 `<radio>`/`<checkbox>` 单复选框**无内置** `padding`
-  - 平常制作网页的时候很少使用原生的可点击的控件显示，而是利用 `<label>` 元素去模拟 `button`、`checkbox`、`radio`（这些元素隐藏，`<label>` 元素的 `for` 属性值和元素的 `id` 值对应即可）
+	- `ol`/`ul` 列表内置 `padding-left`，但是单位是 `px`，如果列表中的字体大小很小，则元素的项目符号（如点或数字）就会离元素的左边缘距离很开；如果 `font-size` 比较大，则项目符号可能跑到列表元素的外面
+	- 很多表单元素都内置 `padding`
+	- 所有浏览器 `<input>`/`<textarea>` 输入框内置 `padding`
+	- 所有浏览器 `<button>` 按钮内置 `padding`，按钮元素的 `padding` 最难控制！Chrome 下 `button { padding: 0; }` 就可以了，Firefox 下可以试试 `button::-moz-focus-inner { padding: 0; }`
+	- 部分浏览器 `<select>` 下拉内置 `padding`，如 Firefox、IE8 及以上版本浏览器可以设置 `padding`
+	- 所有浏览器 `<radio>`/`<checkbox>` 单复选框**无内置** `padding`
+	- 平常制作网页的时候很少使用原生的可点击的控件显示，而是利用 `<label>` 元素去模拟 `button`、`checkbox`、`radio`（这些元素隐藏，`<label>` 元素的 `for` 属性值和元素的 `id` 值对应即可）
 
 CSS 中还有很多其他场景或属性会出现这种不影响其他元素布局而是出现层叠效果的现象，可以分为两类
 
@@ -593,7 +568,7 @@ CSS 中还有很多其他场景或属性会出现这种不影响其他元素布�
 
 判断：如果父容器 `overflow:auto`，层叠区域超出父 容器的时候，没有滚动条出现，则是纯视觉的；如果出现滚动条，则会影响尺寸、影响布局
 
-> 在不影响当前布局的情况下，优雅地增加链接或按钮的点击区域大小
+> 🌰 在不影响当前布局的情况下，优雅地增加链接或按钮的点击区域大小
 
 ```css
 article a { 
@@ -601,9 +576,9 @@ article a {
 }
 ```
 
+（除了使用 `padding`，也可以使用透明的 `border`）
 
-
-> 利用内联元素的 padding 实现高度可控的分隔线
+> 🌰 利用内联元素的 padding 实现高度可控的分隔线
 
 ```html
 <a href="">登录</a><a href="">注册</a>
@@ -618,9 +593,7 @@ a + a:before {
 </style>
 ```
 
-
-
-> 不使用伪元素，仅一层标签实现大队长的“三道杠”分类图标效果
+> 🌰 不使用伪元素，仅一层标签实现大队长的“三道杠”分类图标效果
 
 ```css
 .icon-menu { 
@@ -634,9 +607,7 @@ a + a:before {
 }
 ```
 
-
-
-> 不使用伪元素，仅一层标签实现双层圆点效果
+> 🌰 不使用伪元素，仅一层标签实现双层圆点效果
 
 ```css
 .icon-dot { 
@@ -650,26 +621,24 @@ a + a:before {
 } 
 ```
 
-
-
 ### 功勋卓越的 border 属性
 
 `border` 就是“边框”，border 属性在图形构建、体验优 化以及网页布局这块几大放异彩，同时保证其良好的兼容性和稳定的特性表现
 
 - 虽然同属盒模型基本成员，但是 `border-width` 却不支持百分比，主要是因为没有需要使用百分比值的场景（`outline`、`box-shadow`、`text-shadow` 这些也不支持百分比，原因相同）
 - `border-width` 除了常见的数字+长度单位（0的时候可以省略长度单位）还支持若干关键字
-  - `thin`：薄薄的，等同于 `1px`
-  - `medium`（默认值）：薄厚均匀，等同于 `3px` (这个是因为 `border-style:double` 至少 `3px` 才有效果)
-  - `thick`：厚厚的，等同于 `4px`
+	- `thin`：薄薄的，等同于 `1px`
+	- `medium`（默认值）：薄厚均匀，等同于 `3px` (这个是因为 `border-style:double` 至少 `3px` 才有效果)
+	- `thick`：厚厚的，等同于 `4px`
 - `border-style` 的默认值是 `none`，因此设定了 `border-width` 和 `border-color` 之后并不会有边框显示
-  - `border-style:solid`：实线边框
-  - `border-style:dashed`：虚线边框，虚线颜色区的宽高比以及颜色区和透明区的宽度比例在不同浏 览器下是有差异的
-  - `border-style:dotted`：虚点边框，在表现上同样有兼容性差异
-  - `border-style:double`：双实线边框，`border-width` 大小不同，其表现不同（表现规则：双线宽度永远相等，中间间隔±1）
-  - 其他：`inset`（内凹）、`outset`（外凸）、`groove`（沟槽）、`ridge` （山脊）风格老土过时，且浏览器表现形式不一，因此，它 们没有任何实用价值，但是他们的出现无形中规范了实线边框的转角连接规则
+	- `border-style:solid`：实线边框
+	- `border-style:dashed`：虚线边框，虚线颜色区的宽高比以及颜色区和透明区的宽度比例在不同浏 览器下是有差异的
+	- `border-style:dotted`：虚点边框，在表现上同样有兼容性差异
+	- `border-style:double`：双实线边框，`border-width` 大小不同，其表现不同（表现规则：双线宽度永远相等，中间间隔±1）
+	- 其他：`inset`（内凹）、`outset`（外凸）、`groove`（沟槽）、`ridge` （山脊）风格老土过时，且浏览器表现形式不一，因此，它 们没有任何实用价值，但是他们的出现无形中规范了实线边框的转角连接规则
 - 当没有指定 `border-color` 颜色值的时候，会使用当前元素的 `color` 计算值作为边框色（`outline`、`box-shadow` 和 `text-shadow` 也是这样），可以不设定边框颜色，`hover` 时只修改 `color` 值，悬浮时它和它的伪元素边框颜色值也会变化
 
-> 右下方 **background** 定位的技巧
+> 🌰 右下方 **background** 定位的技巧
 
 假设现在有一个宽度不固定的元素，我们需要在距离右边缘 50 像素的位置设置一个背景图片，可以使用透明边框（默认 `background` 背景图片是相对于 padding box 定位的，也就是说，`background-position:100%` 的位置计算默认是不会把 `border-width` 计算在内的）：
 
@@ -680,9 +649,7 @@ a + a:before {
 }
 ```
 
-
-
-> 优雅地增加点击区域大小
+> 🌰 优雅地增加点击区域大小
 
 可以在 icon 外嵌套一层标签或者在 icon 上使用 `padding` 或透明 `border`
 
@@ -695,9 +662,7 @@ a + a:before {
 }
 ```
 
-
-
-> 三角等图形绘制
+> 🌰 三角等图形绘制
 
 `border` 属性可以轻松实现兼容性非常好的三角图形效果，其底层原因受 `inset`/`outset` 等看上去没有实用价值的 `border-style` 属性影响，这一转角规则也被 `solid` 类型的边框给沿用了，**只要是与三角形或者梯形相关的图形，都可以使用 `border` 属性来模拟**
 
@@ -712,7 +677,7 @@ div {
 div { 
    width: 0; height: 0;  
    border: 10px solid transparent;  /* 仅调整垂直方向 border-width 可以让其更扁或更高 */
-   border-color-top: #f30; /* 保留两个方向的颜色，可以构造更多不同的三角形 */
+   border-top-color: #f30; /* 保留两个方向的颜色，可以构造更多不同的三角形 */
 } 
 /* 利用梯形可以构造倒角矩形 */
 div {
@@ -740,9 +705,7 @@ div::after{
 }
 ```
 
-
-
-> 使用 border 实现等高布局
+> 🌰 使用 border 实现等高布局
 
 如下：左侧深色背景区域是由 `border-left` 属性生成的，元素边框高度总是和元素 自身高度保持一致，**因此可以巧妙地实现等高布局效果**
 
@@ -772,8 +735,6 @@ div::after{
 </style>
 ```
 
-
-
 ### 激进的 margin 属性
 
 方便后面理解，先看下元素尺寸相关概念：
@@ -799,11 +760,9 @@ div::after{
 </script>
 ```
 
-
-
 对于普通块状元素，在默认的水平流下，`margin` 只能改变左右方向的内部尺寸，垂直方向则无法改变；但是，对于具有拉伸特性的绝对定位元素，则水平或垂直方向都可以；使用 `writing-mode` 改变流向为垂直流，则水平方向内部尺寸无法改变，垂直方向可以改变（这是由 `margin:auto` 的计算规则决定的）
 
-> 一侧定宽的两栏自适应布局效果
+> 🌰 一侧定宽的两栏自适应布局效果
 
 一下案例文字内容就会根据 `.box` 盒子的宽度变化而自动排列，形成自适应布局效果，无论盒子是 200 像素还是 400 像素，布局依然良好，不会像纯浮动布局那样发生错位
 
@@ -818,8 +777,6 @@ div::after{
 	<img src="1.jpg"> <p>文字内容...</p>
 </div> 
 ```
-
-
 
 图片右侧定位，但是按 HTML 顺序
 
@@ -838,9 +795,7 @@ div::after{
 </div> 
 ```
 
-
-
-> 两端对齐布局
+> 🌰 两端对齐布局
 
 列表块两端对齐，一行显示 3 个，中间有 2 个 20 像素的间隙
 
@@ -856,8 +811,6 @@ li:nth-of-type(3n) {
 }
 ```
 
-
-
 还可以通过给父容器添加 margin 属性，增加容器的可用宽度来实现，此时 `ul` 的宽度就相当于`100%+20px`
 
 ```css
@@ -871,13 +824,11 @@ ul > li {
 }
 ```
 
-
-
 #### margin 与元素的外部尺寸：
 
 对于外部尺寸，`margin` 属性的影响则更为广泛，只要元素具有**块状特性**，无论有没有 设置 `width`/`height`，无论是水平方向还是垂直方向，即使发生了 `margin` 合并，`margin` 对外部尺寸都着着实实**发生了影响**
 
-> 借助 `margin` 的外部尺寸特性来实现底部留白
+> 🌰 借助 `margin` 的外部尺寸特性来实现底部留白
 
 只能使用**子元素**的 `margin-bottom` 来实现滚动容器的底部留白
 
@@ -887,9 +838,7 @@ ul > li {
 </div>
 ```
 
-
-
-> 利用 `margin` 外部尺寸实现等高布局
+> 🌰 利用 `margin` 外部尺寸实现等高布局
 
 针对具有块状特性的元素而言，垂直方向 `margin` 无法改变元素的内部尺寸，但却能改变外部尺寸，默认情况下，垂 直方向块级元素上下距离是 0，一旦 margin-bottom:-9999px 就意味着后面所有元素和上面元 素的空间距离变成了-9999px，也就是后面元素都往上移动了 9999px。此时，通过神来一笔 padding-bottom:9999px 增加元素高度，这正负一抵消，对布局层并无影响，但却带来了我们 需要的东西—视觉层多了 9999px 高度的可使用的背景色，需要配合父级 overflow:hidden 把多出来的色块背景隐藏掉，于是实现了视觉上的等高布局效果。如果需要有子元素定位到容器之 外，父级的 overflow:hidden 是一个棘手的限制；其次，当触发锚点定位或者使用DOM.scrollIntoview()方法的时候，可能就会出现奇怪的定位问题
 
@@ -903,28 +852,22 @@ ul > li {
 }
 ```
 
-
-
 **内联元素**垂直方向的 margin 是没有任何影响的，既不会影响外部尺寸，也不会影响内部尺寸，有种石沉大海的感觉。对于水平方向，由于内联元素宽度表现为“包裹性”，也不会影响内部尺寸
 
-
-
-#### **margin** 的百分比值 
+#### **margin** 的百分比值
 
 和 padding 属性一样，margin 的百分比值无论是水平方向还是垂直方向都是相对于宽度计算的
 
 元素设置 margin 在垂直方向上无法改变元素自身的内部尺寸，往往需要父元素作为载体，此外，由于 margin 合并的存在，垂直方向往往需要双倍尺寸才能和 padding 表现一致
-
-
 
 #### **margin** 合并场景
 
 块级元素的上外边距（margin-top）与下外边距（margin-bottom）有时会合并为单个外边距，这样的现象称为“margin 合并”
 
 - 块级元素，但不包括浮动和绝对定位元素，尽管浮动和绝对定位可以让元素块状化
-- 只发生在和当前文档流方向的相垂直的方向上，由于默认文档流 是水平流，因此发生 margin 合并的就是垂直方向
+- 只发生在和当前文档流方向的**相垂直的方向**上，由于默认文档流是水平流，因此发生 margin 合并的就是垂直方向
 
- margin 合并的意义：对于兄弟元素的 margin 合并其作用和 em 类似，都是让图文信息的排版更加舒服自然；父子 margin 合并使得在页面中任何地方嵌套或直接放入任何裸 `<div>`，都不会影响原来的块状布局；自身 margin 合并的意义在于可以避免不小心遗落或者生成的空标签影响排版和布局。
+margin 合并的意义：对于兄弟元素的 margin 合并其作用和 em 类似，都是让图文信息的排版更加舒服自然；父子 margin 合并使得在页面中任何地方嵌套或直接放入任何裸 `<div>`，都不会影响原来的块状布局；自身 margin 合并的意义在于可以避免不小心遗落或者生成的空标签影响排版和布局。
 
 **margin** 合并的 3 种场景
 
@@ -937,8 +880,6 @@ ul > li {
 p { margin: 1em 0; outline: 1px solid red;} 
 </style>
 ```
-
-
 
 ![margin合并](https://cdn.wallleap.cn/img%2Fpic%2Fillustrtion%2F202210251907216.png)
 
@@ -957,20 +898,18 @@ p { margin: 1em 0; outline: 1px solid red;}
 </div>
 ```
 
-
-
 ![margin合并](https://cdn.wallleap.cn/img%2Fpic%2Fillustrtion%2F202210251911838.png)
 
-解决父子 margin 合并：
+**解决父子 margin 合并：**
 
-对于 margin-top 合并，可以进行如下操作（满足一个条件即可）： 
+对于 margin-top 合并，可以进行如下操作（满足一个条件即可）：
 
 - 父元素设置为**块状格式化上下文**元素；
 - 父元素设置 border-top 值；
 - 父元素设置 padding-top 值；
 - 父元素和第一个子元素之间添加内联元素进行分隔。
 
-对于 margin-bottom 合并，可以进行如下操作（满足一个条件即可）： 
+对于 margin-bottom 合并，可以进行如下操作（满足一个条件即可）：
 
 - 父元素设置为块状格式化上下文元素；
 - 父元素设置 border-bottom 值；
@@ -1000,16 +939,12 @@ p { margin: 1em 0; }
 </style>
 ```
 
-
-
-如果不希望空元素有 margin 合并，可以进行如下操作： 
+如果不希望空元素有 margin 合并，可以进行如下操作：
 
 - 设置垂直方向的 border；
 - 设置垂直方向的 padding；
 - 里面添加内联元素（直接 Space 键空格是没用的）；
 - 设置 height 或者 min-height。
-
-
 
 #### **margin** 合并的计算规则
 
@@ -1021,9 +956,7 @@ p { margin: 1em 0; }
 
 如果同号，取绝对值最大的那个；如果异号，则 margin 结果为相加的值
 
-
-
-####  margin:auto
+#### margin:auto
 
 margin:auto 的填充规则如下：
 
@@ -1039,8 +972,6 @@ margin:auto 的填充规则如下：
     width: 200px;
 }
 ```
-
-
 
 触发 margin:auto 计算有一个前提条件，就是 width 或 height 为 auto 时， 元素是具有对应方向的自动填充特性的，需要 margin:auto 可以让元素在垂直方向居中：
 
@@ -1069,8 +1000,6 @@ margin:auto 的填充规则如下：
    margin: auto;
 }
 ```
-
-
 
 #### **margin** 无效情形
 
@@ -1144,17 +1073,18 @@ margin:auto 的填充规则如下：
 
 #### 利用 line-height 实现文本居中
 
-> 要让单行文字垂直居中，只需要 `line-height` 这一个属性就可以，并不需要依靠 `height` 属性
+> 🌰 要让单行文字垂直居中，只需要 `line-height` 这一个属性就可以，并不需要依靠 `height` 属性
 
 ```css
 .title { line-height: 24px; }
 ```
 
 `line-height` 可以让单行或多行元素**近似垂直居中**（通过 `line-height` 设置的垂直居中，并不是真正意义上的垂直居中）
+
 - 行高可以实现“垂直居中”原因在于 CSS 中“**行距的上下等分机制**”
 - “近似”是因为文字字形的垂直中线位置普遍要比真正的“行框盒子”的垂直中线位置低
 
-> 行高实现多行文本或者图片等替换元素的垂直居中效果
+> 🌰 行高实现多行文本或者图片等替换元素的垂直居中效果
 
 ```html
 <style>
@@ -1167,6 +1097,7 @@ margin:auto 的填充规则如下：
 ```
 
 实现原理
+
 - 多行文字使用一个标签包裹，然后设置 `display` 为 `inline-block`
 	- 重置外部的 `line-height` 为正常的大小
 	- 又能保持内联元素特性，从而可以设置 `vertical-align` 属性，以及产生一个非常关键的“行框盒子”（让幽灵空白节点撑起高度）
@@ -1180,12 +1111,12 @@ margin:auto 的填充规则如下：
 
 在各种内联相关模型中，凡是涉及垂直方向的排版或者对齐的，都离不开最基本的基线（baseline）
 
--   `line-height` 行高的定义就是两基线的间距
+- `line-height` 行高的定义就是两基线的间距
 - `vertical-align` 的默认值就是基线，其他中线顶线一类的定义也离不开基线
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202212281421592.png)
 
-> 字母x的下边缘（线）就是我们的基线
+> 字母 x 的下边缘（线）就是我们的基线
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202212281422699.png)
 
@@ -1194,6 +1125,7 @@ margin:auto 的填充规则如下：
 	- cap height: 大写字母高度
 	- median: 中线
 	- descender height: 下行线高度
+
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202212281424669.png)
 
 `vertical- align:middle` 中 `middle` 指的是基线往上`1/2 x-height` 高度。我们可以近似理解为字母 x 交叉点那个位置。
@@ -1236,7 +1168,7 @@ margin:auto 的填充规则如下：
 	- `vertial-align:top` 就是垂直上边缘对齐（`bottom` 则相反）
 		- 内联元素：元素底部和当前**行框盒子**的顶部对齐（和这一行位置最高的内联元素的顶部对齐）
 		- `table-cell` 元素：元素底 `padding` 边缘和表格行的顶部对齐（类似  `<td>` 元素，则和 `<tr>` 元素上边缘对齐）
-	-   `line-height` 和 `vertial-align: middle` 实现的多行文本或者图片的垂直居中全部都是“近似垂直居中”
+	- `line-height` 和 `vertial-align: middle` 实现的多行文本或者图片的垂直居中全部都是“近似垂直居中”
 		- 内联元素：元素的垂直中心点和行框盒子基线往上 `1/2 x-height` 处对齐（可以看作是 x 的交叉位置）
 		- `table-cell` 元素：单元格填充盒子相对于外面的表格行居中对齐
 		- 基本上所有的字体中，字符 x 的位置都是偏下一点儿的，`font-size` 越大偏移越明显，这才导致默认状态下的 `vertial-align:middle` 实现的都是“近似垂直居中”
@@ -1260,7 +1192,7 @@ margin:auto 的填充规则如下：
 
 不同属性值定义完全不同，且很多属性 `table-cell` 元素有着不同的定义；同时最终表现与字符 x、`line-height`，和 `font-size`、`font-family` 属性密切相关
 
-> 基于20px图标对齐的处理技巧
+> 🌰 基于20px图标对齐的处理技巧
 
 - 图标高度和当前行高都是20px
 - 图标标签里面永远有字符（伪元素生成空格）
@@ -1282,7 +1214,7 @@ margin:auto 的填充规则如下：
 ...
 ```
 
-> 基于 `vertical-align` 属性的水平垂直居中弹框
+> 🌰 基于 `vertical-align` 属性的水平垂直居中弹框
 
 无论浏览器尺寸是多大，也无论弹框尺寸是多少，弹框永远都是居中的
 
@@ -1340,7 +1272,7 @@ CSS 世界中正常的流内容或者流布局虽然也足够强大，但是实�
 
 利用 `float` 破坏 CSS 正常流的特性，实现两栏或多栏的自适应布局
 
-> 一侧定宽的两栏自适应布局
+> 🌰 一侧定宽的两栏自适应布局
 
 ```html
 <div class="father">
@@ -1384,11 +1316,13 @@ CSS 世界中正常的流内容或者流布局虽然也足够强大，但是实�
 BFC 全称是 Block Formatting Context，块级格式化上下文
 
 BFC 表现原则：
+
 - 具有 BFC 特性的元素的子元素不会受外部元素影响，也不会影响外部元素（内部是独立的环境）
 - BFC 元素是不可能发生 margin 重叠的，因为 margin 重叠是会影响外面的元素的
 - BFC 元素也可以用来清除浮动的影响，因为如果不清除，子元素浮动则父元素高度塌陷，必然会影响后面元素布局和定位（有 BFC 就可以不 `clear` 了）
 
 BFC 形成条件：
+
 - `<html>` 根元素
 - `float` 值不为 none
 - `overflow` 的值为 `auto`、`scroll` 或 `hidden`
@@ -1396,6 +1330,7 @@ BFC 形成条件：
 - `position` 的值不为 `static` 和 `relative`
 
 一般认为使用 BFC 特性清除浮动的影响要比使用 `clear` 更优，但是使用不同属性也有不同的效果：
+
 - `float: left`：虽然产生了 BFC 特性，但是浮动元素有破坏性和包裹性，失去了元素本身的流体自适应性，无法用来实现自动填满容器的自适应布局
 - `position: absolute`：使用这个属性元素完全脱离文档流
 - `overflow: hidden`：这个本身还是普通的元素，块状元素的流体特性仍然保留
@@ -1439,7 +1374,7 @@ BFC 形成条件：
 
 #### 文本溢出
 
-> 单行文字溢出点点点
+> 🌰 单行文字溢出点点点
 
 ```css
 .ell {
@@ -1449,7 +1384,7 @@ BFC 形成条件：
 }
 ```
 
-> 多行内容
+> 🌰 多行文本溢出省略
 
 ```css
 .ell {
@@ -1514,7 +1449,7 @@ BFC 形成条件：
 - 虽然说 `relative/absolute/fixed` 都能对 `absolute` 的“包裹性”以及“定位”产生限制，但只有 `relative` 可以让元素依然保持在正常的文档流中
 - `relative` 的定位有两大特性：一是**相对自身**；二是无侵入
 	- “无侵入”的意思是，当 `relative` 进行定位偏移的时候，一般情况下不会影响周围元素的布局（`margin` 偏移后面的元素会跟着移动，而使用 `relative` 定位后面的元素依然在原地纹丝不动，自身原本区域留出了一大块空白）
-	- 
+	-
 - 相对定位元素的 `left/top/right/bottom` 的**百分比值**是相对于包含块计算的，而不是自身（`top` 和 `bottom` 这两个垂直方向的百分比值计算跟 `height` 的百分比值是一样的，都是相对高度计算的，如果包含块的高度是 `auto`，那么计算值是 0）
 - 当相对定位元素同时应用对立方向定位值的时候，也就是 `top/bottom` 和 `left/right` 同时使用的时候，只有一个方向的定位属性会起作用，**与文档流的顺序有关的**，默认的文档流是自上而下、从左往右，因此 `top/bottom` 同时使用的时候，`top` 生效；`left/right` 同时使用的时候，`left` 生效
 - 在实际使用中可以参照 `relative` 的最小化影响原则
@@ -1580,7 +1515,7 @@ CSS 2.1 下，层叠顺序规则如下图所示：
 
 （3）单纯从层叠水平上看，实际上 `z-index:0` 和 `z-index:auto` 是可以看成是一样的。
 
-`background/border `为**装饰**属性，浮动和块状元素一般用作**布局**，而内联元素都是**内容**
+` background/border  `为**装饰**属性，浮动和块状元素一般用作**布局**，而内联元素都是**内容**
 
 ### 两条层叠领域的黄金准则
 
@@ -1591,7 +1526,7 @@ CSS 2.1 下，层叠顺序规则如下图所示：
 ### 层叠上下文的特性
 
 - 层叠上下文的层叠水平要比普通元素高（原因后面会说明）
-- 层叠上下文可以阻断元素的混合模式（参见 http://www.zhangxinxu.com/wordpress/?p=5155 的这篇文章的第二部分说明）
+- 层叠上下文可以阻断元素的混合模式（参见 <http://www.zhangxinxu.com/wordpress/?p=5155> 的这篇文章的第二部分说明）
 - 层叠上下文可以嵌套，内部层叠上下文及其所有子元素均受制于外部的“层叠上下文”
 - 每个层叠上下文和兄弟元素独立，也就是说，当进行层叠变化或渲染的时候，只需要考虑后代元素
 - 每个层叠上下文是自成体系的，当元素发生层叠的时候，整个元素被认为是在父层叠上下文的层叠顺序中。
@@ -1602,31 +1537,30 @@ CSS 2.1 下，层叠顺序规则如下图所示：
 根层叠上下文指的是页面根元素，可以看成是元素。因此，页面中所有的元素一定处于至少一个“层叠结界”中。
 
 2．定位元素与传统层叠上下文
-对于 position 值为 relative/absolute 以及 Firefox/IE 浏览器（不包括 Chrome 浏览 器）下含有 position:fixed 声明的定位元素，当其 z-index 值不是 auto 的时候，会创建层叠上下文。
+对于 `position` 值为 `relative/absolute` 以及 Firefox/IE 浏览器（不包括 Chrome 浏览 器）下含有 `position:fixed` 声明的定位元素，当其 `z-index` 值不是 `auto` 的时候，会创建层叠上下文。
 
 3．CSS3 与新时代的层叠上下文
 
-（1）元素为 flex 布局元素（父元素 display:flex|inline-flex），同时 z-index 值不是 auto。
-（2）元素的 opacity 值不是 1。 
-（3）元素的 transform 值不是 none。
-（4）元素 mix-blend-mode 值不是 normal。 
-（5）元素的 filter 值不是 none。
-（6）元素的 isolation 值是 isolate。
-（7）元素的 will-change 属性值为上面 2～6 的任意一个（如 will-change:opacity、will-chang:transform 等）。
-（8）元素的-webkit-overflow-scrolling 设为 touch。
+（1）元素为 `flex` 布局元素（父元素 `display:flex|inline-flex`），同时 `z-index` 值不是 `auto`。
+（2）元素的 `opacity` 值不是 1。
+（3）元素的 `transform` 值不是 `none`。
+（4）元素 `mix-blend-mode` 值不是 `normal`。
+（5）元素的 `filter` 值不是 `none`。
+（6）元素的 `isolation` 值是 `isolate`。
+（7）元素的 `will-change` 属性值为上面 2～6 的任意一个（如 `will-change:opacity`、`will-chang:transform` 等）。
+（8）元素的 `-webkit-overflow-scrolling` 设为 `touch`。
 
 ### 层叠上下文与层叠顺序
 
-（1）如果层叠上下文元素不依赖 z-index 数值，则其层叠顺序是 z-index:auto，可看成 z:index:0 级别；
+（1）如果层叠上下文元素不依赖 `z-index` 数值，则其层叠顺序是 `z-index:auto`，可看成 `z-index:0` 级别；
 
-（2）如果层叠上下文元素依赖 z-index 数值，则其层叠顺序由 z-index 值决定。
+（2）如果层叠上下文元素依赖 `z-index` 数值，则其层叠顺序由 `z-index` 值决定。
 
 ![新的层叠顺序规则](https://cdn.wallleap.cn/img/pic/illustration/202302221607061.png)
 
+元素一旦成为定位元素，其 `z-index` 就会自动生效，此时其 `z-index` 就是默认的 `auto`，也就是 0 级别，根据上面的层叠顺序表，就会覆盖 `inline` 或 `block` 或 `float` 元素。而不支持 `z-index` 的层叠上下文元素天然是 `z-index:auto` 级别，也就意味着，层叠上下文元素和定位元素是 一个层叠顺序的，于是当它们发生层叠的时候，遵循的是“后来居上”准则。
 
-元素一旦成为定位元素，其 z-index 就会自动生效，此时其 z-index 就是默认的 auto，也就是 0 级别，根据上面的层叠顺序表，就会覆盖 inline 或 block 或 float 元素。而不支持 z-index 的层叠上下文元素天然是 z-index:auto 级别，也就意味着，层叠上下文元素和定位元素是 一个层叠顺序的，于是当它们发生层叠的时候，遵循的是“后来居上”准则。
-
-从图中可以看到 z-index 负值元素的层级是在层叠上下文元素上面、block 元素的下面，也就是 z-index 虽然名为负数层级，但依然无法突破当前层叠上下文所包裹的小世界。
+从图中可以看到 `z-index` 负值元素的层级是在层叠上下文元素上面、`block` 元素的下面，也就是 `z-index` 虽然名为负数层级，但依然无法突破当前层叠上下文所包裹的小世界。
 
 ## 文本
 
@@ -1642,28 +1576,29 @@ CSS 2.1 下，层叠顺序规则如下图所示：
 
 `em` 相对于当前元素，`rem` 相对于根元素
 
-**font-size 的关键词属性**
-- 相对尺寸关键字，相对于当前元素 font-size 计算
-	- larger：大一点，是元素的默认 font-size 属性值
-	- smaller：小一点，是元素的默认 font-size 属性值
-- 绝对尺寸关键字，仅受浏览器设置的字号影响
-	- xx-large：好大好大，和 `<h1>` 元素计算值一样
-	- x-large：好大，和 `<h2>` 元素计算值一样
-	- large：大，和 `<h3>` 元素计算值近似（“近似”指计算值偏差在 1 像素以内，下同）
-	- medium：不上不下，是 font-size 的初始值，和 `<h4>` 元素计算值一样
-	- small：小，和 `<h5>` 元素计算值近似
-	- x-small：好小，和 `<h6>` 元素计算值近似
-	- xx-small：好小好小，无对应的 HTML 元素
+**`font-size` 的关键词属性**
 
-桌面 Chrome 浏览器下有个 12px 的字号限制，如果 font-size:0 的字号表现就是 0，那么文字会直接被隐藏掉，并且只能是 font-size:0，哪怕设置成 font-size:0.0000001px，都还是会被当作 12px 处理的
+- 相对尺寸关键字，相对于**当前元素** `font-size` 计算
+	- `larger`：大一点，是元素的默认 font-size 属性值
+	- `smaller`：小一点，是元素的默认 font-size 属性值
+- 绝对尺寸关键字，仅受浏览器设置的字号影响
+	- `xx-large`：好大好大，和 `<h1>` 元素计算值一样
+	- `x-large`：好大，和 `<h2>` 元素计算值一样
+	- `large`：大，和 `<h3>` 元素计算值近似（“近似”指计算值偏差在 1 像素以内，下同）
+	- `medium`：不上不下，是 font-size 的初始值，和 `<h4>` 元素计算值一样
+	- `small`：小，和 `<h5>` 元素计算值近似
+	- `x-small`：好小，和 `<h6>` 元素计算值近似
+	- `xx-small`：好小好小，无对应的 HTML 元素
+
+桌面 Chrome 浏览器下有个 `12px` 的字号限制，如果 `font-size:0` 的字号表现就是 0，那么文字会直接被隐藏掉，并且只能是 `font-size:0`，哪怕设置成 `font-size:0.0000001px`，都还是会被当作 `12px` 处理的
 
 ### 字体属性家族 font
 
 #### font-family 字体家族
 
-font-family 默认值由操作系统和浏览器共同决定
+`font-family` 默认值由操作系统和浏览器共同决定
 
-font-family 支持两类属性值，一类是“字体名”，一类是“字体族”，如果字体名包含空格，需要使用引号包起来（可以不用区分大小写；如果有多个字体设定，从左往右依次寻找本地是否有对应的字体即可）
+`font-family` 支持两类属性值，一类是“字体名”，一类是“字体族”，如果字体名包含空格，需要使用引号包起来（可以不用区分大小写；如果有多个字体设定，从左往右依次寻找本地是否有对应的字体即可）
 
 ```css
 body {
@@ -1672,18 +1607,19 @@ body {
 ```
 
 字体族分类：
-- serif：衬线字体（笔画开始、结束的地方有额外 装饰而且笔画的粗细会有所不同的字体，典型字体是“宋体”）
-- sans-serif：无衬线字体（没有这些额外的装饰，而且笔画的粗细差不多，黑体）
-- monospace：等宽字体
-- cursive：手写字体
-- fantasy：奇幻字体
-- system-ui：系统 UI 字体。
 
-serif 和 sans-serif 一定要写在最后，因为在大多数浏览器下，写在 serif 和 sans-serif 后面的所有字体都会被忽略
+- `serif`：衬线字体（笔画开始、结束的地方有额外 装饰而且笔画的粗细会有所不同的字体，典型字体是“宋体”）
+- `sans-serif`：无衬线字体（没有这些额外的装饰，而且笔画的粗细差不多，黑体）
+- `monospace`：等宽字体
+- `cursive`：手写字体
+- `fantasy`：奇幻字体
+- `system-ui`：系统 UI 字体。
+
+`serif` 和 `sans-serif` 一定要**写在最后**，因为在大多数浏览器下，写在 `serif` 和 `sans-serif` 后面的所有字体都会被忽略
 
 等宽字体一般用于展示代码、一些字符
 
-1ch 表示一个 0 字符的宽度，所以 6 个 0 所占据的宽度就是 6ch，用这个单位和等宽字体可以实现数字/字母一个个出现的效果
+`1ch` 表示一个 0 字符的宽度，所以 6 个 0 所占据的宽度就是 `6ch`，用这个单位和等宽字体可以实现数字/字母一个个出现的效果
 
 #### font-weight 字重
 
@@ -1694,21 +1630,23 @@ serif 和 sans-serif 一定要写在最后，因为在大多数浏览器下，�
 /* 400 等同于 normal，700 等同于 bold */
 ```
 
-这些数值关键字浏览器都是支持的，之所以没有看到任何粗细的变化，是因为我们的系统里面缺乏对应粗细的字体。font-weight 要想真正发挥潜力，问题不在于 CSS 的支持，而在于是否存在对应的字体文件。
+这些数值关键字浏览器都是支持的，之所以没有看到任何粗细的变化，是因为我们的系统里面缺乏对应粗细的字体。`font-weight` 要想真正发挥潜力，问题不在于 CSS 的支持，而在于是否存在对应的字体文件。
 
 #### font-style 倾斜
 
 ```css
-font-style: normal; font-style: italic; font-style: oblique;
+font-style: normal;
+font-style: italic;
+font-style: oblique;
 ```
 
-italic 是使用当前字体的斜体字体，而 oblique 只是单纯地让文字倾斜
+`italic` 是使用当前字体的斜体字体，而 `oblique` 只是单纯地让文字倾斜
 
-如果当前字体没有对应的斜体字体，则退而求其次，解析为 oblique，也就是单纯形状倾斜
+如果当前字体没有对应的斜体字体，则退而求其次，解析为 `oblique`，也就是单纯形状倾斜
 
 #### font 属性
 
-可以缩写在 font 属性中的属性非常多，包括 font-style、font-variant、 font-weight、font-size、line-height、font-family 等
+可以缩写在 `font` 属性中的属性非常多，包括 `font-style`、`font-variant`、 `font-weight`、`font-size`、`line-height`、`font-family` 等
 
 完整语法为：
 
@@ -1717,28 +1655,28 @@ font: [ [ font-style || font-variant || font-weight ]? font-size [ / line-height
 /* ||表示或，?和正则表达式中的?的含义一致，表示 0 个或 1 个 */
 ```
 
-font-size 和 font-family 是必需的，是不可以省略的
+`font-size` 和 `font-family` 是必需的，是不可以省略的
 
-font 还支持关键字属性值，使用关键字作为属性值的时候必须是独立的，只能使用一下值
+`font` 还支持关键字属性值，使用关键字作为属性值的时候必须是独立的，只能使用一下值
 
 ```
 font:caption | icon | menu | message-box | small-caption | status-bar
 ```
 
-如果将 font 属性设置为上面的一个值，就等同于设置 font 为操作系统该部件对应的 font，也就是说直接使用系统字体
+如果将 `font` 属性设置为上面的一个值，就等同于设置 `font` 为操作系统该部件对应的 `font`，也就是说直接使用系统字体
 
-- caption：活动窗口标题栏使用的字体
-- icon：包含图标内容所使用的字体，如所有文件夹名称、文件名称、磁盘名称，甚至 浏览器窗口标题所使用的字体
-- menu：菜单使用的字体，如文件夹菜单
-- message-box：消息盒里面使用的字体
-- small-caption：调色板标题所使用的字体
-- status-bar：窗体状态栏使用的字体
+- `caption`：活动窗口标题栏使用的字体
+- `icon`：包含图标内容所使用的字体，如所有文件夹名称、文件名称、磁盘名称，甚至 浏览器窗口标题所使用的字体
+- `menu`：菜单使用的字体，如文件夹菜单
+- `message-box`：消息盒里面使用的字体
+- `small-caption`：调色板标题所使用的字体
+- `status-bar`：窗体状态栏使用的字体
 
 ### @font face 规则
 
-@font face 本质上就是一个定 义字体或字体集的变量，这个变量不仅仅是简单地自定义字体，还包括字体重命名、默认字体样式设置等
+`@font face` 本质上就是一个定 义字体或字体集的变量，这个变量不仅仅是简单地自定义字体，还包括字体重命名、默认字体样式设置等
 
-@font face 规则支持的 CSS 属性有 font-family、src、font-style、font-weigh、unicode-range、font-variant、font-stretch 和 font-feature-settings，例如：
+`@font face` 规则支持的 CSS 属性有 `font-family`、`src`、`font-style`、`font-weigh`、`unicode-range`、`font-variant`、`font-stretch` 和 `font-feature-settings`，例如：
 
 ```css
 @font-face {
@@ -1752,7 +1690,7 @@ font-stretch: expanded;
 font-feature-settings："liga1" on; }
 ```
 
-src 可以给多种字体格式，因为不同系统兼容性不同，我们可以优先使用 woff2，然后是 woff 格式字体
+`src` 可以给多种字体格式，因为不同系统兼容性不同，我们可以优先使用 woff2，然后是 woff 格式字体
 
 ### 文本的控制
 
@@ -1762,51 +1700,54 @@ src 可以给多种字体格式，因为不同系统兼容性不同，我们可�
 p { text-indent: 2em; }
 ```
 
-text-indent 的百分比值是相对于当前元素的“包含块”计算的，而不是当前元素
+`text-indent` 的百分比值是相对于当前元素的“包含块”计算的，而不是当前元素
 
 #### letter-spacing 字符间距
 
-默认值是 normal，计算值还是 0，支持负值
+默认值是 `normal`，计算值还是 0，支持负值
 
 #### word-spacing 单词间距
 
-letter-spacing 作用于所有字符，但 word-spacing 仅作用于空格字符
+`letter-spacing` 作用于所有字符，但 `word-spacing` 仅作用于空格字符
 
 #### word-break 和 word-wrap
 
-word-break 属性，语法如下：
+**`word-break`** 属性，语法如下：
+
 ```
 word-break: normal;
 word-break: break-all;
 word-break: keep-all;
 ```
 
-- normal：使用默认的换行规则
-- break-all：允许任意非 CJK（Chinese/Japanese/Korean）文本间的单词断行
-- keep-all：不允许 CJK 文本中的单词换行，只能在半角空格或连字符处换行。非 CJK 文本的行为实际上和 normal 一致。
+- `normal`：使用默认的换行规则
+- `break-all`：允许任意非 CJK（Chinese/Japanese/Korean）文本间的单词断行
+- `keep-all`：不允许 CJK 文本中的单词换行，只能在半角空格或连字符处换行。非 CJK 文本的行为实际上和 `normal` 一致。
 
-word-wrap
+**`word-wrap`**
+
 ```
 word-wrap: normal;
 word-wrap: break-word;
 ```
 
-- normal：就是大家平常见得最多的正常的换行规则
-- break-word：一行单词中实在没有其他靠谱的换行点的时候换行
+- `normal`：就是大家平常见得最多的正常的换行规则
+- `break-word`：一行单词中实在没有其他靠谱的换行点的时候换行
 
-word-break:break-all 和 word-wrap:break-word 效果区别
-- word-break:break-all 的作用是所有的都换行，毫不留情，一点儿空 隙都不放过
-- 而 word-wrap:break-word 则带有怜悯之心，如果这一行文字有可以换 行的点，如空格或 CJK（中文/日文/韩文）之类的，就不打英文单词或字符的主意了，在 这些换行点换行，至于对不对齐、好不好看则不关心，因此，很容易出现一片一片空白区 域的情况。
+`word-break:break-all` 和 `word-wrap:break-word` 效果区别
+
+- `word-break:break-all` 的作用是所有的都换行，毫不留情，一点儿空 隙都不放过
+- 而 `word-wrap:break-word` 则带有怜悯之心，如果这一行文字有可以换 行的点，如空格或 CJK（中文/日文/韩文）之类的，就不打英文单词或字符的主意了，在 这些换行点换行，至于对不对齐、好不好看则不关心，因此，很容易出现一片一片空白区 域的情况。
 
 #### white-space
 
-white-space 属性声明了如何处理元素内的空白字符，这类空白字符包括 Space（空格） 键、Enter（回车）键、Tab（制表符）键产生的空白
+`white-space` 属性声明了如何处理元素内的空白字符，这类空白字符包括 Space（空格） 键、Enter（回车）键、Tab（制表符）键产生的空白
 
-- normal：合并空白字符和换行符
-- pre：空白字符不合并，并且内容只在有换行符的地方换行
-- nowrap：该值和 normal 一样会合并空白字符，但不允许文本环绕
-- pre-wrap：空白字符不合并，并且内容只在有换行符的地方换行，同时允许文本环绕
-- pre-line：合并空白字符，但只在有换行符的地方换行，允许文本环绕
+- `normal`：合并空白字符和换行符
+- `pre`：空白字符不合并，并且内容只在有换行符的地方换行
+- `nowrap`：该值和 normal 一样会合并空白字符，但不允许文本环绕
+- `pre-wrap`：空白字符不合并，并且内容只在有换行符的地方换行，同时允许文本环绕
+- `pre-line`：合并空白字符，但只在有换行符的地方换行，允许文本环绕
 
 white-space 的功能分 3 个维度，分别是：是否合并空白字符，是否合并换行符，以及文本是否自动换行
 
@@ -1816,10 +1757,10 @@ white-space 的功能分 3 个维度，分别是：是否合并空白字符，�
 - 如果合并换行，会把多个连续换行合并成 1 个，并当作 1 个普通空格处理，就是键盘空格键敲出来的那个空格。
 - 如果文本环绕，一行文字内容超出容器宽度时，会自动从下一行开始显示。
 
-当 white-space 设置为 nowrap 的时候，元素的宽度此时表现为“**最大可用宽度**”，换 行符和一些空格全部合并，文本一行显示
+当 `white-space` 设置为 `nowrap` 的时候，元素的宽度此时表现为“**最大可用宽度**”，换 行符和一些空格全部合并，文本一行显示
 
-- “包含块”尺寸过小处理，绝对定位以及 inline-block 元素 都具有包裹性，当文本内容宽度超过包含块宽度的时候，就会发生文本 环绕现象。
-- 单行文字溢出点点点效果。text-overflow:ellipsis 文字内容超出打点效果离不开 white-space:nowrap 声明
+- “包含块”尺寸过小处理，绝对定位以及 `inline-block` 元素 都具有包裹性，当文本内容宽度超过包含块宽度的时候，就会发生文本 环绕现象。
+- 单行文字溢出点点点效果。`text-overflow: ellipsis` 文字内容超出打点效果离不开 `white-space: nowrap` 声明
 
 #### text-align 对齐
 
@@ -1836,33 +1777,382 @@ text-align:justify 两端对齐，除了实现文本的两端对齐，还可以�
 ```css
 a {
   text-decoration: none;
-  border-bottom: 1px solid current;
+  border-bottom: 1px solid currentColor;
   padding-bottom: .2em;
 }
 ```
 
 #### text-transform 字符大小写
 
-text-transform 也是为英文字符设计的，要么全大写 text-transform:uppercase， 要么全小写 text-transform:lowercase
+`text-transform` 也是为英文字符设计的，要么全大写 `text-transform:uppercase`， 要么全小写 `text-transform:lowercase`
 
 ### ::first-letter/::first-line 伪元素
 
+- `::first-letter` 首字符作为元素的假想子元素
+- `::first-letter` 伪元素生效的前提
+	- 元素的 `display` 计算值**必须**是 `block`、`inline-block`、`list-item`、`table- cell` 或者 `table-caption`
+	- 不是所有的字符都能单独作为 `::first-letter` 伪元素存在的，常见的标点符号、各类括号和引号在 `::first-letter` 伪元素眼中全部都是“辅助类”字符，要是只有这些内容那就选中不到，如果以这些字符开头，后面有其他的文字内容（数字、英文字母、中文、$、一些运算符以及空格），那么会选择第一个字符和之前的符号
+	- 字符前面不能有图片或者 `inline-block/inline-table` 之类的元素存在
+	- 如果使用 `::before` 伪元素，且伪元素的是数字、英文字母、中文、$、一些运算符或空格，那么 `::first-letter` 会选中伪元素中的第一个字符
+- 通过 `::first-letter` 选中的元素，仅部分 CSS 属性可以支持
+	- 所有字体相关属性、所有背景相关属性、所有 `margin` 相关属性、所有 `padding` 相关属性、所有 `border` 相关属性、`color` 属性、`text-decoration`、`text-transform`、`letter-spacing`、`word-spacing`（合 适情境下）、`line-height`、`float` 和 `vertical-align`（只有当 `float` 为 `none` 的时候）等属性支持，其他类似 `visibility`、`display: none` 都不支持
 
+> 🌰 修改价格前面的美元符号
 
+```css
+/* .price{$13.50} */
+.price::first-letter {
+	margin-right: 5px;
+	font-size: .8em;
+	vertical-align: -2px;
+}
+```
 
+- `::first-line` 和 `::first-letter` 伪元素一样，只能作用在块级元素上，也就是 `display` 为 `block`、`inline-block`、`list-item`、`table-cell` 或者 `table-caption` 的元素设置 `::first-line` 才有效，`table`、`flex` 之类都是无效的
+- `::first-line` 和 `::first-letter` 伪元素一样，仅支持部分 CSS 属性
+	- 所有字体相关属性、`color` 属性、所有背景相关属性、`text-decoration`、`text-transfor`、`letter-spacing`、`word-spacing`、`line-height` 和 `vertical-align` 等属性
 
+> 🌰 适合单行的使用了 `currentColor` 的场景
 
+```html
+<button class="btn-normal green">确定</button>
+<button class="btn-normal red">取消</button>
+<style>
+.green { color: #1E887D; }
+.red { color: red; }
+button {
+  background: currentColor;
+}
+button::first-line {
+  color: white;
+}
+</style>
+```
 
+## 颜色和背景色
 
+### color
 
+- 颜色关键词：例如 `red`、`green`、`blue`、`purple` 等
+- 透明：`transparent`
+- `currentColor` 变量：使用当前 `color` 计算值/颜色值，`border`、`text-shadow`、`box-shadow` 颜色默认值就是这个
+- `rgb()` 和 `rgba()`，都支持四个参数，`rgb()` 的第四个参数可以省略，`rgb()` 可以使用百分比，但是要么是百分比，要么全是整数
+- 十六进制 HEX：`#000`、`#fefefe`、`#00000011`
+- `hsl()` 和 `hsla()`
+- 系统颜色：系统空间的颜色，不可控
 
+![](https://cdn.wallleap.cn/img/pic/illustration/202302231117092.png)
 
+### background
 
+当我们使用 `background` 属性的时候，实际上使用的是一系列 `background` 相关属性的集合，包括：
 
+- `background-image: none`
+- `background-position: 0% 0%`
+- `background-repeat: repeat`
+- `background-attachment: scroll`
+- `background-size: auto auto`
+- `background-origin: padding-box`
+- `background-clip: border-box`
 
+#### background-position
 
+- 属性值可以是具体数值，也可以是百分比值，还可以是 `left`、 `top`、`right`、`center` 和 `bottom` 等关键字（CSS 中几乎带 `position` 的都是这样）
 
+![](https://cdn.wallleap.cn/img/pic/illustration/202302231132502.png)
 
+- 如果缺省偏移关键字，则会认为是 `center`，因此 `background-position:top center` 可以直接写成 `background-position:top`
+- 还支持同时出现 3 个值或 4 个值，作用是指定定位的偏移计算从哪个方位算起 `background-position: right 40px bottom 20px;` 表示距离右边缘 40 像素，距离底边缘 20 像素
+- 也支持百分比值，`positionX = (容器的宽度 - 图片的宽度) * percentX;`、`positionY = (容器的高度 - 图片的高度) * percentY;`
 
+#### background-repeat
 
+- ` background-repeat  `支持 `repeat`、`repeat-x`、`repeat-y` 这几个值
 
+#### background-attachment
+
+- 支持 `scroll` 和 `fixed` 两个属性值，其中 `scroll` 是默认值，背景图片会跟着页面滚动
+- `fixed` 表示背景相对于 当前文档视区定位，也就是页面再怎么滚动背景图片位置依旧纹丝不动
+
+#### background-color
+
+- `background-color` 背景色永远是最低的（无论是单背景图还是多背景图，背景色一定是在最底下的位置）
+- 设置了背景色的元素，在激活状态(`:active`/`:hover`)的时候，可以使用背景图片设置渐变，这样最底部还是原来的背景色，而渐变色是在背景色上层
+
+```css
+a[href]:active, button:active {
+  background-image: linear-gradient(to top, rgba(0,0,0,.05), rgba(0,0,0,.05));
+}
+```
+
+## 元素的显示与隐藏
+
+使用 CSS 让元素不可见的方法很多，剪裁、定位到屏幕外、明度变化等都是可以的
+
+- 如果希望元素不可见，同时不占据空间，辅助设备无法访问，同时不渲染，可以使用 `<script>` 标签隐藏
+
+```html
+<script type="text/html">
+  <img src="1.jpg"> </script>
+```
+
+此时，图片 1.jpg 是不会有请求的
+
+- `<script>` 标签是不支持嵌套的，因此，如果希望在 `<script>` 标签中再放置其他不渲染的模板内容，可以试试使用 `<textarea>` 元素
+
+```html
+<script type="text/html"> 
+  <img src="1.jpg"> 
+  <textarea style="display:none;"> 
+    <img src="2.jpg"> 
+  </textarea>
+</script> 
+```
+
+图片 2.jpg 也是不会有请求的，`<script>` 标签隐藏内容获取使用 `script.innerHTML`，`<textarea>` 使用`textarea.value`
+
+- 如果希望元素不可见，同时不占据空间，辅助设备无法访问，但资源有加载，DOM 可访问，则可以直接使用 `display:none` 隐藏
+
+```css
+el { display: none; }
+```
+
+`display` 计算值是 `none` 则该元素以及所有后代元素都隐藏
+
+Chrome 和 Safari 浏览器，若父元素 `display:none`，图片不加载，若本身背景图所在元素隐藏，则图片依旧会去加载
+
+HTML 中有很多标签和属性天然 `display:none`，如 `<style>`、`<script>` 和 `<dialog>` 元素，如果这些标签在 `<body>` 元素中，那么设置 `display: block` 可以让标签内的内容显示在页面中（设置 `contenteditable="true"` 可以实时编辑预览）
+
+有的属性也是自带 `display: none` 的，例如 `<input type="hidden" name="id" value="1">`、`<div hidden>None</div>` （如果不放心可以在 CSS 加一条 `[hidden]{ display: none }`）
+
+`display:none` 显隐控制并不会影响 CSS3 `animation` 动画的实现，但是会影响 CSS3 `transition` 过渡效果执行（因此 `transition` 一般搭配 `visibility` 和 `opacity` 使用）
+
+对于计数器列表元素，如果设置 `display:none`，则该元素不加入计数队列（例如原来 10 个有序列表，将第 2 个设置了 `display: none`，那么这个元素会消失，且第 3 个会变成 2，总计数是 9）
+
+- 如果希望元素不可见，同时不占据空间，辅助设备无法访问，但显隐的时候可以有 `transition` 淡入淡出效果，则可以使用：
+
+```css
+.hidden {
+  position: absolute;
+  visibility: hidden; 
+}
+```
+
+- 如果希望元素不可见，不能点击，辅助设备无法访问，但占据空间保留，则可以使用 `visibility:hidden` 隐藏
+
+```css
+el { visibility: hidden; }
+```
+
+父元素设置 `visibility:hidden`，子元素也会看不见，究其原因是继承性，子元素继承了 `visibility:hidden`，但是，如果子元素设置了 `visibility:visible`，则子元素又会显示出来
+
+`visibility:hidden` 不会影响计数器的计数，这和 `display:none` 完全不一样
+
+- 如果希望元素不可见，不能点击，不占据空间，但键盘可访问，则可以使用 `clip` 剪裁隐藏
+
+```css
+.clip {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+.out {
+  position: relative;
+  left: -999em;
+}
+```
+
+- 如果希望元素不可见，不能点击，但占据空间，且键盘可访问，则可以试试 `relative` 隐藏。例如，如果条件允许，也就是和层叠上下文之间存在设置了背景色的父元素，则也可以使用更友好的 `z-index` 负值隐藏
+
+```css
+.lower {
+  position: relative; z-index: -1;
+}
+```
+
+- 如果希望元素不可见，但可以点击，而且不占据空间，则可以使用透明度
+
+```css
+.opacity {
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(opacity=0);
+}
+```
+
+- 如果单纯希望元素看不见，但位置保留，依然可以点可以选，则直接让透明度为 0
+
+```css
+.opacity {
+  opacity: 0;
+  filter: Alpha(opacity=0);
+}
+```
+
+## 轮廓和光标
+
+### outline
+
+`outline` 表示元素的轮廓，语法和 `border` 属性非常类似，分宽度、类型和颜色，支持的关键字和属性值与 `border` 属性一模一样
+
+```css
+.outline {
+  outline: 1px solid #000;
+}
+```
+
+表单按钮 `focus` 的时候会显示轮廓，按 <kbd>Tab</kbd> 可以聚焦到下一个元素，按 <kbd>Enter</kbd> 相当于鼠标点击（不要把全局的轮廓都去掉，只去掉需要的就可以）
+
+```css
+.input { outline: 0; /* 或者 none */ }
+.input:focus {
+  border-color: Highlight;
+}
+```
+
+`outline` 是一个真正意义上不占任何空间的属性
+
+> 图片镂空效果
+
+```html
+<div class="crop">
+  <div class="crop-area"></div>
+  <img src="1.png" alt="1">
+</div>
+<style>
+.crop { overflow: hidden; }
+.crop > .crop-area {
+  width: 80px; height: 80px;
+  outline: 256px solid rgba(0,0,0,.5); /* 宽度比容器要大 */
+  cursor: move;
+}
+</style>
+```
+
+### cursor
+
+- 常规
+	- `cursor:auto`：`cursor` 默认值，光标形状根据内容类别浏览器自动进行处理
+	- `cursor:default`：系统默认光标形状
+	- `cursor:none`：让光标隐藏不见，看视频的时候，尤其全屏看视频的时候可以用这个（如果鼠标静止 3 秒不动，就设置页面或视频元素 `cursor:none` 隐藏光标，如果有 `mousemove` 行为，再显示即可）
+- 链接和状态
+	- `cursor:pointer`：光标表现为一只伸出食指的手，一般是出现在可以点击交互的元素上
+	- `cursor:help`：帮助，通常是光标头上带了个问号，用在帮助链接 或者包含提示信息的问号小图标上
+	- `cursor:progress`：表示进行中的意思，适合 loading 处理（点击一个按钮发送请求，请求发送出去、返回数据还没接收到的这段时间就可以用这个；页面加载中也可以用，`body { cursor:progress }`，当 JavaScript 初始化完毕的时候执行 `document.body.style.cursor = 'auto'`）
+	- `cursor:wait`，计算机死机时的光标，一般不用
+	- `cursor:context-menu`，菜单列表、下拉列表都可以用
+- 选择
+	- `cursor:text`，文字可被选中，默认文本字符或者可输入的单复选框的光标就表现成这样，因为文字可以被选中
+	- `cursor:vertical-text`，文字可以垂直选中，使用 `writing-mode` 把文字排版从水平改为垂直的时候，文字的光标就自动表现为 `cursor:vertical-text`
+	- `cursor:crosshair`，十字光标，通常用在像素级的框选或点选场合， 比方说自定义的取色工具
+	- `cursor:cell`，单元格使用
+- 拖曳
+	- `cursor:move`，当前元素是可以移动的
+	- `cursor:copy`，当前元素是可以被复制的
+	- `cursor:alias`，当前元素是可以创建别名或者快捷方式的
+	- `cursor:no-drop`，当前元素放开到当前位置是不允许的
+	- `cursor:not-allowed`，当前行 为是禁止的
+- 滚动
+	- `cursor:all-scroll`：表示上下左右都可以滚动
+- 拉伸
+	- `cursor:col-resize`，适用于移动垂直线条，如垂直参考线、移动改变左右分栏的宽度
+	- `cursor:row-resize`，适用于移动水平线条
+	- 单向拉伸和双向拉伸
+- 缩放
+	- `cursor:zoom-in`，可以放大
+	- `cursor:zoom-out`，可以缩小
+- 抓取
+	- `cursor:grab`，展开的手
+	- `cursor:grabbing`，握紧的手
+
+除了自带的还可以自定义光标：
+
+```css
+.cur-none {
+  cursor: url(transparent.cur);
+}
+```
+
+## 改变流向
+
+### direction
+
+通过属性 `direction` 改变文档流的水平方向
+
+```css
+direction: ltr; // 默认值
+direction: rtl;
+```
+
+`direction` 属性默认有这么一个特性，即可以改变替换元素或者 `inline-block/ inline-table` 元素的水平呈现顺序
+
+HTML 中可以改变顺序
+
+```html
+<p dir="rtl">
+  <img src="1.jpg">
+  <img src="2.jpg">
+</p>
+```
+
+按钮的顺序就可以通过这个改变
+
+文字省略也可以用这个改变到前面去
+
+```html
+<p class="ell" dir="ltr">这个是默认的，省略号会在这里显示<p>
+<p class="ell" dir="rtl">省略号会在前面显示，这里的文字会完整显示出来<p>
+<style>
+.ell {
+  width: 240px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+</style>
+```
+
+`direction` 属性还可以轻松改变表格中列的呈现顺序（左边的单元格到右边）
+
+`directionL:rtl` 还可以让 `text-justify` 两端对齐元素，最后一行落单的元素右对齐
+
+**只要是内联元素，只要与书写流相关，都可以试试 `direction` 属性**
+
+### unicode-bidi
+
+搭配 `unicode-bidi` 可以改变文字的方向
+
+```css
+unicode-bidi: normal; // 默认值
+unicode-bidi: embed;  /* 如果是被下面的声明嵌套的，那么方向会相反 */
+unicode-bidi: bidi-override; /* 强制所有的字符按照 direction 的方向排列 */
+```
+
+### writing-mode
+
+`writing-mode` 原本是为控制内联元素的显示而设计的（即所谓的垂直文本布局），用来实现**文字竖向呈现**
+
+```css
+/* 关键字值 */  
+writing-mode: horizontal-tb; /* 默认值 文本流是水平方向，元素是从上往下的 */
+writing-mode: vertical-rl;  /* 文本是垂直方向，阅读的顺序是从右往左 */
+writing-mode: vertical-lr; /* 文本是垂直方向，阅读顺序是从左往由 */
+writing-mode: inherit;  
+writing-mode: initial;  
+writing-mode: unset;
+```
+
+`writing-mode` **将页面默认的水平流改成了垂直流**
+
+```css
+.verticle-mode {
+  writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+```
+
+- 改变了流的方向之后，水平方向也会发生 `margin` 合并
+- 垂直方向也可以使用 `margin: auto` 实现居中
+- `text-align: center` 也能让图片在垂直方向上居中了
+- `text-indent` 可以实现文字下沉效果
+- 高度自适应布局
