@@ -1,7 +1,7 @@
 ---
 title: 自由输入法 RIME 建明配置指南
 date: 2023-02-20 15:22
-updated: 2023-02-20 15:23
+updated: 2023-02-27 17:45
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -357,3 +357,116 @@ sync_dir: 'D:\Nutstore\RimeSync'
 5. [推荐一个神级输入法RIME](https://sspai.com/link?target=https%3A%2F%2Fwww.byvoid.com%2Fzhs%2Fblog%2Frecommend-rime%2F)
 6. [一位匠人的中州韵——专访Rime输入法作者佛振](https://sspai.com/link?target=https%3A%2F%2Fsegmentfault.com%2Fa%2F1190000002424698)
 7. [最新版 Rime 输入法使用](https://sspai.com/link?target=https%3A%2F%2Fjdhao.github.io%2F2019%2F02%2F18%2Frime_configuration_intro%2F)
+
+## 按键
+
+```
+BackSpace	退格
+Tab	水平定位符
+Linefeed	换行
+Clear	清除
+Return	回車
+Pause	暫停
+Sys_Req	印屏
+Escape	退出
+Delete	刪除
+Home	原位
+Left	左箭頭
+Up	上箭頭
+Right	右箭頭
+Down	下箭頭
+Prior、Page_Up	上翻
+Next、Page_Down	下翻
+End	末位
+Begin	始位
+Shift_L	左Shift
+Shift_R	右Shift
+Control_L	左Ctrl
+Control_R	右Ctrl
+Meta_L	左Meta
+Meta_R	右Meta
+Alt_L	左Alt
+Alt_R	右Alt
+Super_L	左Super
+Super_R	右Super
+Hyper_L	左Hyper
+Hyper_R	右Hyper
+Caps_Lock	大寫鎖
+Shift_Lock	上檔鎖
+Scroll_Lock	滾動鎖
+Num_Lock	小鍵板鎖
+Select	選定
+Print	列印
+Execute	執行
+Insert	插入
+Undo	還原
+Redo	重做
+Menu	菜單
+Find	蒐尋
+Cancel	取消
+Help	幫助
+Break	中斷
+space
+exclam	!
+quotedbl	"
+numbersign	#
+dollar	$
+percent	%
+ampersand	&
+apostrophe	'
+parenleft	(
+parenright	)
+asterisk	*
+plus	+
+comma	,
+minus	-
+period	.
+slash	/
+colon	:
+semicolon	;
+less	<
+equal	=
+greater	>
+question	?
+at	@
+bracketleft	[
+backslash	
+bracketright	]
+asciicircum	^
+underscore	_
+grave	`
+braceleft	{
+bar	|
+braceright	}
+asciitilde	~
+KP_Space	小鍵板空格
+KP_Tab	小鍵板水平定位符
+KP_Enter	小鍵板回車
+KP_Delete	小鍵板刪除
+KP_Home	小鍵板原位
+KP_Left	小鍵板左箭頭
+KP_Up	小鍵板上箭頭
+KP_Right	小鍵板右箭頭
+KP_Down	小鍵板下箭頭
+KP_Prior、KP_Page_Up	小鍵板上翻
+KP_Next、KP_Page_Down	小鍵板下翻
+KP_End	小鍵板末位
+KP_Begin	小鍵板始位
+KP_Insert	小鍵板插入
+KP_Equal	小鍵板等於
+KP_Multiply	小鍵板乘號
+KP_Add	小鍵板加號
+KP_Subtract	小鍵板減號
+KP_Divide	小鍵板除號
+KP_Decimal	小鍵板小數點
+KP_0	小鍵板0
+KP_1	小鍵板1
+KP_2	小鍵板2
+KP_3	小鍵板3
+KP_4	小鍵板4
+KP_5	小鍵板5
+KP_6	小鍵板6
+KP_7	小鍵板7
+KP_8	小鍵板8
+KP_9	小鍵板9
+```
