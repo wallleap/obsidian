@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4d02bb0030379ac3",
+            "id": "092deb17cc2631db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/008-JS 基本概念.md",
+                "file": "300-web/课程/009-JS 类型的基本使用.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/008-JS 基本概念.md"
+                "file": "300-web/课程/009-JS 类型的基本使用.md"
               }
             }
           },
@@ -139,16 +139,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4d02bb0030379ac3",
+  "active": "092deb17cc2631db",
   "lastOpenFiles": [
-    "100-life/工具/自由输入法 RIME 建明配置指南.md",
     "300-web/课程/008-JS 基本概念.md",
+    "300-web/课程/009-JS 类型的基本使用.md",
+    "300-web/课程/005-深入 CSS.md",
+    "300-web/课程/006-布局相关.md",
+    "400-design/设计规范.md",
+    "100-life/工具/自由输入法 RIME 建明配置指南.md",
     "300-web/课程/007-CSS 补充.md",
     "300-web/三件套/用HTML+CSS制作前端简历.md",
     "300-web/三件套/CSS 世界笔记.md",
-    "300-web/课程/005-深入 CSS.md",
     "300-web/课程/004-接触 CSS.md",
-    "300-web/课程/006-布局相关.md",
     "300-web/三件套/规范 JavaScript 命名.md",
     "300-web/工具/面向 Coding 的 Git.md",
     "300-web/工具/macOS 安装 NVM.md",
