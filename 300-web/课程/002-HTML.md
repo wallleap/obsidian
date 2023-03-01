@@ -1,7 +1,7 @@
 ---
 title: 002-HTML
 date: 2023-02-06 21:36
-updated: 2023-02-06 21:36
+updated: 2023-03-01 21:08
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -17,7 +17,7 @@ keywords:
   - 关键词2
   - 关键词3
 description: 文章描述
-source: #
+source: null
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -29,10 +29,10 @@ url: //myblog.wallleap.cn/post/1
 <div id="avatar">头像</div>
 ```
 
--   id 表示独⼀无⼆的“身份”，⼀个元素只能有⼀个 id，不同元素不能有相同 id
--   class 表示“特征” 或者“共同点”，一个元素可以有多个不同 class，不同元素可以有相同 class
--   多个 class 用空格分割
--   多用 class，只对某些特殊且重要元素用 id
+- `id` 表示独⼀无⼆的“身份”，⼀个元素只能有⼀个 `id`，不同元素不能有相同 `id`
+- `class` 表示“特征” 或者“共同点”，一个元素可以有多个不同 `class`，不同元素可以有相同 `class`
+- 多个 `class` 用空格分隔
+- 多用 `class`，只对某些特殊且重要元素用 `id`
 
 ## 属性
 
@@ -40,12 +40,12 @@ url: //myblog.wallleap.cn/post/1
 <a id="copyright" class="link select" href="/" target="_blank" title="饥人谷">饥人谷</a>
 ```
 
--   全局属性
-    -   所有标签都可以拥有， id、class、title、style... [了解更多](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes)
--   自有属性
-    -   仅自己可拥有，`<a>` 的 href、target；`<img>` 的 src 等
--   自定义属性 `data-*`
-    -   用户自定义，用于存储一些数据
+- 全局属性
+	- 所有标签都可以拥有， `id`、`class`、`title`、`style`... [了解更多](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes)
+- 自有属性
+	- 仅自己可拥有，`<a>` 的 `href`、`target`；`<img>` 的 `src`、`alt` 等
+- 自定义属性 `data-*`
+	- 用户自定义，用于存储一些数据
 
 ## class起名
 
@@ -95,9 +95,9 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 
 `[block]__[element]--[modifier]`
 
--   Block 我的容器是谁
--   Element 我是谁
--   Modifier 我是什么形态
+- Block 我的容器是谁
+- Element 我是谁
+- Modifier 我是什么形态
 
 ```
 范例：.nav__logo，.photo__img, .photo__img--framed.btn--secondary.hero__text--small, .hero__text--big
@@ -111,6 +111,8 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 <button>确定</button>
 <button disabled>禁用</button>
 ```
+
+- `button` 有个 `type` 属性，属性值可以为 `button`、`submit`、`reset`，前者是默认的，后两者在表单中起到提交和重置的作用（可以通过点击事件实现）
 
 ### span、i、strong、em
 
@@ -127,17 +129,17 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 <div><i>饥</i>人谷</div>
 ```
 
--   使用 `span` 表示标记普通的文本
--   使用 `i` 表示带有不同语义的文本
--   使用 `em` 表示强调或重读
--   使用 `strong` 表示重要性
+- 使用 `span` 表示标记普通的文本
+- 使用 `i` 表示带有不同语义的文本
+- 使用 `em` 表示强调或重读
+- 使用 `strong` 表示重要性
 
 一般经验：`div` 包含 `span` 包含 `i`
 
 ### figure、img、figcaption
 
 ```html
- <figure>
+ <figure> 
 	 <img    src="https://static.xiedaimala.com/xdml/image/8334f008-f5bb-41ea-9654-87bb65118b1e/MjAyMi05LTItMTEtNDItNC03Njk=.png"    alt="三个卡通人在写字看电脑看书">
 	 <figcaption>饥人谷前端</figcaption>
  </figure> 
@@ -155,7 +157,7 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 		<tr><th>Items</th><th>Expenditure</th></tr>
 	</thead>
 	<tbody>
-		<tr><td>Donuts</td><td>3,000</td></tr>
+		<tr><td>Donats</td><td>3,000</td></tr>
 		<tr><td>Stationery</td><td>18,000</td></tr>
 	</tbody>
 	<tfoot>
@@ -164,8 +166,8 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 </table>
 ```
 
--   `table`、`thead`、`tbody`、`tfoot`（四部分）
--   `th`、`tr`、`td`（单元格）
+- `table`、`thead`、`tbody`、`tfoot`（四部分）
+- `th`、`tr`、`td`（单元格）
 
 ### 音视频
 
@@ -273,12 +275,12 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 
 ### HTML 标签
 
-- 块级：div、header、main、footer、section、article、nav、aside、h1、p、ul、li、table
-- 行级：span、i、strong、em、a、button、img、input
+- 块级：`div`、`header`、`main`、`footer`、`section`、`article`、`nav`、`aside`、`h1`~`h6`、`p`、`ul`、`li`、`table`
+- 行级：`span`、`i`、`strong`、`em`、`a`、`button`、`img`、`input`
 
 ### DTD 的作用
 
-- `<Doctype html` 放在页面开头
+- `<doctype html>` 放在页面开头
 - 告诉浏览器以标准模式渲染页面，不加的话由浏览器自己决定怎么渲染
 
 ### HTML 5 是什么
@@ -300,6 +302,9 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 
 让页面在移动端合理显示
 
+###  src 和 href 的区别
 
+`src` 和 `href` 都是**用来引用外部的资源**，它们的区别如下：
 
-
+- `src`： 表示对**资源**的引用，它指向的内容会嵌入到当前标签所在的位置。`src` 会将其指向的资源下载并应⽤到⽂档内，如请求 JS 脚本、`img` 图片、`audio` 音频、`video` 视频等。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执⾏完毕，所以⼀般 JS 脚本会放在页面底部。
+- `href`： 表示**超文本引用**，它指向一些网络资源，建立和当前元素或本文档的链接关系。当浏览器识别到它他指向的⽂件时，就会并⾏下载资源，不会停⽌对当前⽂档的处理。 常用在 `a`、`link` 等标签上。
