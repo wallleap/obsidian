@@ -280,7 +280,7 @@ nav, prev, next, breadcrumb, forward, back, indicator, paging, first, last
 
 ### DTD 的作用
 
-- `<doctype html>` 放在页面开头
+- `<!doctype html>` 放在页面开头
 - 告诉浏览器以标准模式渲染页面，不加的话由浏览器自己决定怎么渲染
 
 ### HTML 5 是什么
