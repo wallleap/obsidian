@@ -1,5 +1,6 @@
 {
   "trashOption": "local",
   "showFrontmatter": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "vimMode": true
 }

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5f5189c64e165130",
+        "id": "ded2dbd6bf8797b5",
         "type": "tabs",
         "children": [
           {
-            "id": "63c6fc780ecdf0b2",
+            "id": "46934694c85b66a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -139,24 +139,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "63c6fc780ecdf0b2",
+  "active": "46934694c85b66a0",
   "lastOpenFiles": [
-    "300-web/课程/007-CSS 补充.md",
-    "300-web/课程/006-布局相关.md",
-    "300-web/课程/005-深入 CSS.md",
-    "300-web/课程/004-接触 CSS.md",
-    "300-web/课程/003-Git 学习.md",
-    "300-web/课程/002-HTML.md",
-    "100-life/工具/打造个性化 GitHub 主页.md",
-    "300-web/课程/001-初学 Web.md",
+    "100-life/工具/个人输入法调教之 Rime.md",
     "300-web/课程/009-JS 类型的基本使用.md",
+    "300-web/工具/Vim —— 写代码更高效.md",
+    "300-web/课程/001-初学 Web.md",
+    "300-web/课程/007-CSS 补充.md",
+    "300-web/课程/005-深入 CSS.md",
+    "300-web/课程/002-HTML.md",
+    "300-web/课程/004-接触 CSS.md",
+    "300-web/课程/006-布局相关.md",
+    "300-web/课程/008-JS 基本概念.md",
+    "300-web/工具/手把手教你快速搭建一个代码在线编辑预览工具.md",
+    "300-web/课程/003-Git 学习.md",
+    "100-life/工具/打造个性化 GitHub 主页.md",
     "300-web/资源/前端优质开源项目.md",
     "300-web/资源/前端优质学习资源.md",
     "300-web/资源",
-    "300-web/工具/手把手教你快速搭建一个代码在线编辑预览工具.md",
     "300-web/三件套/手写 JS 常用 API.md",
     "(链接地址).md",
-    "300-web/课程/008-JS 基本概念.md",
     "400-design/设计规范.md"
   ]
 }

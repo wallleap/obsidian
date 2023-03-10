@@ -17,5 +17,6 @@
   "obsidian-icon-folder",
   "table-editor-obsidian",
   "obsidian-regex-replace",
-  "remotely-save"
+  "remotely-save",
+  "obsidian-vimrc-support"
 ]
