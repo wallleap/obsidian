@@ -118,11 +118,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 207.5
+    "width": 207.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -142,13 +144,15 @@
   "active": "46934694c85b66a0",
   "lastOpenFiles": [
     "300-web/课程/012-函数相关.md",
+    "300-web/课程/013-数组.md",
+    "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
+    "300-web/课程/015-正则表达式.md",
+    "300-web/课程/016-浏览器渲染机制.md",
+    "300-web/课程/017-DOM 查询创建.md",
+    "100-life/笔记/GitHub emoji.md",
     "300-web/课程/011-流程控制语句.md",
     "300-web/课程/010-数组和对象基本使用.md",
     "300-web/课程/009-数字和字符串.md",
-    "300-web/课程/016-浏览器渲染机制.md",
-    "300-web/课程/015-正则表达式.md",
-    "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
-    "300-web/课程/013-数组.md",
     "100-life/工具/个人输入法调教之 Rime.md",
     "300-web/工具/Vim —— 写代码更高效.md",
     "300-web/课程/001-初学 Web.md",
@@ -165,7 +169,6 @@
     "300-web/资源/前端优质学习资源.md",
     "300-web/资源",
     "300-web/三件套/手写 JS 常用 API.md",
-    "(链接地址).md",
-    "400-design/设计规范.md"
+    "(链接地址).md"
   ]
 }
