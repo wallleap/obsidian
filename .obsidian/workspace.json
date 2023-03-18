@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "46934694c85b66a0",
+            "id": "6a24d895d219331a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/017-DOM 操作.md",
+                "file": "300-web/课程/018-JS 事件.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/017-DOM 操作.md"
+                "file": "300-web/课程/018-JS 事件.md"
               }
             }
           },
@@ -139,10 +139,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46934694c85b66a0",
+  "active": "6a24d895d219331a",
   "lastOpenFiles": [
-    "(链接地址).md",
     "300-web/课程/017-DOM 操作.md",
+    "300-web/课程/018-JS 事件.md",
+    "(链接地址).md",
     "300-web/课程/015-正则表达式.md",
     "300-web/课程/016-浏览器渲染机制.md",
     "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
@@ -166,7 +167,6 @@
     "100-life/工具/打造个性化 GitHub 主页.md",
     "300-web/资源/前端优质开源项目.md",
     "300-web/资源/前端优质学习资源.md",
-    "300-web/资源",
-    "300-web/三件套/手写 JS 常用 API.md"
+    "300-web/资源"
   ]
 }
