@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/018-JS 事件.md",
+                "file": "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/018-JS 事件.md"
+                "file": "300-web/课程/014-Symbol、Set、Map、WeakMap.md"
               }
             }
           },
@@ -141,14 +141,14 @@
   },
   "active": "6a24d895d219331a",
   "lastOpenFiles": [
-    "300-web/课程/017-DOM 操作.md",
-    "300-web/课程/018-JS 事件.md",
-    "(链接地址).md",
-    "300-web/课程/015-正则表达式.md",
-    "300-web/课程/016-浏览器渲染机制.md",
-    "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
     "300-web/课程/013-数组.md",
+    "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
+    "300-web/课程/018-JS 事件.md",
+    "300-web/课程/017-DOM 操作.md",
+    "300-web/课程/016-浏览器渲染机制.md",
+    "300-web/课程/015-正则表达式.md",
     "300-web/课程/012-函数相关.md",
+    "(链接地址).md",
     "100-life/笔记/GitHub emoji.md",
     "300-web/课程/011-流程控制语句.md",
     "300-web/课程/010-数组和对象基本使用.md",
