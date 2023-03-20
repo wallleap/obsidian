@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f4ca5e7ba477229f",
+            "id": "bb28fdd62002bfef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/019-BOM.md",
+                "file": "300-web/课程/000-如何提问.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 301.5
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/019-BOM.md"
+                "file": "300-web/课程/000-如何提问.md"
               }
             }
           },
@@ -139,11 +139,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f4ca5e7ba477229f",
+  "active": "bb28fdd62002bfef",
   "lastOpenFiles": [
+    "400-design/B 端设计/004-B 端组件库/设计资产库中的组件，应该如何命名.md",
+    "300-web/课程/000-如何提问.md",
+    "400-design/B 端设计/004-B 端组件库/浏览记录的标签页该如何使用 2.md",
+    "400-design/B 端设计/004-B 端组件库/设计提效，10 分钟学会 Figma 组件库的搭建和使用.md",
+    "400-design/B 端设计/004-B 端组件库/万字干货带你读懂并应用 Design Token 2.md",
+    "400-design/B 端设计/004-B 端组件库/用Sketch搭建组件库.md",
+    "400-design/B 端设计/004-B 端组件库/万字干货带你读懂并应用 Design Token.md",
+    "400-design/配色收集.md",
+    "400-design/设计规范.md",
+    "400-design/认知偏差知识手册.md",
+    "400-design/B 端设计/004-B 端组件库/中性色色值为什么要使用透明度 2.md",
+    "400-design/B 端设计/004-B 端组件库/中性色色值为什么要使用透明度.md",
     "(链接地址).md",
-    "100-life/博客设计.md",
     "300-web/课程/019-BOM.md",
+    "100-life/博客设计.md",
     "300-web/课程/000-学习路线.md",
     "300-web/课程/001-初学 Web.md",
     "300-web/课程/002-HTML.md",
@@ -155,18 +167,6 @@
     "300-web/课程/008-JS 基本概念.md",
     "300-web/课程/009-数字和字符串.md",
     "300-web/课程/010-数组和对象基本使用.md",
-    "300-web/课程/011-流程控制语句.md",
-    "300-web/课程/012-函数相关.md",
-    "300-web/课程/013-数组.md",
-    "300-web/课程/014-Symbol、Set、Map、WeakMap.md",
-    "300-web/课程/015-正则表达式.md",
-    "300-web/课程/016-浏览器渲染机制.md",
-    "300-web/课程/017-DOM 操作.md",
-    "300-web/课程/018-JS 事件.md",
-    "100-life/笔记/GitHub emoji.md",
-    "100-life/工具/个人输入法调教之 Rime.md",
-    "300-web/工具/Vim —— 写代码更高效.md",
-    "300-web/工具/手把手教你快速搭建一个代码在线编辑预览工具.md",
     "300-web/资源"
   ]
 }
