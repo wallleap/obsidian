@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/000-如何提问.md",
+                "file": "300-web/课程/006-布局相关.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "JSON.pa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/000-如何提问.md"
+                "file": "300-web/课程/006-布局相关.md"
               }
             }
           },
@@ -141,8 +141,19 @@
   },
   "active": "bb28fdd62002bfef",
   "lastOpenFiles": [
-    "400-design/B 端设计/004-B 端组件库/设计资产库中的组件，应该如何命名.md",
+    "300-web/课程/005-深入 CSS.md",
+    "300-web/课程/004-接触 CSS.md",
+    "300-web/课程/019-BOM.md",
+    "300-web/课程/017-DOM 操作.md",
+    "300-web/课程/016-浏览器渲染机制.md",
+    "300-web/课程/015-正则表达式.md",
+    "300-web/课程/009-数字和字符串.md",
+    "300-web/课程/010-数组和对象基本使用.md",
+    "300-web/课程/007-CSS 补充.md",
+    "300-web/课程/006-布局相关.md",
+    "100-life/常用 DNS 服务器.md",
     "300-web/课程/000-如何提问.md",
+    "400-design/B 端设计/004-B 端组件库/设计资产库中的组件，应该如何命名.md",
     "400-design/B 端设计/004-B 端组件库/浏览记录的标签页该如何使用 2.md",
     "400-design/B 端设计/004-B 端组件库/设计提效，10 分钟学会 Figma 组件库的搭建和使用.md",
     "400-design/B 端设计/004-B 端组件库/万字干货带你读懂并应用 Design Token 2.md",
@@ -154,19 +165,8 @@
     "400-design/B 端设计/004-B 端组件库/中性色色值为什么要使用透明度 2.md",
     "400-design/B 端设计/004-B 端组件库/中性色色值为什么要使用透明度.md",
     "(链接地址).md",
-    "300-web/课程/019-BOM.md",
     "100-life/博客设计.md",
     "300-web/课程/000-学习路线.md",
-    "300-web/课程/001-初学 Web.md",
-    "300-web/课程/002-HTML.md",
-    "300-web/课程/003-Git 学习.md",
-    "300-web/课程/004-接触 CSS.md",
-    "300-web/课程/005-深入 CSS.md",
-    "300-web/课程/006-布局相关.md",
-    "300-web/课程/007-CSS 补充.md",
-    "300-web/课程/008-JS 基本概念.md",
-    "300-web/课程/009-数字和字符串.md",
-    "300-web/课程/010-数组和对象基本使用.md",
     "300-web/资源"
   ]
 }
