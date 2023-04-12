@@ -8,12 +8,25 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bb28fdd62002bfef",
+            "id": "b22cfd26917e60ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/006-布局相关.md",
+                "file": "300-web/课程/020-内存图1.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79accc614a1f12a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "400-design/设计方法论/分析评估｜正态分布模型.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,6 +34,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -87,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/006-布局相关.md"
+                "file": "400-design/设计方法论/分析评估｜正态分布模型.md"
               }
             }
           },
@@ -139,34 +153,34 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bb28fdd62002bfef",
+  "active": "79accc614a1f12a7",
   "lastOpenFiles": [
-    "300-web/课程/005-深入 CSS.md",
-    "300-web/课程/004-接触 CSS.md",
-    "300-web/课程/019-BOM.md",
-    "300-web/课程/017-DOM 操作.md",
-    "300-web/课程/016-浏览器渲染机制.md",
-    "300-web/课程/015-正则表达式.md",
-    "300-web/课程/009-数字和字符串.md",
-    "300-web/课程/010-数组和对象基本使用.md",
-    "300-web/课程/007-CSS 补充.md",
-    "300-web/课程/006-布局相关.md",
-    "100-life/常用 DNS 服务器.md",
-    "300-web/课程/000-如何提问.md",
-    "400-design/B 端设计/004-B 端组件库/设计资产库中的组件，应该如何命名.md",
-    "400-design/B 端设计/004-B 端组件库/浏览记录的标签页该如何使用 2.md",
+    "400-design/设计方法论/设计策略-7±2法则.md",
+    "400-design/设计方法论/用户调研-用户体验地图.md",
+    "400-design/设计方法论/设计法则-渐进式披露.md",
+    "400-design/设计方法论/设计策略-古腾堡原则.md",
+    "400-design/设计基础/颜色.md",
+    "400-design/设计基础/排版.md",
+    "400-design/设计基础/调色.md",
+    "400-design/设计方法论/设计法则-形、色、字、构、质、动.md",
+    "400-design/B 端设计/003-设计规范/9-字体.md",
+    "400-design/B 端设计/003-设计规范/10-栅格 2.md",
+    "400-design/B 端设计/003-设计规范/10-栅格.md",
+    "400-design/B 端设计/004-B 端组件库/抽屉和弹窗的区别是什么.md",
+    "400-design/B 端设计/004-B 端组件库/抽屉和弹窗的区别是什么 2.md",
+    "400-design/B 端设计/004-B 端组件库/大厂组件库一览表.md",
+    "400-design/B 端设计/004-B 端组件库/大厂组件库一览表 2.md",
+    "400-design/B 端设计/004-B 端组件库/搞定输入框和表单的20个秘诀.md",
+    "400-design/B 端设计/004-B 端组件库/搞定输入框和表单的20个秘诀 2.md",
+    "400-design/B 端设计/004-B 端组件库/简单理解token机制.md",
+    "400-design/B 端设计/004-B 端组件库/浏览记录的标签页该如何使用.md",
     "400-design/B 端设计/004-B 端组件库/设计提效，10 分钟学会 Figma 组件库的搭建和使用.md",
-    "400-design/B 端设计/004-B 端组件库/万字干货带你读懂并应用 Design Token 2.md",
-    "400-design/B 端设计/004-B 端组件库/用Sketch搭建组件库.md",
+    "400-design/B 端设计/004-B 端组件库/设计资产库中的组件，应该如何命名.md",
     "400-design/B 端设计/004-B 端组件库/万字干货带你读懂并应用 Design Token.md",
-    "400-design/配色收集.md",
-    "400-design/设计规范.md",
-    "400-design/认知偏差知识手册.md",
-    "400-design/B 端设计/004-B 端组件库/中性色色值为什么要使用透明度 2.md",
-    "400-design/B 端设计/004-B 端组件库/中性色色值为什么要使用透明度.md",
-    "(链接地址).md",
-    "100-life/博客设计.md",
-    "300-web/课程/000-学习路线.md",
+    "400-design/B 端设计/004-B 端组件库/万字干货带你读懂并应用 Design Token 2.md",
+    "400-design/B 端设计/004-B 端组件库/想做好组件设计先做这六项自查.md",
+    "400-design/B 端设计/004-B 端组件库/想做好组件设计先做这六项自查 2.md",
+    "400-design/B 端设计/004-B 端组件库/一个拖拽就暴露了国内外大厂的差距.md",
     "300-web/资源"
   ]
 }
