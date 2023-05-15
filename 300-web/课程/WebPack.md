@@ -80,6 +80,16 @@ url: //myblog.wallleap.cn/post/1
 - 文档的作用
 	- 先通看一遍，然后用的时候搜索关键词
 
+DOCUMENTATION
+webpack5
+- API
+- Concepts
+- Configuration
+- Guides
+- Loaders
+- Migrate
+- Plugins
+
 ## 初始化一个 Webpack 项目
 
 事先下载好 NVM，并通过 NVM 下载好 Node18（最新偶数版本）
