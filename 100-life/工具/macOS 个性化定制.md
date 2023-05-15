@@ -58,6 +58,12 @@ sudo xattr -rd com.apple.quarantine
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202212151818586.png)
 
+如果还是显示出现问题，那么就需要关闭 SIP 了
+
+可以参考这个关闭：<https://zhuanlan.zhihu.com/p/360808429>
+
+进入恢复模式（关机状态长按开机键）→ 状态栏实用工具-终端 → 输入命令 `csrutil disable` 回车 → 按提示输入 `y` 回车 → 输入密码回车（密码在输入过程中看不到）→ 重启
+
 ### 安装 Xcode Command Line Tools
 
 完整的 Xcode 占用空间太大，而且也不一定使用，Command Line Tools 是在 Xcode 中的一款工具，macOS 下不少开发工具都会依赖这个，手动安装一下，后面安装其他工具可以省下不少麻烦：
@@ -68,7 +74,7 @@ xcode-select --install
 
 ### 安装 HomeBrew
 
-好用的软件包管理器，官网为：[The Missing Package Manager for macOS (or Linux) — Homebrew](https://brew.sh/)（可以直接到官网首页搜索框搜软件，之后直接复制到终端运行）
+好用的软件包管理器，官网为：[Homebrew](https://brew.sh/)（可以直接到官网首页搜索框搜软件，之后直接复制到终端运行）
 
 由于国内直接运行安装命令会报错，所以需要先配置好代理（自行解决），或者使用镜像（自己搜索教程）
 
@@ -147,9 +153,17 @@ killall Dock
 
 ### 鼠标滚动方向
 
-个人习惯了 Win 的方式，把自然的选项去掉
+~~个人习惯了 Win 的方式，把自然的选项去掉~~
 
-![鼠标滚动方向](https://cdn.wallleap.cn/img/pic/illustrtion/20221009005906.png)
+把自然去掉的话触控板方向也会变，所以我一般使用 Mos 这个软件来修改
+
+![](https://cdn.wallleap.cn/img/pic/illustration/202305041029589.png)
+
+安装：
+
+```zsh
+brew install --cask mos
+```
 
 ### 程序坞
 
@@ -192,6 +206,7 @@ killall Dock
 	- ![偏好设置](https://cdn.wallleap.cn/img/pic/illustrtion/20221009005912.jpeg)
 
 	- 边栏大小设置在系统设置-通用中
+	- `defaults write com.apple.Finder AppleShowAllFiles true; killall Finder`
 - 工具栏设置，右击工具栏选择自定工具栏，根据自己喜好添加删除排序
 
 	- ![工具栏](https://cdn.wallleap.cn/img/pic/illustrtion/20221009005913.png)

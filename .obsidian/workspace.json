@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b22cfd26917e60ec",
+            "id": "53d3a4f990f58b5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/工具/除了 Markdown 编辑器，你还需要会用程序来处理它.md",
+                "file": "300-web/课程/WebPack.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "JSON.pa",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,12 +66,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "f1d6fef81c05701c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 301.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -87,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/工具/除了 Markdown 编辑器，你还需要会用程序来处理它.md"
+                "file": "300-web/课程/WebPack.md"
               }
             }
           },
@@ -122,12 +131,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5
+    "width": 207.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "canvas:新建白板": false,
-      "remotely-save:Remotely Save": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "templates:插入模板": false,
@@ -136,37 +145,38 @@
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
       "obsidian-weread-plugin:Weread": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "remotely-save:Remotely Save": false
     }
   },
-  "active": "b22cfd26917e60ec",
+  "active": "b92e5196ce90fd8f",
   "lastOpenFiles": [
+    "300-web/课程/021-内存图2-调用栈.md",
+    "300-web/课程/WebPack.md",
+    "300-web/课程/020-内存图1.md",
+    "300-web/三件套/CSS 世界笔记.md",
+    "300-web/web前端知识体系.md",
+    "300-web/工具/VSCode 自用设置.md",
+    "100-life/vim简单使用教程.md",
+    "100-life/博客设计.md",
+    "100-life/工具/RIME 小鹤双拼快速设置.md",
+    "100-life/工具/个人输入法调教之 Rime.md",
     "300-web/工具/iTerm2.md",
+    "100-life/工具/macOS 个性化定制.md",
+    "100-life/工具/打造个性化 GitHub 主页.md",
+    "100-life/工具/国内如何注册使用 ChatGPT.md",
+    "100-life/工具/mac打包DMG.md",
+    "100-life/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md",
+    "100-life/工具/自由输入法 RIME 建明配置指南.md",
+    "100-life/翻翻教程.md",
     "300-web/工具/除了 Markdown 编辑器，你还需要会用程序来处理它.md",
     "300-web/课程/015-正则表达式.md",
-    "300-web/课程/020-内存图1.md",
     "100-life/备忘录.md",
     "300-web/课程/019-BOM.md",
     "400-design/设计方法论/分析评估｜正态分布模型.md",
     "400-design/设计方法论/设计策略-7±2法则.md",
     "400-design/设计方法论/用户调研-用户体验地图.md",
     "400-design/设计方法论/设计法则-渐进式披露.md",
-    "400-design/设计方法论/设计策略-古腾堡原则.md",
-    "400-design/设计基础/颜色.md",
-    "400-design/设计基础/排版.md",
-    "400-design/设计基础/调色.md",
-    "400-design/设计方法论/设计法则-形、色、字、构、质、动.md",
-    "400-design/B 端设计/003-设计规范/9-字体.md",
-    "400-design/B 端设计/003-设计规范/10-栅格 2.md",
-    "400-design/B 端设计/003-设计规范/10-栅格.md",
-    "400-design/B 端设计/004-B 端组件库/抽屉和弹窗的区别是什么.md",
-    "400-design/B 端设计/004-B 端组件库/抽屉和弹窗的区别是什么 2.md",
-    "400-design/B 端设计/004-B 端组件库/大厂组件库一览表.md",
-    "400-design/B 端设计/004-B 端组件库/大厂组件库一览表 2.md",
-    "400-design/B 端设计/004-B 端组件库/搞定输入框和表单的20个秘诀.md",
-    "400-design/B 端设计/004-B 端组件库/搞定输入框和表单的20个秘诀 2.md",
-    "400-design/B 端设计/004-B 端组件库/简单理解token机制.md",
-    "400-design/B 端设计/004-B 端组件库/浏览记录的标签页该如何使用.md",
     "300-web/资源"
   ]
 }
