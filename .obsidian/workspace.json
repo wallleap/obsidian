@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-web/课程/WebPack.md",
+                "file": "200-work/前端/配置.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 301.5
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-web/课程/WebPack.md"
+                "file": "200-work/前端/配置.md"
               }
             }
           },
@@ -149,14 +148,16 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "b92e5196ce90fd8f",
+  "active": "53d3a4f990f58b5c",
   "lastOpenFiles": [
+    "300-web/课程/Webpack 性能优化.md",
+    "200-work/前端/配置.md",
+    "300-web/课程/WebPack 的使用.md",
+    "300-web/工具/VSCode 自用设置.md",
     "300-web/课程/021-内存图2-调用栈.md",
-    "300-web/课程/WebPack.md",
     "300-web/课程/020-内存图1.md",
     "300-web/三件套/CSS 世界笔记.md",
     "300-web/web前端知识体系.md",
-    "300-web/工具/VSCode 自用设置.md",
     "100-life/vim简单使用教程.md",
     "100-life/博客设计.md",
     "100-life/工具/RIME 小鹤双拼快速设置.md",
@@ -175,8 +176,6 @@
     "300-web/课程/019-BOM.md",
     "400-design/设计方法论/分析评估｜正态分布模型.md",
     "400-design/设计方法论/设计策略-7±2法则.md",
-    "400-design/设计方法论/用户调研-用户体验地图.md",
-    "400-design/设计方法论/设计法则-渐进式披露.md",
     "300-web/资源"
   ]
 }
