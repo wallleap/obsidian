@@ -197,8 +197,8 @@ module.exports = {
 
 这样也只用运行 `pnpm run build` 就可以了
 
-- production 尽量优化、压缩、混淆
-- development 尽量方便开发、调试
+- production 生产模式，代码给用户用，尽量优化、压缩、混淆
+- development 开发模式，代码给开发者用，需要边写边预览，尽量方便开发、调试
 
 ## 开始任务驱动学习法
 
@@ -309,6 +309,37 @@ cacheable modules 176 KiB
 pnpm run serve
 ```
 
+但是在 build 之后发现并没有生成 HTML
+
+需要安装插件
+
+[HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+
+```sh
+pnpm add -D html-webpack-plugin
+```
+
+修改配置文件
+
+```js
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+module.exports = {
+  mode: 'production',
+  plugins: [
+    plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Webpack Demo',
+      filename: 'index.html',
+      template: './public/index.html',
+      favicon: "./public/favicon.ico",
+      inject: 'body',
+    }),
+  ]
+}
+```
+
+这样 build 的时候就会自动生成 index.html 和 favicon.ico 了
+
 ### 引入第三方库
 
 例如 axios、Vue、React
@@ -381,15 +412,21 @@ module.exports = {
 }
 ```
 
+会将 CSS 先转化成 JS 字符串，再创建一个 style 标签，把 JS 字符串放到 style 标签中
+
 ### 将 CSS 单独打包
 
-使用插件 [MiniCssExtractPlugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
+打包的时候就会在 JS 中
+
+使用插件 [MiniCssExtractPlugin](https://webpack.js.org/plugins/mini-css-extract-plugin/) 提取 CSS 文件
 
 安装插件
 
 ```sh
 pnpm add -D mini-css-extract-plugin
 ```
+
+只有在打包的时候需要提取 CSS
 
 拆分配置文件 webpack.config.prod.js
 
@@ -487,3 +524,10 @@ import('./a.js').then(()=>{},()=>{})
 ```
 
 使用 `import()`，等用户点击或触发的时候才加载，打包的时候会单独打包为一个文件
+
+## 总结
+
+- Webpack 是个空架子，需要自己下载 loader 或 plugins 去配置
+- 不需要重点去学，可以给自己设定一个任务，然后去官方文档或 GitHub 搜索，配置解决这个任务
+- 开发模式 mode 是 development，用 serve/dev（也会 build，但是是在内存中）
+- 生产模式 mode 是 production，用 build，文件必打包必加后缀

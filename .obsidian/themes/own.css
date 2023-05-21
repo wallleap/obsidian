@@ -6739,16 +6739,18 @@ audio::-webkit-media-controls-time-remaining-display {
     font-style: var(--blockquote-font-style);
     background-color: var(--blockquote-background-color);
     border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
-    padding: var(--size-4-3) var(--size-4-4);
+    padding: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
 
 .markdown-rendered blockquote> :first-child {
+    padding: var(--size-4-3) var(--size-4-4);
     margin-top: 0;
 }
 
 .markdown-rendered blockquote> :last-child {
+    padding: var(--size-4-3) var(--size-4-4);
     margin-bottom: 0;
 }
 
@@ -6778,6 +6780,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
     font-style: var(--blockquote-style);
+    line-height: 2;
     background-color: var(--blockquote-background-color);
     padding: var(--size-4-3) var(--size-4-4);
 }
@@ -12707,3 +12710,20 @@ input.mobile-vault-chooser-field-input {
 }
 
 /*#endregion */
+
+blockquote,
+.HyperMD-quote.HyperMD-quote-1.cm-line {
+    line-height: 1;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+blockquote ul {
+    margin-top: 0;
+    margin-left: 1em;
+    line-height: 1.8;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}

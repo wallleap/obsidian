@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200-work/前端/配置.md",
+                "file": "300-web/课程/Vue 的构造选项.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 301.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -95,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "200-work/前端/配置.md"
+                "file": "300-web/课程/Vue 的构造选项.md"
               }
             }
           },
@@ -150,12 +151,17 @@
   },
   "active": "53d3a4f990f58b5c",
   "lastOpenFiles": [
-    "300-web/课程/Webpack 性能优化.md",
-    "200-work/前端/配置.md",
+    "300-web/课程/Vue 起手式.md",
+    "300-web/课程/Vue 的构造选项.md",
     "300-web/课程/WebPack 的使用.md",
+    "300-web/课程/Webpack 性能优化.md",
+    "300-web/课程/018-JS 事件.md",
+    "300-web/课程/019-BOM.md",
+    "300-web/课程/020-内存图1.md",
+    "100-life/常用 DNS 服务器.md",
+    "200-work/前端/配置.md",
     "300-web/工具/VSCode 自用设置.md",
     "300-web/课程/021-内存图2-调用栈.md",
-    "300-web/课程/020-内存图1.md",
     "300-web/三件套/CSS 世界笔记.md",
     "300-web/web前端知识体系.md",
     "100-life/vim简单使用教程.md",
@@ -171,11 +177,6 @@
     "100-life/工具/自由输入法 RIME 建明配置指南.md",
     "100-life/翻翻教程.md",
     "300-web/工具/除了 Markdown 编辑器，你还需要会用程序来处理它.md",
-    "300-web/课程/015-正则表达式.md",
-    "100-life/备忘录.md",
-    "300-web/课程/019-BOM.md",
-    "400-design/设计方法论/分析评估｜正态分布模型.md",
-    "400-design/设计方法论/设计策略-7±2法则.md",
     "300-web/资源"
   ]
 }
