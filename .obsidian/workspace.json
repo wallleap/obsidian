@@ -151,10 +151,15 @@
   },
   "active": "53d3a4f990f58b5c",
   "lastOpenFiles": [
-    "300-web/课程/Vue 起手式.md",
-    "300-web/课程/Vue 的构造选项.md",
-    "300-web/课程/WebPack 的使用.md",
     "300-web/课程/Webpack 性能优化.md",
+    "300-web/课程/WebPack 的使用.md",
+    "010-temp/test.md",
+    "010-temp/temporary.md",
+    "010-temp/template.md",
+    "010-temp/meta.md",
+    "010-temp/blog.md",
+    "300-web/课程/Vue 的构造选项.md",
+    "300-web/课程/Vue 起手式.md",
     "300-web/课程/018-JS 事件.md",
     "300-web/课程/019-BOM.md",
     "300-web/课程/020-内存图1.md",
@@ -172,11 +177,6 @@
     "100-life/工具/macOS 个性化定制.md",
     "100-life/工具/打造个性化 GitHub 主页.md",
     "100-life/工具/国内如何注册使用 ChatGPT.md",
-    "100-life/工具/mac打包DMG.md",
-    "100-life/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md",
-    "100-life/工具/自由输入法 RIME 建明配置指南.md",
-    "100-life/翻翻教程.md",
-    "300-web/工具/除了 Markdown 编辑器，你还需要会用程序来处理它.md",
     "300-web/资源"
   ]
 }
